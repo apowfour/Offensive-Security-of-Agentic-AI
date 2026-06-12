@@ -109,7 +109,7 @@ main { padding: 32px 0 80px; }
 }
 .group-head:first-of-type { border-top: none; padding-top: 0; margin-top: 8px; }
 .group-sub { color: var(--ink-soft); margin: 0 0 18px; font-size: 15px; }
-.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
 
 .card {
   background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius);
@@ -132,7 +132,7 @@ main { padding: 32px 0 80px; }
 .card h3 a:hover { color: var(--clay); text-decoration: none; }
 .card .org { font-size: 13px; color: var(--ink-soft); margin: 0 0 10px; font-variant-numeric: tabular-nums; }
 .card .desc { font-size: 15px; color: var(--ink-soft); margin: 0 0 14px; }
-.card .go { margin-top: auto; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 5px; }
+.card .go { margin-top: 10px; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 5px; }
 .card .go .arrow { transition: transform .12s ease; }
 .card:hover .go .arrow { transform: translateX(3px); }
 .card .tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
@@ -182,7 +182,7 @@ footer a { font-weight: 500; }
 .block-sub { color: var(--ink-soft); margin: 0 0 24px; font-size: 16px; }
 
 /* ----- category cards ----- */
-.cat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.cat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: start; }
 .cat-card {
   display: flex; flex-direction: column; align-items: flex-start;
   background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius);
