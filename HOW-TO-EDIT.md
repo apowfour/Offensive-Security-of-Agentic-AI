@@ -31,6 +31,10 @@ No build step, no MkDocs, no Python. To preview, just **double-click `index.html
 
 3. Fill in the fields. Save. Done — the new card appears automatically, joins its category, and becomes searchable.
 
+
+### Mark a resource as "essential" (optional)
+Add `start: true,` to a block to give it a ★ Start here badge and include it in the Essentials filter / step 1 of the path. Use it sparingly — only for the few must-reads in each area.
+
 ### The `type` field controls the category and the filter buttons
 Use one of these exact words:
 
