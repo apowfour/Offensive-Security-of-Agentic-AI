@@ -10,6 +10,7 @@ Plain static files — **no build step**. To preview, double-click `index.html`.
 | `config.js` | Category list + the home-page hierarchy tree | Sometimes |
 | `index.html` | Home page (category cards + tree) | No |
 | `category.html` | The shared template for every category page | No |
+| `tutorial.html` | The beginner tutorial + interactive demo | To edit lesson text |
 | `app.js` | Rendering logic | No |
 | `style.css` | The design | Almost never |
 
@@ -55,7 +56,10 @@ Add `start: true,` to give an entry a ★ Start here badge.
 2. Use that new `type` on entries in `data.js`. Done — a card and page appear automatically.
 
 ## Edit the hierarchy tree
-The tree is the `TREE` list in **`config.js`** — nested `{label, children:[...]}` objects. Add `cat:"tool"` to a node to make it link to a category page, or `url:"https://…"` for an external link.
+The tree is the `TREE` list in **`config.js`**. Its top level mirrors the main categories; each has sub-group labels you can rename or extend later. A node links to its category page via `cat:"tool"`, or to any URL via `url:"https://…"`. Nest more levels with `children:[...]`.
+
+## Edit the tutorial
+Lesson text lives directly in **`tutorial.html`** (plain HTML sections). The interactive attack demo is the `<script>` at the bottom of that file — you rarely need to touch it.
 
 ---
 

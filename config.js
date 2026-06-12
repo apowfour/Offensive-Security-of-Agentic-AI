@@ -24,51 +24,51 @@ const CATEGORIES = [
    Just nested lists — add or edit freely. A node can optionally
    link to a category page via {label, cat} or any url via {label, url}. */
 const TREE = [
-  { label:"1 · Core Concepts", children:[
-    { label:"What is an AI agent", children:[
-      {label:"LLM + tools + memory + planning loop"},
-      {label:"Autonomy levels"},
-      {label:"Multi-agent systems"}
-    ]},
-    { label:"Why the attack surface differs", children:[
-      {label:"Tool / function calling"},
-      {label:"Memory & state"},
-      {label:"Multi-step reasoning"},
-      {label:"Inter-agent trust"}
-    ]}
+  { label:"Frameworks", cat:"framework", children:[
+    {label:"Threat taxonomies"},
+    {label:"Red-teaming frameworks"},
+    {label:"Governance frameworks"}
   ]},
-  { label:"2 · Disciplines", children:[
-    {label:"Red Teaming"},
-    {label:"Penetration Testing"},
-    {label:"Vulnerability Assessment"},
-    {label:"Evaluation & Benchmarking", cat:"benchmark"}
+  { label:"Standards", cat:"standard", children:[
+    {label:"Risk taxonomies"},
+    {label:"Government & body standards"}
   ]},
-  { label:"3 · Threats & Attacks", children:[
-    {label:"Prompt injection (direct / indirect)"},
-    {label:"Tool misuse & hijacking"},
-    {label:"Memory poisoning"},
-    {label:"Privilege escalation"},
-    {label:"Excessive agency"},
-    {label:"Supply chain (models, plugins, MCP)"},
-    {label:"Multi-agent attacks"}
+  { label:"Methodologies", cat:"methodology", children:[
+    {label:"Engagement process"},
+    {label:"Playbooks"}
   ]},
-  { label:"4 · Frameworks & Standards", children:[
-    {label:"Frameworks", cat:"framework"},
-    {label:"Standards", cat:"standard"}
+  { label:"Books", cat:"book", children:[
+    {label:"AI red teaming"},
+    {label:"Adversarial machine learning"}
   ]},
-  { label:"5 · Tooling & Measurement", children:[
-    {label:"Tools", cat:"tool"},
-    {label:"Benchmarks", cat:"benchmark"}
+  { label:"Tools", cat:"tool", children:[
+    {label:"Scanners"},
+    {label:"Multi-turn attack"},
+    {label:"CI / regression"},
+    {label:"Agent harnesses"}
   ]},
-  { label:"6 · Knowledge & Process", children:[
-    {label:"Research Papers", cat:"paper"},
-    {label:"Methodologies & Playbooks", cat:"methodology"},
-    {label:"Guides", cat:"guide"},
-    {label:"Whitepapers", cat:"whitepaper"}
+  { label:"Benchmarks", cat:"benchmark", children:[
+    {label:"Attack-surface benchmarks"},
+    {label:"Safety & policy benchmarks"}
   ]},
-  { label:"7 · Stay Current", children:[
-    {label:"Blogs", cat:"blog"},
-    {label:"Newsletters", cat:"newsletter"},
-    {label:"Books", cat:"book"}
+  { label:"Research Papers", cat:"paper", children:[
+    {label:"Surveys & SoKs"},
+    {label:"Attacks & red-teaming"},
+    {label:"Evaluation & governance"}
+  ]},
+  { label:"Guides", cat:"guide", children:[
+    {label:"Framework guides"},
+    {label:"Technique guides"}
+  ]},
+  { label:"Whitepapers", cat:"whitepaper", children:[
+    {label:"Vendor"},
+    {label:"Community"}
+  ]},
+  { label:"Blogs", cat:"blog", children:[
+    {label:"Vendor blogs"},
+    {label:"Research blogs"}
+  ]},
+  { label:"Newsletters", cat:"newsletter", children:[
+    {label:"Field digests"}
   ]}
 ];

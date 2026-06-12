@@ -218,3 +218,91 @@ footer a { font-weight: 500; }
 .tree-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--line); flex: none; }
 .tree-leaf .tree-link { color: var(--clay); font-weight: 500; }
 .tree-leaf .tree-text { color: var(--ink-soft); font-weight: 400; }
+
+/* ============================================================
+   v4 — Tutorial card + Tutorial page + interactive demo
+   ============================================================ */
+
+/* highlighted tutorial card on the home grid */
+.cat-card--tutorial { background: #1A1915; border-color: #1A1915; }
+.cat-card--tutorial .cat-name { color: #FAF9F5; }
+.cat-card--tutorial .cat-blurb { color: #C9C6BC; }
+.cat-card--tutorial .cat-count { color: #F0997B; }
+.cat-card--tutorial .cat-ic { background: rgba(204,120,92,.22); color: #F0997B; }
+.cat-card--tutorial:hover { border-color: var(--clay); }
+
+/* ---- tutorial page ---- */
+.tutorial { padding: 24px 0 80px; max-width: 760px; }
+.tutorial section { padding: 20px 0; }
+.tutorial h2 {
+  font-family: var(--serif); font-weight: 500; font-size: 26px;
+  margin: 18px 0 12px; padding-top: 22px; border-top: 1px solid var(--line);
+}
+.tutorial p { margin: 0 0 14px; }
+.tut-list { margin: 0 0 14px; padding-left: 0; list-style: none; }
+.tut-list li { position: relative; padding: 6px 0 6px 22px; color: var(--ink); }
+.tut-list li::before { content: ""; position: absolute; left: 4px; top: 15px; width: 6px; height: 6px; border-radius: 50%; background: var(--clay); }
+.tut-list b { font-weight: 600; }
+
+.tut-toc {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  background: var(--paper-2); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px 16px; margin-bottom: 8px;
+}
+.tut-toc a { font-size: 13.5px; font-weight: 500; color: var(--ink-soft); padding: 4px 10px; border-radius: 8px; }
+.tut-toc a:hover { background: var(--paper); color: var(--clay); text-decoration: none; }
+
+.callout {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--clay-soft); border: 1px solid #E8C7B8;
+  border-radius: var(--radius); padding: 14px 16px; margin: 4px 0 14px; color: #6b3a26;
+}
+.callout i { color: var(--clay-deep); font-size: 20px; flex: none; margin-top: 1px; }
+
+.disc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 12px; }
+.disc { background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.disc-ic { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 9px; background: var(--clay-soft); color: var(--clay-deep); font-size: 19px; margin-bottom: 10px; }
+.disc b { display: block; font-size: 16px; margin-bottom: 4px; }
+.disc p { font-size: 14px; color: var(--ink-soft); margin: 0; }
+
+/* ---- interactive demo ---- */
+.demo { background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin: 6px 0 12px; }
+.demo-mail { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.demo-mail-h { display: flex; flex-direction: column; gap: 3px; padding-bottom: 10px; border-bottom: 1px solid var(--line); margin-bottom: 10px; }
+.dm-row { font-size: 13.5px; }
+.dm-k { display: inline-block; width: 64px; color: var(--ink-soft); }
+.dm-v { color: var(--ink); }
+.dm-label { font-size: 12.5px; color: var(--ink-soft); margin: 0 0 8px; }
+.dm-body { font-size: 14.5px; display: flex; flex-direction: column; gap: 8px; }
+.dm-inject-label { font-size: 11.5px; color: var(--clay-deep); font-weight: 500; }
+#inject {
+  width: 100%; font-family: var(--mono, ui-monospace, "SF Mono", Menlo, monospace);
+  font-size: 13px; line-height: 1.45; color: #6b3a26;
+  background: var(--clay-soft); border: 1px dashed var(--clay); border-radius: 8px; padding: 9px 11px; resize: vertical;
+}
+.demo-ctrls { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin: 14px 0 4px; }
+.demo-toggle { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink); cursor: pointer; }
+.demo-toggle small { color: var(--ink-soft); }
+.demo-toggle input { width: 16px; height: 16px; accent-color: var(--clay); }
+.demo-run {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--ink); color: var(--paper); border: none; border-radius: 9px;
+  padding: 10px 16px; font-family: var(--sans); font-size: 14.5px; font-weight: 500; cursor: pointer;
+}
+.demo-run:hover { background: #000; }
+.demo-out { margin-top: 14px; display: flex; flex-direction: column; gap: 0; }
+.demo-out:empty::before { content: "The agent's step-by-step trace will appear here."; color: var(--ink-soft); font-size: 13.5px; font-style: italic; }
+.tl { font-size: 13.5px; padding: 7px 12px; border-left: 2px solid var(--line); }
+.tl + .tl { border-top: 1px solid var(--line); }
+.tstep { display: inline-block; min-width: 52px; font-size: 11px; text-transform: uppercase; letter-spacing: .03em; color: var(--ink-soft); font-weight: 600; }
+.tl code { background: var(--paper); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; font-size: 12.5px; }
+.tl .ok { color: #0F6E56; }
+.tl .bad { color: #A32D2D; }
+.tl .badcode { background: #FCEBEB; border-color: #F09595; color: #791F1F; }
+.res-ok { border-left-color: #1D9E75; background: #E1F5EE; }
+.res-bad { border-left-color: #E24B4A; background: #FCEBEB; }
+.dm-foot { font-size: 13px; color: var(--ink-soft); }
+
+.next-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.next-links a { background: var(--paper-2); border: 1px solid var(--line); border-radius: 9px; padding: 9px 14px; font-size: 14px; font-weight: 500; color: var(--ink); }
+.next-links a:hover { border-color: var(--clay); color: var(--clay); text-decoration: none; }

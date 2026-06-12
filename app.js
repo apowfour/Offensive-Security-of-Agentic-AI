@@ -29,7 +29,13 @@ function cardHTML(r){
 function renderHome(){
   // category cards (hide empty categories)
   const cardsEl = document.getElementById("cat-cards");
-  cardsEl.innerHTML = CATEGORIES.filter(c => countFor(c.type) > 0).map(c => {
+  const tutorialCard = `<a class="cat-card cat-card--tutorial" href="tutorial.html">
+      <span class="cat-ic"><i class="ti ti-compass"></i></span>
+      <span class="cat-name">Tutorial</span>
+      <span class="cat-blurb">New to the topic? A 10-minute primer ending in a hands-on attack demo.</span>
+      <span class="cat-count">Start learning →</span>
+    </a>`;
+  cardsEl.innerHTML = tutorialCard + CATEGORIES.filter(c => countFor(c.type) > 0).map(c => {
     const n = countFor(c.type);
     return `<a class="cat-card" href="category.html?cat=${c.type}">
       <span class="cat-ic"><i class="ti ti-${c.icon}"></i></span>
@@ -57,7 +63,7 @@ function treeNode(node, topLevel){
     ? `<a class="tree-link" href="${link}"${node.url?' target="_blank" rel="noopener"':''}>${escapeHtml(node.label)}</a>`
     : `<span class="tree-text">${escapeHtml(node.label)}</span>`;
   if(node.children && node.children.length){
-    return `<li class="tree-branch${topLevel?" open":""}">
+    return `<li class="tree-branch">
       <span class="tree-toggle"><i class="ti ti-chevron-right tw"></i>${labelHtml}</span>
       <ul>${node.children.map(c=>treeNode(c,false)).join("")}</ul>
     </li>`;
