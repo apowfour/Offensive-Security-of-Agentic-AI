@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,93 +17,25 @@
   <div class="wrap">
     <div class="brand"><span class="dot"></span> OffensiveAgentic</div>
     <h1>The offensive security of agentic&nbsp;AI, in one place.</h1>
-    <p class="lede">A curated, growing reference for everyone who red-teams, pentests, evaluates, or breaks AI agents — frameworks, tools, papers, benchmarks, guides and more.</p>
+    <p class="lede">A curated, growing reference for everyone who red-teams, pentests, evaluates, or breaks AI agents. Pick a category to dive in, or scan the full map below.</p>
     <div class="meta">
       <span><b id="stat-total">0</b> resources</span>
-      <span><b id="stat-types">0</b> categories</span>
-      <span><a href="#mindmap">View the mind map ↓</a></span>
+      <span><b id="stat-cats">0</b> categories</span>
     </div>
   </div>
 </header>
 
-<section class="startpath">
-  <div class="wrap">
-    <h2>New here? Follow the path.</h2>
-    <p class="sub">Five steps from zero to running your own engagement. Each opens a focused, filtered view.</p>
-    <div class="steps" id="steps"></div>
-  </div>
-</section>
-
-<div class="controls">
-  <div class="wrap">
-    <label class="search">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="search" type="search" placeholder="Search resources, tools, papers, tags…" autocomplete="off">
-    </label>
-    <div class="filter-row">
-      <span class="filter-label">By type</span>
-      <div class="chips" id="type-chips"></div>
-    </div>
-    <div class="filter-row">
-      <span class="filter-label">By topic</span>
-      <div class="chips" id="topic-chips"></div>
-    </div>
-  </div>
-</div>
-
 <main class="wrap">
-  <p class="count-line" id="count-line"></p>
-  <div id="results"></div>
-  <div class="empty" id="empty" style="display:none">No matches. Try a different search, type, or topic.</div>
+  <section class="block">
+    <h2 class="block-head">Browse by category</h2>
+    <p class="block-sub">Each opens a focused page with its own search.</p>
+    <div class="cat-grid" id="cat-cards"></div>
+  </section>
 
-  <section id="mindmap">
-    <h2 class="section-head">Mind map</h2>
-    <p class="section-sub">The whole field at a glance. Click any node to expand or collapse it; scroll to zoom, drag to pan.</p>
-    <div id="mindmap-wrap">
-      <div class="markmap" data-markmap='{"initialExpandLevel":2,"spacingVertical":8,"spacingHorizontal":90,"paddingX":16,"fitRatio":0.92}'>
-        <script type="text/template">
-# Offensive Security of Agentic AI
-## Core Concepts
-### What is an AI agent
-- LLM + tools + memory + planning loop
-- Autonomy levels
-- Multi-agent systems
-### Why the attack surface differs
-- Tool / function calling
-- Memory & state
-- Multi-step reasoning
-- Inter-agent trust
-## Disciplines
-### Red Teaming
-### Penetration Testing
-### Vulnerability Assessment
-### Evaluation & Benchmarking
-## Threats & Attacks
-### Prompt injection (direct / indirect)
-### Tool misuse & hijacking
-### Memory poisoning
-### Privilege escalation
-### Excessive agency
-### Supply chain (models, plugins, MCP)
-### Multi-agent attacks
-## Frameworks & Standards
-### OWASP Top 10 for Agentic Apps
-### MITRE ATLAS
-### NIST / CAISI
-### CSA Red Teaming Guide
-## Tools
-### Garak
-### PyRIT
-### Promptfoo
-### AgentDojo
-## Process
-### Scoping & rules of engagement
-### Reporting & disclosure
-### Remediation & retesting
-### Continuous red teaming
-        </script>
-      </div>
-    </div>
+  <section class="block">
+    <h2 class="block-head">The full map</h2>
+    <p class="block-sub">A hierarchy of the whole field — click a row with a ▸ to expand it; linked items jump to their category page.</p>
+    <div id="tree" class="tree"></div>
   </section>
 </main>
 
@@ -114,159 +47,9 @@
   </div>
 </footer>
 
+<script src="config.js"></script>
 <script src="data.js"></script>
-<script>
-const TYPE_LABELS = {
-  framework: "Frameworks & Standards",
-  methodology: "Methodologies & Playbooks",
-  tool: "Tools",
-  benchmark: "Benchmarks",
-  paper: "Research Papers",
-  guide: "Guides & Whitepapers",
-  book: "Books",
-  course: "Courses",
-  media: "Talks & Media",
-  blog: "Blogs & Newsletters"
-};
-const TYPE_ORDER = ["framework","methodology","tool","benchmark","paper","guide","book","course","media","blog"];
-
-// the curriculum: each step applies a filter
-const STEPS = [
-  { n:1, title:"Start with the essentials", desc:"The handful of resources everyone should read first.", mode:"essentials" },
-  { n:2, title:"Learn the frameworks", desc:"OWASP, MITRE ATLAS, NIST, CSA — the shared maps.", type:"framework" },
-  { n:3, title:"Get hands-on with tools", desc:"Garak, PyRIT, Promptfoo, AgentDojo.", type:"tool" },
-  { n:4, title:"Go deep with the research", desc:"Surveys and attack/defense papers.", type:"paper" },
-  { n:5, title:"Run an engagement", desc:"Methodologies and playbooks, end to end.", type:"methodology" }
-];
-
-let activeType = "all";   // "all" | type | "essentials"
-let activeTopic = null;
-let query = "";
-
-const resultsEl = document.getElementById("results");
-const typeChipsEl = document.getElementById("type-chips");
-const topicChipsEl = document.getElementById("topic-chips");
-const countLine = document.getElementById("count-line");
-const emptyEl = document.getElementById("empty");
-
-document.getElementById("stat-total").textContent = RESOURCES.length;
-const presentTypes = TYPE_ORDER.filter(t => RESOURCES.some(r => r.type === t));
-document.getElementById("stat-types").textContent = presentTypes.length;
-
-// ----- start-path steps -----
-document.getElementById("steps").innerHTML = STEPS.map((s,i) =>
-  `<button class="step" data-step="${i}">
-     <span class="n">${s.n}</span>
-     <h3>${s.title}</h3><p>${s.desc}</p>
-   </button>`).join("");
-document.getElementById("steps").addEventListener("click", e => {
-  const b = e.target.closest(".step"); if(!b) return;
-  const s = STEPS[+b.dataset.step];
-  query=""; document.getElementById("search").value="";
-  activeTopic=null;
-  activeType = s.mode==="essentials" ? "essentials" : s.type;
-  syncChips(); render();
-  document.querySelector(".controls").scrollIntoView({behavior:"smooth", block:"start"});
-});
-
-// ----- type chips -----
-function typeCount(t){ return RESOURCES.filter(r => r.type === t).length; }
-const essentialCount = RESOURCES.filter(r => r.start).length;
-const typeChipData = [["all","All",RESOURCES.length],["essentials","★ Essentials",essentialCount]]
-  .concat(presentTypes.map(t => [t, TYPE_LABELS[t]||t, typeCount(t)]));
-typeChipsEl.innerHTML = typeChipData.map(([val,label,c]) =>
-  `<button class="chip${val==='all'?' active':''}" data-type="${val}">${label}<span class="count">${c}</span></button>`).join("");
-typeChipsEl.addEventListener("click", e => {
-  const b = e.target.closest(".chip"); if(!b) return;
-  activeType = b.dataset.type; syncChips(); render();
-});
-
-// ----- topic chips (from tags, most frequent first) -----
-const tagFreq = {};
-RESOURCES.forEach(r => (r.tags||[]).forEach(t => tagFreq[t]=(tagFreq[t]||0)+1));
-const topics = Object.entries(tagFreq).filter(([,c])=>c>=2).sort((a,b)=>b[1]-a[1]).slice(0,12).map(x=>x[0]);
-topicChipsEl.innerHTML = topics.map(t =>
-  `<button class="chip topic" data-topic="${t}">${t}<span class="count">${tagFreq[t]}</span></button>`).join("");
-topicChipsEl.addEventListener("click", e => {
-  const b = e.target.closest(".chip"); if(!b) return;
-  const t = b.dataset.topic;
-  activeTopic = (activeTopic===t) ? null : t;
-  syncChips(); render();
-});
-
-document.getElementById("search").addEventListener("input", e => {
-  query = e.target.value.trim().toLowerCase(); render();
-});
-
-function syncChips(){
-  [...typeChipsEl.children].forEach(c => c.classList.toggle("active", c.dataset.type===activeType));
-  [...topicChipsEl.children].forEach(c => c.classList.toggle("active", c.dataset.topic===activeTopic));
-}
-
-function matches(r){
-  if(activeType==="essentials" && !r.start) return false;
-  if(activeType!=="all" && activeType!=="essentials" && r.type!==activeType) return false;
-  if(activeTopic && !(r.tags||[]).includes(activeTopic)) return false;
-  if(query){
-    const hay=[r.title,r.org,r.desc,(r.tags||[]).join(" "),TYPE_LABELS[r.type]||r.type].join(" ").toLowerCase();
-    if(!hay.includes(query)) return false;
-  }
-  return true;
-}
-
-function card(r){
-  const tags=(r.tags||[]).map(t=>`<span class="tag" data-tag="${t}">${t}</span>`).join("");
-  const org=[r.org,r.year].filter(Boolean).join(" · ");
-  const startTag = r.start ? `<span class="start-tag">★ Start here</span>` : "";
-  return `<article class="card${r.start?' is-start':''}">
-    <div class="badges"><span class="type">${TYPE_LABELS[r.type]||r.type}</span>${startTag}</div>
-    <h3><a href="${r.url}" target="_blank" rel="noopener">${r.title}</a></h3>
-    ${org?`<p class="org">${org}</p>`:""}
-    <p class="desc">${r.desc||""}</p>
-    <a class="go" href="${r.url}" target="_blank" rel="noopener">Open <span class="arrow">→</span></a>
-    ${tags?`<div class="tags">${tags}</div>`:""}
-  </article>`;
-}
-
-function render(){
-  const list = RESOURCES.filter(matches);
-  const grouped = (activeType==="all" && !activeTopic && !query);
-  if(grouped){
-    let html="";
-    for(const t of presentTypes){
-      const items=list.filter(r=>r.type===t);
-      if(!items.length) continue;
-      html += `<h2 class="group-head">${TYPE_LABELS[t]||t}</h2>`;
-      html += `<div class="grid">${items.map(card).join("")}</div>`;
-    }
-    resultsEl.innerHTML=html;
-  } else {
-    resultsEl.innerHTML = `<div class="grid">${list.map(card).join("")}</div>`;
-  }
-  emptyEl.style.display = list.length ? "none" : "block";
-
-  // count line
-  const parts=[];
-  if(activeType==="essentials") parts.push("essentials");
-  else if(activeType!=="all") parts.push(TYPE_LABELS[activeType]||activeType);
-  if(activeTopic) parts.push("topic: "+activeTopic);
-  if(query) parts.push(`“${query}”`);
-  const filt = parts.length ? " — "+parts.join(" · ") : "";
-  countLine.textContent = `Showing ${list.length} of ${RESOURCES.length} resources${filt}.`;
-}
-
-// click a tag inside a card to filter by it
-resultsEl.addEventListener("click", e => {
-  const tg = e.target.closest(".tag"); if(!tg) return;
-  activeTopic = tg.dataset.tag; activeType="all"; query="";
-  document.getElementById("search").value="";
-  syncChips(); render();
-  document.querySelector(".controls").scrollIntoView({behavior:"smooth", block:"start"});
-});
-
-render();
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18"></script>
+<script src="app.js"></script>
+<script>renderHome();</script>
 </body>
 </html>

@@ -6,9 +6,9 @@
 
    Fields:
      title : name of the resource
-     type  : one of  framework | methodology | tool | benchmark
-                     paper | guide | book | course | media | blog
-             (these become the filter buttons)
+     type  : one of  framework | standard | methodology | book | tool
+                     benchmark | paper | guide | whitepaper | blog | newsletter
+             (these decide which page the entry appears on)
      org   : who made it (optional)
      year  : year (optional)
      desc  : one or two plain sentences
@@ -22,7 +22,7 @@ const RESOURCES = [
   {
     title: "OWASP Top 10 for Agentic Applications (2026)",
     start: true,
-    type: "framework",
+    type: "standard",
     org: "OWASP Gen AI Security Project",
     year: 2025,
     desc: "Globally peer-reviewed list of the most critical security risks for autonomous, agentic AI. Adds agent-specific risks like behavior hijacking, tool misuse, and identity/privilege abuse. The natural starting point for any assessment.",
@@ -50,7 +50,7 @@ const RESOURCES = [
   },
   {
     title: "NIST AI RMF & AI Agent Standards Initiative",
-    type: "framework",
+    type: "standard",
     org: "NIST (CAISI)",
     year: 2026,
     desc: "NIST's Center for AI Standards and Innovation launched a three-pillar program standardizing agent security, interoperability, and identity. NIST red-teaming reported an 81% attack success rate against agents vs. 11% against baseline defenses.",
@@ -60,7 +60,7 @@ const RESOURCES = [
   {
     title: "CSA Agentic AI Red Teaming Guide",
     start: true,
-    type: "framework",
+    type: "whitepaper",
     org: "Cloud Security Alliance",
     year: 2025,
     desc: "How to test agent vulnerabilities across permission escalation, hallucination, orchestration flaws, memory manipulation, and supply-chain risks, with actionable steps.",

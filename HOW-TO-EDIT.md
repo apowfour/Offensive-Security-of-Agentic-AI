@@ -1,21 +1,25 @@
 # How to edit OffensiveAgentic
 
-Your whole site is **3 files**. You only ever touch one of them.
+Plain static files — **no build step**. To preview, double-click `index.html`.
+
+## The files
 
 | File | What it is | Touch it? |
 |------|------------|-----------|
-| `data.js` | All your content (the reference blocks) | ✅ Yes — this is your job |
-| `index.html` | Page skeleton + the mind-map outline | Rarely |
+| `data.js` | All your content (the reference entries) | ✅ Yes — your main job |
+| `config.js` | Category list + the home-page hierarchy tree | Sometimes |
+| `index.html` | Home page (category cards + tree) | No |
+| `category.html` | The shared template for every category page | No |
+| `app.js` | Rendering logic | No |
 | `style.css` | The design | Almost never |
 
-No build step, no MkDocs, no Python. To preview, just **double-click `index.html`** — it opens in your browser.
+How it fits together: the home page shows one card per category and a hierarchy tree. Clicking a category card opens `category.html?cat=TYPE`, which shows search + every entry of that type. Empty categories are hidden automatically.
 
 ---
 
 ## Add a new reference (the main thing you'll do)
 
-1. Open **`data.js`** in any text editor (or on GitHub, click the pencil ✏️).
-2. Copy this block and paste it inside the `[ ... ]`, above the "ADD NEW ENTRIES ABOVE THIS LINE" comment:
+Open **`data.js`**, copy this block, paste it inside the `[ ... ]`, fill it in, save:
 
 ```js
 ,{
@@ -23,36 +27,37 @@ No build step, no MkDocs, no Python. To preview, just **double-click `index.html
   type: "tool",
   org: "Who made it",
   year: 2026,
-  desc: "One or two plain sentences describing it.",
+  desc: "One or two plain sentences.",
   url: "https://link-here.com",
-  tags: ["keyword", "another keyword"]
+  tags: ["prompt injection", "scanner"]
 }
 ```
 
-3. Fill in the fields. Save. Done — the new card appears automatically, joins its category, and becomes searchable.
+The entry instantly appears on the matching category page, and its `tags` become topic filters there.
 
+### `type` decides which page it lands on
+Use exactly one of:
 
-### Mark a resource as "essential" (optional)
-Add `start: true,` to a block to give it a ★ Start here badge and include it in the Essentials filter / step 1 of the path. Use it sparingly — only for the few must-reads in each area.
+`framework` · `standard` · `methodology` · `book` · `tool` · `benchmark` · `paper` · `guide` · `whitepaper` · `blog` · `newsletter`
 
-### The `type` field controls the category and the filter buttons
-Use one of these exact words:
+### Optional: mark an essential
+Add `start: true,` to give an entry a ★ Start here badge.
 
-`framework` · `methodology` · `tool` · `benchmark` · `paper` · `guide` · `book` · `course` · `media` · `blog`
-
-(Want a brand-new category, e.g. `podcast`? Just use it as the `type`. To give it a nice label and a filter button, add one line to the `TYPE_LABELS` list near the top of `index.html`.)
-
-### Small rules that keep it clean
-- Every block needs a comma `,` before it (except the very first one).
-- `title`, `type`, and `url` are required; `org`, `year`, `desc`, `tags` are optional.
-- Keep `desc` neutral and short — describe, don't advertise.
+### Small rules
+- Every block needs a comma `,` before it (except the first).
+- `title`, `type`, `url` are required; the rest optional.
+- Keep `desc` neutral and short.
 
 ---
 
-## Edit the mind map
-The outline lives inside `index.html` in the `<script type="text/template">` block (search for "Offensive Security of Agentic AI"). Add a line with `###` under the right `##` heading and it appears as a new branch.
+## Add a whole new category
+1. In **`config.js`**, add a row to `CATEGORIES` (set `type`, `label`, an `icon` from tabler.io/icons, and a `blurb`).
+2. Use that new `type` on entries in `data.js`. Done — a card and page appear automatically.
+
+## Edit the hierarchy tree
+The tree is the `TREE` list in **`config.js`** — nested `{label, children:[...]}` objects. Add `cat:"tool"` to a node to make it link to a category page, or `url:"https://…"` for an external link.
 
 ---
 
-## Publish changes
-If the site is on GitHub Pages: editing `data.js` on github.com and clicking **Commit** updates the live site in under a minute. That's the whole workflow.
+## Publish
+On GitHub Pages: edit a file on github.com → Commit → the live site updates in about a minute.
