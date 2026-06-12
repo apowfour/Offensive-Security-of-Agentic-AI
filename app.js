@@ -94,7 +94,6 @@ function renderCategory(){
   const topicChips = document.getElementById("topic-chips");
 
   let activeTopic = isPapers ? (getParam("topic") || null) : null;
-  let groupBy = "topic";   // papers only: "topic" | "year"
   let query = "";
 
   // ---- topic chips ----
@@ -110,23 +109,6 @@ function renderCategory(){
     if(tags.length){
       topicChips.innerHTML = tags.map(t=>`<button class="chip topic" data-topic="${escapeHtml(t)}">${escapeHtml(t)}<span class="count">${freq[t]}</span></button>`).join("");
     } else { topicChips.parentElement.style.display="none"; }
-  }
-
-  // ---- group toggle (papers only) ----
-  let toggleEl = null;
-  if(isPapers){
-    toggleEl = document.createElement("div");
-    toggleEl.className = "groupby";
-    toggleEl.innerHTML = `<span class="filter-label">Group by</span>
-      <div class="seg"><button data-g="topic" class="seg-btn active">Topic</button><button data-g="year" class="seg-btn">Year</button></div>`;
-    const controlsWrap = document.querySelector(".controls .wrap");
-    controlsWrap.appendChild(toggleEl);
-    toggleEl.addEventListener("click", e => {
-      const b=e.target.closest(".seg-btn"); if(!b) return;
-      groupBy=b.dataset.g;
-      [...toggleEl.querySelectorAll(".seg-btn")].forEach(x=>x.classList.toggle("active",x===b));
-      draw();
-    });
   }
 
   function matches(r){
@@ -147,12 +129,8 @@ function renderCategory(){
     const list = items.filter(matches);
     let html="";
     const grouped = isPapers && !activeTopic && !query;
-    if(grouped && groupBy==="topic"){
+    if(grouped){
       topicOrder.forEach(t => { const g=list.filter(r=>r.topic===t); if(g.length) html+=section(t,g); });
-    } else if(grouped && groupBy==="year"){
-      const years=[...new Set(list.map(r=>r.year).filter(Boolean))].sort((a,b)=>b-a);
-      years.forEach(y => html+=section(String(y), list.filter(r=>r.year===y)));
-      const noyear=list.filter(r=>!r.year); if(noyear.length) html+=section("Undated", noyear);
     } else {
       html = `<div class="grid">${list.map(cardHTML).join("")}</div>`;
     }
@@ -160,7 +138,6 @@ function renderCategory(){
     empty.style.display = list.length ? "none" : "block";
     const f=[]; if(activeTopic) f.push("topic: "+activeTopic); if(query) f.push(`“${query}”`);
     countLine.textContent = `Showing ${list.length} of ${items.length}${f.length?" — "+f.join(" · "):""}.`;
-    if(toggleEl) toggleEl.style.display = (activeTopic||query) ? "none" : "flex";
   }
 
   // sync any preselected topic chip from the URL

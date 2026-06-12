@@ -109,7 +109,7 @@ main { padding: 32px 0 80px; }
 }
 .group-head:first-of-type { border-top: none; padding-top: 0; margin-top: 8px; }
 .group-sub { color: var(--ink-soft); margin: 0 0 18px; font-size: 15px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 
 .card {
   background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius);
@@ -182,7 +182,7 @@ footer a { font-weight: 500; }
 .block-sub { color: var(--ink-soft); margin: 0 0 24px; font-size: 16px; }
 
 /* ----- category cards ----- */
-.cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.cat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .cat-card {
   display: flex; flex-direction: column; align-items: flex-start;
   background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius);
@@ -315,13 +315,32 @@ footer a { font-weight: 500; }
   color: var(--ink-soft); background: var(--paper);
   border: 1px solid var(--line); padding: 3px 8px; border-radius: 6px;
 }
-.groupby { display: flex; align-items: center; gap: 10px; }
-.seg { display: inline-flex; background: var(--paper-2); border: 1px solid var(--line); border-radius: 9px; padding: 3px; gap: 3px; }
-.seg-btn {
-  border: none; background: transparent; cursor: pointer;
-  font-family: var(--sans); font-size: 13.5px; color: var(--ink-soft);
-  padding: 5px 14px; border-radius: 6px;
-}
-.seg-btn.active { background: var(--ink); color: var(--paper); }
 .gh-count { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--ink-soft); vertical-align: middle; }
 .group-head .gh-count { margin-left: 4px; }
+
+/* ============================================================
+   v6 — responsive: 3 cols desktop / 2 tablet / 1 mobile
+   ============================================================ */
+@media (max-width: 920px) {
+  .grid, .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .grid, .cat-grid { grid-template-columns: 1fr; }
+  .wrap { padding: 0 16px; }
+  header.hero { padding: 36px 0 28px; }
+  .hero h1 { font-size: 30px; }
+  .hero p.lede { font-size: 17px; }
+  .block { padding: 28px 0 4px; }
+  .block-head { font-size: 23px; }
+  .group-head { font-size: 22px; }
+  .controls { padding: 11px 0; }
+  .tutorial { padding: 16px 0 60px; }
+  .tutorial h2 { font-size: 23px; }
+  .hero--sub h1 { font-size: 26px; }
+  .demo-ctrls { flex-direction: column; align-items: stretch; }
+  .demo-run { justify-content: center; }
+}
+/* never let cards or tree overflow on tiny screens */
+.card, .cat-card { min-width: 0; }
+.card h3 { overflow-wrap: anywhere; }
+img, svg { max-width: 100%; }
