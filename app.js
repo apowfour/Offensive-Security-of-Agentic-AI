@@ -89,6 +89,7 @@ function renderCategory(){
   document.title = `${cl} — OffensiveAgentic`;
 
   const grid = document.getElementById("grid");
+  grid.classList.remove("grid");  // ensure outer container is a plain block (cards live in inner .grid)
   const empty = document.getElementById("empty");
   const countLine = document.getElementById("count-line");
   const topicChips = document.getElementById("topic-chips");
