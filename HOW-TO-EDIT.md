@@ -41,6 +41,23 @@ Use exactly one of:
 
 `framework` · `standard` · `methodology` · `book` · `tool` · `benchmark` · `paper` · `guide` · `whitepaper` · `blog` · `newsletter`
 
+
+### Research Papers: topic + year
+Paper entries have an extra `topic:` field (your PAPERS subfolder, e.g. `"Prompt Injection"`). The Research Papers page can group **by topic** or **by year** (toggle at the top), and each topic is a filter. To add a paper:
+
+```js
+,{
+  title: "Paper title",
+  type: "paper",
+  topic: "Prompt Injection",
+  year: 2026,
+  desc: "One sentence on what it is. One sentence on its OSAA contribution.",
+  url: "https://link-or-scholar-search"
+}
+```
+
+To add a new paper topic, just use a new `topic` value and (optionally) add it under Research Papers in `config.js`'s `TREE`.
+
 ### Optional: mark an essential
 Add `start: true,` to give an entry a ★ Start here badge.
 

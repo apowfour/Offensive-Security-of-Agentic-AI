@@ -14,7 +14,7 @@ function cardHTML(r){
   const org=[r.org,r.year].filter(Boolean).join(" · ");
   const startTag = r.start ? `<span class="start-tag">★ Start here</span>` : "";
   return `<article class="card${r.start?' is-start':''}">
-    <div class="badges"><span class="type">${TYPE_LABEL[r.type]||r.type}</span>${startTag}</div>
+    <div class="badges"><span class="type">${TYPE_LABEL[r.type]||r.type}</span>${r.topic?`<span class="topic-badge">${escapeHtml(r.topic)}</span>`:""}${startTag}</div>
     <h3><a href="${r.url}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a></h3>
     ${org?`<p class="org">${escapeHtml(org)}</p>`:""}
     <p class="desc">${escapeHtml(r.desc||"")}</p>
@@ -58,7 +58,7 @@ function renderHome(){
 }
 
 function treeNode(node, topLevel){
-  const link = node.cat ? `category.html?cat=${node.cat}` : node.url || null;
+  const link = node.cat ? `category.html?cat=${node.cat}${node.topic?"&topic="+encodeURIComponent(node.topic):""}` : node.url || null;
   const labelHtml = link
     ? `<a class="tree-link" href="${link}"${node.url?' target="_blank" rel="noopener"':''}>${escapeHtml(node.label)}</a>`
     : `<span class="tree-text">${escapeHtml(node.label)}</span>`;
@@ -80,57 +80,102 @@ function renderCategory(){
   const type = getParam("cat");
   const cat = CATEGORIES.find(c => c.type === type);
   const items = RESOURCES.filter(r => r.type === type);
+  const isPapers = (type === "paper");
 
-  // header
   const cl = cat ? cat.label : "Unknown category";
   document.getElementById("cat-title").innerHTML =
     `<span class="cat-ic big"><i class="ti ti-${cat?cat.icon:'help'}"></i></span> ${cl}`;
   document.getElementById("cat-desc").textContent = cat ? cat.blurb : "";
   document.title = `${cl} — OffensiveAgentic`;
 
-  let activeTopic = null, query = "";
   const grid = document.getElementById("grid");
   const empty = document.getElementById("empty");
   const countLine = document.getElementById("count-line");
   const topicChips = document.getElementById("topic-chips");
 
-  // topic chips from this category's tags
-  const freq={}; items.forEach(r=>(r.tags||[]).forEach(t=>freq[t]=(freq[t]||0)+1));
-  const topics=Object.entries(freq).sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
-  if(topics.length){
-    topicChips.innerHTML = topics.map(t=>`<button class="chip topic" data-topic="${escapeHtml(t)}">${escapeHtml(t)}<span class="count">${freq[t]}</span></button>`).join("");
+  let activeTopic = isPapers ? (getParam("topic") || null) : null;
+  let groupBy = "topic";   // papers only: "topic" | "year"
+  let query = "";
+
+  // ---- topic chips ----
+  let topicOrder = [];
+  if(isPapers){
+    // preserve first-seen order from data.js
+    items.forEach(r => { if(r.topic && !topicOrder.includes(r.topic)) topicOrder.push(r.topic); });
+    topicChips.innerHTML = topicOrder.map(t =>
+      `<button class="chip topic" data-topic="${escapeHtml(t)}">${escapeHtml(t)}<span class="count">${items.filter(r=>r.topic===t).length}</span></button>`).join("");
   } else {
-    topicChips.parentElement.style.display="none";
+    const freq={}; items.forEach(r=>(r.tags||[]).forEach(t=>freq[t]=(freq[t]||0)+1));
+    const tags=Object.entries(freq).sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
+    if(tags.length){
+      topicChips.innerHTML = tags.map(t=>`<button class="chip topic" data-topic="${escapeHtml(t)}">${escapeHtml(t)}<span class="count">${freq[t]}</span></button>`).join("");
+    } else { topicChips.parentElement.style.display="none"; }
+  }
+
+  // ---- group toggle (papers only) ----
+  let toggleEl = null;
+  if(isPapers){
+    toggleEl = document.createElement("div");
+    toggleEl.className = "groupby";
+    toggleEl.innerHTML = `<span class="filter-label">Group by</span>
+      <div class="seg"><button data-g="topic" class="seg-btn active">Topic</button><button data-g="year" class="seg-btn">Year</button></div>`;
+    const controlsWrap = document.querySelector(".controls .wrap");
+    controlsWrap.appendChild(toggleEl);
+    toggleEl.addEventListener("click", e => {
+      const b=e.target.closest(".seg-btn"); if(!b) return;
+      groupBy=b.dataset.g;
+      [...toggleEl.querySelectorAll(".seg-btn")].forEach(x=>x.classList.toggle("active",x===b));
+      draw();
+    });
   }
 
   function matches(r){
-    if(activeTopic && !(r.tags||[]).includes(activeTopic)) return false;
+    if(activeTopic && (isPapers ? r.topic!==activeTopic : !(r.tags||[]).includes(activeTopic))) return false;
     if(query){
-      const hay=[r.title,r.org,r.desc,(r.tags||[]).join(" ")].join(" ").toLowerCase();
+      const hay=[r.title,r.org,r.desc,r.topic,(r.tags||[]).join(" ")].join(" ").toLowerCase();
       if(!hay.includes(query)) return false;
     }
     return true;
   }
+
+  function section(title, list){
+    return `<h2 class="group-head">${escapeHtml(title)} <span class="gh-count">${list.length}</span></h2>`+
+           `<div class="grid">${list.map(cardHTML).join("")}</div>`;
+  }
+
   function draw(){
     const list = items.filter(matches);
-    grid.innerHTML = list.map(cardHTML).join("");
+    let html="";
+    const grouped = isPapers && !activeTopic && !query;
+    if(grouped && groupBy==="topic"){
+      topicOrder.forEach(t => { const g=list.filter(r=>r.topic===t); if(g.length) html+=section(t,g); });
+    } else if(grouped && groupBy==="year"){
+      const years=[...new Set(list.map(r=>r.year).filter(Boolean))].sort((a,b)=>b-a);
+      years.forEach(y => html+=section(String(y), list.filter(r=>r.year===y)));
+      const noyear=list.filter(r=>!r.year); if(noyear.length) html+=section("Undated", noyear);
+    } else {
+      html = `<div class="grid">${list.map(cardHTML).join("")}</div>`;
+    }
+    grid.innerHTML = html;
     empty.style.display = list.length ? "none" : "block";
     const f=[]; if(activeTopic) f.push("topic: "+activeTopic); if(query) f.push(`“${query}”`);
     countLine.textContent = `Showing ${list.length} of ${items.length}${f.length?" — "+f.join(" · "):""}.`;
+    if(toggleEl) toggleEl.style.display = (activeTopic||query) ? "none" : "flex";
   }
+
+  // sync any preselected topic chip from the URL
+  function syncTopicChips(){ [...topicChips.children].forEach(c=>c.classList.toggle("active", c.dataset.topic===activeTopic)); }
+  syncTopicChips();
 
   document.getElementById("search").addEventListener("input", e=>{ query=e.target.value.trim().toLowerCase(); draw(); });
   topicChips.addEventListener("click", e=>{
     const b=e.target.closest(".chip"); if(!b) return;
     activeTopic = activeTopic===b.dataset.topic ? null : b.dataset.topic;
-    [...topicChips.children].forEach(c=>c.classList.toggle("active", c.dataset.topic===activeTopic));
-    draw();
+    syncTopicChips(); draw();
   });
   grid.addEventListener("click", e=>{
     const tg=e.target.closest(".tag"); if(!tg) return;
-    activeTopic=tg.dataset.tag;
-    [...topicChips.children].forEach(c=>c.classList.toggle("active", c.dataset.topic===activeTopic));
-    draw(); window.scrollTo({top:0,behavior:"smooth"});
+    activeTopic=tg.dataset.tag; syncTopicChips(); draw(); window.scrollTo({top:0,behavior:"smooth"});
   });
 
   draw();

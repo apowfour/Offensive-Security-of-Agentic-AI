@@ -52,9 +52,20 @@ const TREE = [
     {label:"Safety & policy benchmarks"}
   ]},
   { label:"Research Papers", cat:"paper", children:[
-    {label:"Surveys & SoKs"},
-    {label:"Attacks & red-teaming"},
-    {label:"Evaluation & governance"}
+    {label:"Surveys", cat:"paper", topic:"Surveys"},
+    {label:"Benchmarks", cat:"paper", topic:"Benchmarks"},
+    {label:"Prompt Injection", cat:"paper", topic:"Prompt Injection"},
+    {label:"Jailbreaking", cat:"paper", topic:"Jailbreaking"},
+    {label:"Backdoor & Poisoning", cat:"paper", topic:"Backdoor & Poisoning"},
+    {label:"RAG Security", cat:"paper", topic:"RAG Security"},
+    {label:"Multi-Agent Security", cat:"paper", topic:"Multi-Agent Security"},
+    {label:"Pentesting Frameworks", cat:"paper", topic:"Pentesting Frameworks"},
+    {label:"Red Teaming", cat:"paper", topic:"Red Teaming"},
+    {label:"Autonomous Exploitation", cat:"paper", topic:"Autonomous Exploitation"},
+    {label:"Privacy & Exfiltration", cat:"paper", topic:"Privacy & Exfiltration"},
+    {label:"Protocol Security", cat:"paper", topic:"Protocol Security"},
+    {label:"Embodied & Robotic Security", cat:"paper", topic:"Embodied & Robotic Security"},
+    {label:"Additional / Emerging", cat:"paper", topic:"Additional / Emerging"},
   ]},
   { label:"Guides", cat:"guide", children:[
     {label:"Framework guides"},
