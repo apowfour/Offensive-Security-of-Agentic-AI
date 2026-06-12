@@ -176,815 +176,1623 @@ const RESOURCES = [
   },
 
   /* ---------- RESEARCH PAPERS ----------
-     Sub-categorized by topic (your PAPERS subfolders) and year.
-     Only offensive-security (OSAA) papers are included. ---------- */
+     Auto-synced from the PAPERS folders. Topic = subfolder; OSAA-offensive only.
+     Defensive / foundational / off-topic papers are excluded. ---------- */
   {
-    title: "Personal LLM Agents: Capability, Efficiency and Security",
+    title: "Personal LLM Agents Capability Efficiency Security Survey",
     type: "paper",
     topic: "Surveys",
     year: 2024,
-    desc: "Surveys the architecture of personal LLM agents with a dedicated treatment of their security and privacy risks. Gives an early systematization of the agent attack surface that frames many OSAA threat categories.",
-    url: "https://scholar.google.com/scholar?q=Personal%20LLM%20Agents%3A%20Capability%2C%20Efficiency%20and%20Security"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Personal%20LLM%20Agents%20Capability%20Efficiency%20Security%20Survey"
   },
   {
-    title: "A Comprehensive Survey of Unique Security and Privacy Threats of LLMs",
+    title: "Unique Security Privacy Threats LLMs Comprehensive Survey",
     type: "paper",
     topic: "Surveys",
     year: 2024,
-    desc: "Catalogues security and privacy threats specific to large language models. Establishes the threat vocabulary OSAA builds on once models are wrapped in agents.",
-    url: "https://scholar.google.com/scholar?q=A%20Comprehensive%20Survey%20of%20Unique%20Security%20and%20Privacy%20Threats%20of%20LLMs"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Unique%20Security%20Privacy%20Threats%20LLMs%20Comprehensive%20Survey"
   },
   {
-    title: "Agentic AI Security: Threats, Defenses, Evaluation and Open Challenges",
+    title: "Agentic AI Security Threats Defenses Evaluation Open Challenges",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys the full agentic-security landscape across threats, defenses, evaluation and open problems. One of the most direct OSAA reference maps of offensive techniques against agents.",
-    url: "https://scholar.google.com/scholar?q=Agentic%20AI%20Security%3A%20Threats%2C%20Defenses%2C%20Evaluation%20and%20Open%20Challenges"
+    desc: "A benchmark for evaluating agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Agentic%20AI%20Security%20Threats%20Defenses%20Evaluation%20Open%20Challenges"
   },
   {
-    title: "A Comprehensive Survey on LLM Agent Full-Stack Safety",
+    title: "Comprehensive Survey LLM Agent Full Stack Safety",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys safety risks across the entire LLM-agent stack from data to deployment. Gives OSAA practitioners a layered model of where agents can be attacked.",
-    url: "https://scholar.google.com/scholar?q=A%20Comprehensive%20Survey%20on%20LLM%20Agent%20Full-Stack%20Safety"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Comprehensive%20Survey%20LLM%20Agent%20Full%20Stack%20Safety"
   },
   {
-    title: "Toward Secure Multi-LLM Agentic AI: A Zero-Trust Survey",
+    title: "Secure MultiLLM Agentic AI ZeroTrust Survey",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys multi-LLM agent risks through a zero-trust lens. Frames the inter-agent trust boundaries OSAA red-teaming targets.",
-    url: "https://scholar.google.com/scholar?q=Toward%20Secure%20Multi-LLM%20Agentic%20AI%3A%20A%20Zero-Trust%20Survey"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Secure%20MultiLLM%20Agentic%20AI%20ZeroTrust%20Survey"
   },
   {
-    title: "A Survey of Agentic Security: Applications, Threats and Defenses",
+    title: "Survey Agentic Security Applications Threats Defenses",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Broad survey of agentic-security threats and defenses. Core OSAA orientation reference for the attack taxonomy.",
-    url: "https://scholar.google.com/scholar?q=A%20Survey%20of%20Agentic%20Security%3A%20Applications%2C%20Threats%20and%20Defenses"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Survey%20Agentic%20Security%20Applications%20Threats%20Defenses"
   },
   {
-    title: "A Survey of Attacks on Large Language Models",
+    title: "Survey Attacks Large Language Models",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Comprehensive survey of attack techniques against LLMs. Supplies the offensive technique catalogue underlying agent-level attacks.",
-    url: "https://scholar.google.com/scholar?q=A%20Survey%20of%20Attacks%20on%20Large%20Language%20Models"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Survey%20Attacks%20Large%20Language%20Models"
   },
   {
-    title: "A Survey on Autonomy-Induced Security Risks of Large Model Agents",
+    title: "Survey Autonomy Induced Security Risks Large Model Agents",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys how increasing agent autonomy creates new security risks. Directly links autonomy, the defining agentic property, to offensive risk.",
-    url: "https://scholar.google.com/scholar?q=A%20Survey%20on%20Autonomy-Induced%20Security%20Risks%20of%20Large%20Model%20Agents"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Survey%20Autonomy%20Induced%20Security%20Risks%20Large%20Model%20Agents"
   },
   {
     title: "From Secure Agentic AI to Secure Agentic Web",
     type: "paper",
     topic: "Surveys",
     year: 2026,
-    desc: "Surveys threats and directions as agents interconnect into an agentic web. Extends the OSAA attack surface to multi-agent, web-scale interactions.",
+    desc: "Surveys threats and directions as agents interconnect into an agentic web. Extends the OSAA attack surface to web-scale interactions.",
     url: "https://scholar.google.com/scholar?q=From%20Secure%20Agentic%20AI%20to%20Secure%20Agentic%20Web"
   },
   {
-    title: "SoK: The Attack Surface of Agentic AI — Tools and Autonomy",
+    title: "SoK Attack Surface Agentic AI Tools Autonomy",
     type: "paper",
     topic: "Surveys",
     year: 2026,
     desc: "Systematizes how tools and autonomy expand the agent attack surface. The clearest SoK of the OSAA attack surface to date.",
-    url: "https://scholar.google.com/scholar?q=SoK%3A%20The%20Attack%20Surface%20of%20Agentic%20AI%20%E2%80%94%20Tools%20and%20Autonomy"
+    url: "https://scholar.google.com/scholar?q=SoK%20Attack%20Surface%20Agentic%20AI%20Tools%20Autonomy"
   },
   {
-    title: "A Survey of Agentic AI and Cybersecurity",
+    title: "Survey Agentic AI Cybersecurity Challenges Opportunities",
     type: "paper",
     topic: "Surveys",
     year: 2026,
-    desc: "Surveys challenges, opportunities and prototypes at the agentic-AI / cybersecurity intersection. Connects OSAA to broader offensive-cyber use cases.",
-    url: "https://scholar.google.com/scholar?q=A%20Survey%20of%20Agentic%20AI%20and%20Cybersecurity"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Survey%20Agentic%20AI%20Cybersecurity%20Challenges%20Opportunities"
   },
   {
-    title: "Navigating the Risks: Security, Privacy and Ethics of LLM Agents",
+    title: "Navigating Risks Security Privacy Ethics LLM Agents",
     type: "paper",
     topic: "Surveys",
     year: 2024,
-    desc: "Surveys security, privacy and ethical risks of LLM agents with case studies. Early taxonomy that seeds OSAA threat categories.",
-    url: "https://scholar.google.com/scholar?q=Navigating%20the%20Risks%3A%20Security%2C%20Privacy%20and%20Ethics%20of%20LLM%20Agents"
+    desc: "A security analysis of agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Navigating%20Risks%20Security%20Privacy%20Ethics%20LLM%20Agents"
   },
   {
-    title: "The Emerged Security and Privacy of LLM Agent: Survey with Case Studies",
+    title: "Emerged Security Privacy LLM Agent Survey Case Studies",
     type: "paper",
     topic: "Surveys",
     year: 2024,
-    desc: "Surveys emerging agent security/privacy issues using concrete case studies. Provides real attack case studies useful for OSAA red-teaming.",
-    url: "https://scholar.google.com/scholar?q=The%20Emerged%20Security%20and%20Privacy%20of%20LLM%20Agent%3A%20Survey%20with%20Case%20Studies"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Emerged%20Security%20Privacy%20LLM%20Agent%20Survey%20Case%20Studies"
   },
   {
-    title: "Attack and Defense Landscape of Agentic AI: A Comprehensive Survey",
+    title: "Attack Defense Landscape Agentic AI Comprehensive Survey",
     type: "paper",
     topic: "Surveys",
     year: 2026,
-    desc: "Maps both the attack and defense sides of agentic AI. Its offensive half is a structured catalogue of agent attacks for OSAA.",
-    url: "https://scholar.google.com/scholar?q=Attack%20and%20Defense%20Landscape%20of%20Agentic%20AI%3A%20A%20Comprehensive%20Survey"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Attack%20Defense%20Landscape%20Agentic%20AI%20Comprehensive%20Survey"
   },
   {
-    title: "Large-Model-Based Agents: Cooperation Paradigms, Security, Privacy and Future Trends",
-    type: "paper",
-    topic: "Surveys",
-    year: 2024,
-    desc: "Surveys cooperative multi-agent paradigms and their security/privacy implications. Frames multi-agent collusion and trust attacks for OSAA.",
-    url: "https://scholar.google.com/scholar?q=Large-Model-Based%20Agents%3A%20Cooperation%20Paradigms%2C%20Security%2C%20Privacy%20and%20Future%20Trends"
-  },
-  {
-    title: "Evaluation and Benchmarking of LLM Agents: A Survey (KDD 2025)",
+    title: "Large Model Based Agents Cooperation Paradigms Security Privacy Future Trends",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys methods for evaluating and benchmarking LLM agents. Grounds the evaluation-and-benchmarking pillar of OSAA.",
-    url: "https://scholar.google.com/scholar?q=Evaluation%20and%20Benchmarking%20of%20LLM%20Agents%3A%20A%20Survey"
+    desc: "A security analysis of agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Large%20Model%20Based%20Agents%20Cooperation%20Paradigms%20Security%20Privacy%20Future%20Trends"
   },
   {
-    title: "TRiSM for Agentic AI: Trust, Risk and Security Management",
+    title: "Evaluation Benchmarking LLM Agents Survey",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys trust, risk and security management for LLM multi-agent systems. Provides the risk-assessment framing OSAA engagements report against.",
-    url: "https://scholar.google.com/scholar?q=TRiSM%20for%20Agentic%20AI%3A%20Trust%2C%20Risk%20and%20Security%20Management"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Evaluation%20Benchmarking%20LLM%20Agents%20Survey"
   },
   {
-    title: "Forewarned is Forearmed: A Survey on LLM Agents for Autonomous Cyberattacks",
+    title: "TRiSM Agentic AI Trust Risk Security Management LLM MultiAgent Systems",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys LLM agents used to carry out autonomous cyberattacks. Directly catalogues offensive agentic capabilities — core OSAA.",
-    url: "https://scholar.google.com/scholar?q=Forewarned%20is%20Forearmed%3A%20A%20Survey%20on%20LLM%20Agents%20for%20Autonomous%20Cyberattacks"
+    desc: "A security analysis of agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=TRiSM%20Agentic%20AI%20Trust%20Risk%20Security%20Management%20LLM%20MultiAgent%20Systems"
   },
   {
-    title: "A Survey on Trustworthy LLM Agents: Threats and Countermeasures (KDD 2025)",
+    title: "Forewarned Forearmed Survey LLM Agents Autonomous Cyberattacks",
     type: "paper",
     topic: "Surveys",
     year: 2025,
-    desc: "Surveys threats to and countermeasures for trustworthy LLM agents. Its threat half enumerates the agent attack landscape for OSAA.",
-    url: "https://scholar.google.com/scholar?q=A%20Survey%20on%20Trustworthy%20LLM%20Agents%3A%20Threats%20and%20Countermeasures"
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Forewarned%20Forearmed%20Survey%20LLM%20Agents%20Autonomous%20Cyberattacks"
   },
   {
-    title: "Agent-SafetyBench: Evaluating the Safety of LLM Agents",
+    title: "Survey Trustworthy LLM Agents Threats Countermeasures",
+    type: "paper",
+    topic: "Surveys",
+    year: 2025,
+    desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
+    url: "https://scholar.google.com/scholar?q=Survey%20Trustworthy%20LLM%20Agents%20Threats%20Countermeasures"
+  },
+  {
+    title: "Agent SafetyBench Evaluating Safety LLM Agents",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark measuring LLM-agent safety across many interactive environments. Standardizes measurement of the agent failures OSAA tries to induce.",
-    url: "https://scholar.google.com/scholar?q=Agent-SafetyBench%3A%20Evaluating%20the%20Safety%20of%20LLM%20Agents"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Agent%20SafetyBench%20Evaluating%20Safety%20LLM%20Agents"
   },
   {
-    title: "InjecAgent: Benchmarking Indirect Prompt Injection in Tool-Integrated Agents",
+    title: "InjecAgent Benchmark Indirect Prompt Injection Tool Integrated",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark for indirect prompt injection against tool-using agents. A canonical OSAA benchmark for the highest-impact agent attack.",
-    url: "https://scholar.google.com/scholar?q=InjecAgent%3A%20Benchmarking%20Indirect%20Prompt%20Injection%20in%20Tool-Integrated%20Agents"
+    desc: "A benchmark for indirect prompt injection against tool-integrated agents. A canonical OSAA benchmark for the highest-impact agent attack.",
+    url: "https://scholar.google.com/scholar?q=InjecAgent%20Benchmark%20Indirect%20Prompt%20Injection%20Tool%20Integrated"
   },
   {
-    title: "JAWS-BENCH: Security Assessment of AI Code Agents via Jailbreaking",
+    title: "JAWS BENCH Security Assessment AI Code Agents Jailbreaking",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark assessing the security of AI coding agents through jailbreaks. Targets code agents, a high-risk OSAA surface.",
-    url: "https://scholar.google.com/scholar?q=JAWS-BENCH%3A%20Security%20Assessment%20of%20AI%20Code%20Agents%20via%20Jailbreaking"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=JAWS%20BENCH%20Security%20Assessment%20AI%20Code%20Agents%20Jailbreaking"
   },
   {
-    title: "JailbreakBench: An Open Robustness Benchmark for Jailbreaking LLMs (NeurIPS)",
+    title: "JailbreakBench Open Robustness Benchmark Jailbreaking LLMs",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Open, reproducible benchmark for jailbreaking LLMs. Standard jailbreak benchmark feeding OSAA agent testing.",
-    url: "https://scholar.google.com/scholar?q=JailbreakBench%3A%20An%20Open%20Robustness%20Benchmark%20for%20Jailbreaking%20LLMs"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=JailbreakBench%20Open%20Robustness%20Benchmark%20Jailbreaking%20LLMs"
   },
   {
-    title: "ST-WebAgentBench: Safety and Trustworthiness of Web Agents",
+    title: "ST WebAgentBench Benchmark Safety Trustworthiness Web Agents",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark for the safety and trust of web-browsing agents. Measures web-agent susceptibility central to OSAA.",
-    url: "https://scholar.google.com/scholar?q=ST-WebAgentBench%3A%20Safety%20and%20Trustworthiness%20of%20Web%20Agents"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=ST%20WebAgentBench%20Benchmark%20Safety%20Trustworthiness%20Web%20Agents"
   },
   {
-    title: "SafeAgentBench: Safe Task Planning for Embodied LLM Agents",
+    title: "SafeAgentBench Benchmark Safe Task Planning Embodied LLM Agents",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark for safe task planning in embodied agents. Extends OSAA evaluation to physical/embodied actions.",
-    url: "https://scholar.google.com/scholar?q=SafeAgentBench%3A%20Safe%20Task%20Planning%20for%20Embodied%20LLM%20Agents"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=SafeAgentBench%20Benchmark%20Safe%20Task%20Planning%20Embodied%20LLM%20Agents"
   },
   {
-    title: "ToolSword: Safety Issues of LLMs in Tool Learning (ACL 2024)",
+    title: "ToolSword Safety Issues LLMs Tool Learning",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark exposing safety issues across the tool-learning lifecycle. Maps the tool-use attack points OSAA exploits.",
-    url: "https://scholar.google.com/scholar?q=ToolSword%3A%20Safety%20Issues%20of%20LLMs%20in%20Tool%20Learning"
+    desc: "A security analysis of agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=ToolSword%20Safety%20Issues%20LLMs%20Tool%20Learning"
   },
   {
-    title: "OS-HARM: A Benchmark for the Safety of Computer-Use Agents",
+    title: "OS HARM Benchmark Safety Computer Use Agents",
     type: "paper",
     topic: "Benchmarks",
     year: 2025,
-    desc: "Benchmark measuring harm from computer-use (GUI) agents. Evaluates the OS-control attack surface for OSAA.",
-    url: "https://scholar.google.com/scholar?q=OS-HARM%3A%20A%20Benchmark%20for%20the%20Safety%20of%20Computer-Use%20Agents"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=OS%20HARM%20Benchmark%20Safety%20Computer%20Use%20Agents"
   },
   {
-    title: "RAS-Eval: A Real-World LLM Agent Security Benchmark",
+    title: "RAS Eval Comprehensive Benchmark LLM Agent Security RealWorld",
     type: "paper",
     topic: "Benchmarks",
     year: 2025,
-    desc: "Comprehensive real-world agent-security benchmark. Brings OSAA evaluation closer to deployment conditions.",
-    url: "https://scholar.google.com/scholar?q=RAS-Eval%3A%20A%20Real-World%20LLM%20Agent%20Security%20Benchmark"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=RAS%20Eval%20Comprehensive%20Benchmark%20LLM%20Agent%20Security%20RealWorld"
   },
   {
-    title: "AgentNoiseBench: Robustness of Tool-Using LLM Agents under Noisy Conditions",
+    title: "AgentNoiseBench Robustness ToolUsing LLM Agents Noisy Conditions",
     type: "paper",
     topic: "Benchmarks",
     year: 2026,
-    desc: "Benchmark for agent robustness to noisy and manipulated tool outputs. Tests resilience to manipulated tool feedback, an OSAA vector.",
-    url: "https://scholar.google.com/scholar?q=AgentNoiseBench%3A%20Robustness%20of%20Tool-Using%20LLM%20Agents%20under%20Noisy%20Conditions"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=AgentNoiseBench%20Robustness%20ToolUsing%20LLM%20Agents%20Noisy%20Conditions"
   },
   {
-    title: "AgentHarm: Measuring the Harmfulness of LLM Agents",
+    title: "Benchmarking the Robustness of Agentic Systems to Adversarially Induced",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Benchmarking%20the%20Robustness%20of%20Agentic%20Systems%20to%20Adversarially%20Induced"
+  },
+  {
+    title: "AgentHarm Benchmark Measuring Harmfulness LLM Agents",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark measuring how harmful agent behaviors can be elicited. Quantifies attacker-achievable harm for OSAA.",
-    url: "https://scholar.google.com/scholar?q=AgentHarm%3A%20Measuring%20the%20Harmfulness%20of%20LLM%20Agents"
+    desc: "A benchmark measuring how harmful agent behaviors can be elicited (AgentHarm). Quantifies attacker-achievable harm for OSAA.",
+    url: "https://scholar.google.com/scholar?q=AgentHarm%20Benchmark%20Measuring%20Harmfulness%20LLM%20Agents"
   },
   {
-    title: "AgentDojo: Evaluating Prompt Injection Attacks and Defenses (NeurIPS 2024)",
+    title: "Breaking Agent Backbones Evaluating the Security of Backbone LLMs",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Breaking%20Agent%20Backbones%20Evaluating%20the%20Security%20of%20Backbone%20LLMs"
+  },
+  {
+    title: "CTRL ALT DECEIT Sabotage Evaluations for Automated AI R",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=CTRL%20ALT%20DECEIT%20Sabotage%20Evaluations%20for%20Automated%20AI%20R"
+  },
+  {
+    title: "Creative Adversarial Testing CAT A Novel Framework for Evaluating",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Creative%20Adversarial%20Testing%20CAT%20A%20Novel%20Framework%20for%20Evaluating"
+  },
+  {
+    title: "Cybersecurity AI Benchmark CAIBench A Meta Benchmark for Evaluating",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Cybersecurity%20AI%20Benchmark%20CAIBench%20A%20Meta%20Benchmark%20for%20Evaluating"
+  },
+  {
+    title: "AgentDojo Evaluate Prompt Injection",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Dynamic environment to evaluate prompt-injection attacks and defenses on tool-using agents. A leading OSAA attack/defense harness and benchmark.",
-    url: "https://scholar.google.com/scholar?q=AgentDojo%3A%20Evaluating%20Prompt%20Injection%20Attacks%20and%20Defenses"
+    desc: "A dynamic environment to evaluate prompt-injection attacks and defenses on tool-using agents. A leading OSAA attack/defense harness and benchmark.",
+    url: "https://scholar.google.com/scholar?q=AgentDojo%20Evaluate%20Prompt%20Injection"
   },
   {
-    title: "Evaluating and Regulating Agentic AI: A Study of Benchmarks",
+    title: "Evaluating Regulating Agentic AI Study of Benchmarks",
     type: "paper",
     topic: "Benchmarks",
     year: 2026,
-    desc: "Meta-study analyzing agentic-AI benchmarks and their regulatory use. Helps OSAA pick rigorous, comparable evaluations.",
-    url: "https://scholar.google.com/scholar?q=Evaluating%20and%20Regulating%20Agentic%20AI%3A%20A%20Study%20of%20Benchmarks"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Evaluating%20Regulating%20Agentic%20AI%20Study%20of%20Benchmarks"
   },
   {
-    title: "ASB: Agent Security Bench (ICLR 2025)",
+    title: "FinVault Benchmarking Financial Agent Safety in Execution Grounded Environments",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2026,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=FinVault%20Benchmarking%20Financial%20Agent%20Safety%20in%20Execution%20Grounded%20Environments"
+  },
+  {
+    title: "Mind the Gap Evaluating Model and Agentic Level Vulnerabilities",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Mind%20the%20Gap%20Evaluating%20Model%20and%20Agentic%20Level%20Vulnerabilities"
+  },
+  {
+    title: "OpenAgentSafety A Comprehensive Framework for Evaluating Real World AI",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=OpenAgentSafety%20A%20Comprehensive%20Framework%20for%20Evaluating%20Real%20World%20AI"
+  },
+  {
+    title: "PEAR Planner Executor Agent Robustness Benchmark",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=PEAR%20Planner%20Executor%20Agent%20Robustness%20Benchmark"
+  },
+  {
+    title: "PropensityBench Evaluating Latent Safety Risks in Large Language Models",
+    type: "paper",
+    topic: "Benchmarks",
+    year: null,
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=PropensityBench%20Evaluating%20Latent%20Safety%20Risks%20in%20Large%20Language%20Models"
+  },
+  {
+    title: "RedCode Risky Code Execution and Generation Benchmark for Code",
     type: "paper",
     topic: "Benchmarks",
     year: 2024,
-    desc: "Benchmark formalizing agent attack surfaces such as injection and tool misuse. Enables reproducible OSAA evaluation across attack types.",
-    url: "https://scholar.google.com/scholar?q=ASB%3A%20Agent%20Security%20Bench"
+    desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=RedCode%20Risky%20Code%20Execution%20and%20Generation%20Benchmark%20for%20Code"
   },
   {
-    title: "MemoryGraft: Persistent Compromise of LLM Agents via Poisoned Experience",
+    title: "Security Analysis of Agentic AI Communication Protocols A Comparative",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A security analysis of agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Security%20Analysis%20of%20Agentic%20AI%20Communication%20Protocols%20A%20Comparative"
+  },
+  {
+    title: "Towards Effective Offensive Security LLM Agents Hyperparameter Tuning LLM",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2025,
+    desc: "A security analysis of agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
+    url: "https://scholar.google.com/scholar?q=Towards%20Effective%20Offensive%20Security%20LLM%20Agents%20Hyperparameter%20Tuning%20LLM"
+  },
+  {
+    title: "ASB Agent Security Bench",
+    type: "paper",
+    topic: "Benchmarks",
+    year: 2024,
+    desc: "Formalizes agent attack surfaces such as injection and tool misuse (Agent Security Bench). Enables reproducible OSAA evaluation across attack types.",
+    url: "https://scholar.google.com/scholar?q=ASB%20Agent%20Security%20Bench"
+  },
+  {
+    title: "MemoryGraft Persistent Compromise LLM Agents Poisoned Experience",
     type: "paper",
     topic: "Prompt Injection",
     year: 2024,
-    desc: "Attack that persistently compromises agents by poisoning their stored experience. Demonstrates durable memory-based agent compromise for OSAA.",
-    url: "https://scholar.google.com/scholar?q=MemoryGraft%3A%20Persistent%20Compromise%20of%20LLM%20Agents%20via%20Poisoned%20Experience"
+    desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=MemoryGraft%20Persistent%20Compromise%20LLM%20Agents%20Poisoned%20Experience"
   },
   {
-    title: "Context Manipulation: Web Agents Susceptible to Corrupted Memory",
+    title: "Context Manipulation Web Agents Susceptible Corrupted Memory",
     type: "paper",
     topic: "Prompt Injection",
     year: 2025,
-    desc: "Shows web agents can be hijacked through corrupted context and memory. Adds a concrete OSAA memory-manipulation attack on web agents.",
-    url: "https://scholar.google.com/scholar?q=Context%20Manipulation%3A%20Web%20Agents%20Susceptible%20to%20Corrupted%20Memory"
+    desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Context%20Manipulation%20Web%20Agents%20Susceptible%20Corrupted%20Memory"
   },
   {
-    title: "Les Dissonances: Cross-Tool Harvesting from a Pool of Tools",
+    title: "Les Dissonances CrossTool Harvesting Pool of Tools LLM Agents",
     type: "paper",
     topic: "Prompt Injection",
     year: 2025,
-    desc: "Attack that harvests data across an agent's pool of tools. Reveals cross-tool exfiltration paths for OSAA.",
-    url: "https://scholar.google.com/scholar?q=Les%20Dissonances%3A%20Cross-Tool%20Harvesting%20from%20a%20Pool%20of%20Tools"
+    desc: "A security analysis of prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Les%20Dissonances%20CrossTool%20Harvesting%20Pool%20of%20Tools%20LLM%20Agents"
   },
   {
-    title: "Memory Poisoning Attack and Defense for Memory-Based LLM Agents",
+    title: "Memory Poisoning Attack Defense Memory Based LLM Agents",
     type: "paper",
     topic: "Prompt Injection",
     year: 2025,
-    desc: "Studies poisoning attacks on agent memory. Its offensive half formalizes memory-poisoning for OSAA.",
-    url: "https://scholar.google.com/scholar?q=Memory%20Poisoning%20Attack%20and%20Defense%20for%20Memory-Based%20LLM%20Agents"
+    desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Memory%20Poisoning%20Attack%20Defense%20Memory%20Based%20LLM%20Agents"
   },
   {
-    title: "A Simple Prompt Injection Can Leak Personal Data from LLM Agents",
+    title: "Simple Prompt Injection Leak Personal Data LLM Agents",
     type: "paper",
     topic: "Prompt Injection",
     year: 2025,
-    desc: "Shows minimal prompt injection can exfiltrate personal data from agents. Demonstrates low-effort, high-impact OSAA data leakage.",
-    url: "https://scholar.google.com/scholar?q=A%20Simple%20Prompt%20Injection%20Can%20Leak%20Personal%20Data%20from%20LLM%20Agents"
+    desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Simple%20Prompt%20Injection%20Leak%20Personal%20Data%20LLM%20Agents"
   },
   {
-    title: "Automating Agent Hijacking via Structural Template Injection",
+    title: "Automating Agent Hijacking Structural Template Injection",
     type: "paper",
     topic: "Prompt Injection",
     year: 2026,
-    desc: "Automated agent hijacking using structural template injection. Scales OSAA hijacking through automation.",
-    url: "https://scholar.google.com/scholar?q=Automating%20Agent%20Hijacking%20via%20Structural%20Template%20Injection"
+    desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Automating%20Agent%20Hijacking%20Structural%20Template%20Injection"
   },
   {
-    title: "MCP Threat Modeling: Tool Poisoning and Prompt Injection",
+    title: "MCP Threat Modeling Tool Poisoning Prompt Injection",
     type: "paper",
     topic: "Prompt Injection",
     year: 2026,
-    desc: "Threat-models the Model Context Protocol for tool poisoning and injection. Maps the MCP supply-chain attack surface for OSAA.",
-    url: "https://scholar.google.com/scholar?q=MCP%20Threat%20Modeling%3A%20Tool%20Poisoning%20and%20Prompt%20Injection"
+    desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=MCP%20Threat%20Modeling%20Tool%20Poisoning%20Prompt%20Injection"
   },
   {
-    title: "Not What You've Signed Up For: Indirect Prompt Injection (AISec 2023)",
+    title: "Not What Signed Up For Indirect Prompt Injection",
     type: "paper",
     topic: "Prompt Injection",
     year: 2023,
-    desc: "Seminal paper introducing indirect prompt injection of LLM-integrated applications. Foundational OSAA attack class for tool and agent systems.",
-    url: "https://scholar.google.com/scholar?q=Not%20What%20You%27ve%20Signed%20Up%20For%3A%20Indirect%20Prompt%20Injection"
+    desc: "Seminal paper introducing indirect prompt injection of LLM-integrated applications. Foundational OSAA attack class for tool-using agents.",
+    url: "https://scholar.google.com/scholar?q=Not%20What%20Signed%20Up%20For%20Indirect%20Prompt%20Injection"
   },
   {
-    title: "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+    title: "On the Security of Tool Invocation Prompts for LLM",
+    type: "paper",
+    topic: "Prompt Injection",
+    year: 2025,
+    desc: "A security analysis of prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=On%20the%20Security%20of%20Tool%20Invocation%20Prompts%20for%20LLM"
+  },
+  {
+    title: "Jailbreaking Leading Safety Aligned LLMs Simple Adaptive Attacks",
     type: "paper",
     topic: "Jailbreaking",
     year: 2024,
-    desc: "Shows simple adaptive attacks defeat aligned LLMs. Baseline jailbreak technique reused in OSAA agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Jailbreaking%20Leading%20Safety-Aligned%20LLMs%20with%20Simple%20Adaptive%20Attacks"
+    desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=Jailbreaking%20Leading%20Safety%20Aligned%20LLMs%20Simple%20Adaptive%20Attacks"
   },
   {
-    title: "BadThink: Triggered Overthinking Attacks on CoT Reasoning",
+    title: "BadThink Triggered Overthinking Attacks CoT Reasoning LLMs",
     type: "paper",
     topic: "Jailbreaking",
     year: 2025,
-    desc: "Attack inducing harmful overthinking in chain-of-thought reasoning. Targets the reasoning loop agents depend on (OSAA).",
-    url: "https://scholar.google.com/scholar?q=BadThink%3A%20Triggered%20Overthinking%20Attacks%20on%20CoT%20Reasoning"
+    desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=BadThink%20Triggered%20Overthinking%20Attacks%20CoT%20Reasoning%20LLMs"
   },
   {
-    title: "Jailbreaking to Jailbreak: Autonomous Agent Red Teaming",
+    title: "Jailbreaking to Jailbreak Autonomous Agent Red Teaming",
     type: "paper",
     topic: "Jailbreaking",
     year: 2025,
-    desc: "Uses an autonomous agent to jailbreak other models. Automates OSAA red-teaming via agentic attackers.",
-    url: "https://scholar.google.com/scholar?q=Jailbreaking%20to%20Jailbreak%3A%20Autonomous%20Agent%20Red%20Teaming"
+    desc: "An autonomous offensive system in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=Jailbreaking%20to%20Jailbreak%20Autonomous%20Agent%20Red%20Teaming"
   },
   {
-    title: "ShadowCoT: Cognitive Hijacking via Stealthy Reasoning Backdoors",
+    title: "ShadowCoT Cognitive Hijacking Stealthy Reasoning Backdoors",
     type: "paper",
     topic: "Jailbreaking",
     year: 2025,
-    desc: "Stealthy backdoors that hijack a model's reasoning. Adds a covert reasoning-hijack technique to OSAA.",
-    url: "https://scholar.google.com/scholar?q=ShadowCoT%3A%20Cognitive%20Hijacking%20via%20Stealthy%20Reasoning%20Backdoors"
+    desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=ShadowCoT%20Cognitive%20Hijacking%20Stealthy%20Reasoning%20Backdoors"
   },
   {
-    title: "Reasoning Hijacking via Constraint Tightening: Red-Teaming LLM Agents",
+    title: "Reasoning Hijacking Constraint Tightening RedTeaming LLM Agents",
     type: "paper",
     topic: "Jailbreaking",
     year: 2026,
-    desc: "Red-teams agents by tightening constraints to hijack reasoning. A novel OSAA agent reasoning-hijack method.",
-    url: "https://scholar.google.com/scholar?q=Reasoning%20Hijacking%20via%20Constraint%20Tightening%3A%20Red-Teaming%20LLM%20Agents"
+    desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=Reasoning%20Hijacking%20Constraint%20Tightening%20RedTeaming%20LLM%20Agents"
   },
   {
-    title: "PAIR: Jailbreaking Black-Box LLMs in Twenty Queries",
+    title: "AmpleGCG Learning a Universal and Transferable Generative Model of",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2024,
+    desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=AmpleGCG%20Learning%20a%20Universal%20and%20Transferable%20Generative%20Model%20of"
+  },
+  {
+    title: "AutoDAN Turbo A Lifelong Agent for Strategy Self Exploration",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2024,
+    desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=AutoDAN%20Turbo%20A%20Lifelong%20Agent%20for%20Strategy%20Self%20Exploration"
+  },
+  {
+    title: "PAIR Jailbreaking Black Box LLMs Few Queries",
     type: "paper",
     topic: "Jailbreaking",
     year: 2023,
-    desc: "Query-efficient automated black-box jailbreak. An efficient OSAA jailbreak primitive.",
-    url: "https://scholar.google.com/scholar?q=PAIR%3A%20Jailbreaking%20Black-Box%20LLMs%20in%20Twenty%20Queries"
+    desc: "A query-efficient automated black-box jailbreak (PAIR). An efficient OSAA jailbreak primitive.",
+    url: "https://scholar.google.com/scholar?q=PAIR%20Jailbreaking%20Black%20Box%20LLMs%20Few%20Queries"
   },
   {
-    title: "AutoDAN: Generating Stealthy Jailbreak Prompts",
+    title: "How Johnny Can Persuade LLMs to Jailbreak Them Rethinking",
     type: "paper",
     topic: "Jailbreaking",
     year: 2024,
-    desc: "Automatically generates stealthy, readable jailbreak prompts. Automated OSAA prompt-attack generation.",
-    url: "https://scholar.google.com/scholar?q=AutoDAN%3A%20Generating%20Stealthy%20Jailbreak%20Prompts"
+    desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=How%20Johnny%20Can%20Persuade%20LLMs%20to%20Jailbreak%20Them%20Rethinking"
   },
   {
-    title: "Universal and Transferable Adversarial Attacks on Aligned LLMs (GCG)",
+    title: "Jailbreak Zero A Path to Pareto Optimal Red Teaming",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2026,
+    desc: "An autonomous offensive system in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=Jailbreak%20Zero%20A%20Path%20to%20Pareto%20Optimal%20Red%20Teaming"
+  },
+  {
+    title: "LLM Defenses Are Not Robust to Multi Turn Human",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2024,
+    desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=LLM%20Defenses%20Are%20Not%20Robust%20to%20Multi%20Turn%20Human"
+  },
+  {
+    title: "AutoDAN Generating Stealthy Jailbreak Prompts",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2024,
+    desc: "Automatically generates stealthy, readable jailbreak prompts (AutoDAN). Automated OSAA prompt-attack generation.",
+    url: "https://scholar.google.com/scholar?q=AutoDAN%20Generating%20Stealthy%20Jailbreak%20Prompts"
+  },
+  {
+    title: "STAC When Innocent Tools Form Dangerous Chains to Jailbreak",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2025,
+    desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=STAC%20When%20Innocent%20Tools%20Form%20Dangerous%20Chains%20to%20Jailbreak"
+  },
+  {
+    title: "TextBugger Generating Adversarial Text Against Real world Applications",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2018,
+    desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
+    url: "https://scholar.google.com/scholar?q=TextBugger%20Generating%20Adversarial%20Text%20Against%20Real%20world%20Applications"
+  },
+  {
+    title: "Tree of Attacks Jailbreaking Black Box LLMs Automatically",
     type: "paper",
     topic: "Jailbreaking",
     year: 2023,
-    desc: "Introduces transferable adversarial suffixes (GCG) that jailbreak LLMs. Foundational transferable attack underpinning OSAA.",
-    url: "https://scholar.google.com/scholar?q=Universal%20and%20Transferable%20Adversarial%20Attacks%20on%20Aligned%20LLMs"
+    desc: "Automatically jailbreaks black-box LLMs via a tree search of attacks (TAP). A strong automated OSAA jailbreak method.",
+    url: "https://scholar.google.com/scholar?q=Tree%20of%20Attacks%20Jailbreaking%20Black%20Box%20LLMs%20Automatically"
   },
   {
-    title: "AgentPoison: Red-Teaming LLM Agents via Poisoning Memory (NeurIPS 2024)",
+    title: "Universal Transferable Adversarial Attacks GCG",
+    type: "paper",
+    topic: "Jailbreaking",
+    year: 2023,
+    desc: "Introduces transferable adversarial suffixes (GCG) that jailbreak aligned LLMs. A foundational transferable attack underpinning OSAA.",
+    url: "https://scholar.google.com/scholar?q=Universal%20Transferable%20Adversarial%20Attacks%20GCG"
+  },
+  {
+    title: "AgentPoison RedTeaming LLM Agents Poisoning Memory",
     type: "paper",
     topic: "Backdoor & Poisoning",
     year: 2024,
-    desc: "Red-teams agents by poisoning their memory or knowledge base. A landmark OSAA memory-poisoning attack.",
-    url: "https://scholar.google.com/scholar?q=AgentPoison%3A%20Red-Teaming%20LLM%20Agents%20via%20Poisoning%20Memory"
+    desc: "Red-teams agents by poisoning their memory or knowledge base (AgentPoison). A landmark OSAA memory-poisoning attack.",
+    url: "https://scholar.google.com/scholar?q=AgentPoison%20RedTeaming%20LLM%20Agents%20Poisoning%20Memory"
   },
   {
-    title: "BadAgent: Inserting and Activating Backdoor Attacks on LLM Agents",
+    title: "BadAgent Inserting Activating Backdoor Attacks LLM Agents",
     type: "paper",
     topic: "Backdoor & Poisoning",
     year: 2024,
-    desc: "Inserts and triggers backdoors in LLM agents. Demonstrates agent-level backdoors for OSAA.",
-    url: "https://scholar.google.com/scholar?q=BadAgent%3A%20Inserting%20and%20Activating%20Backdoor%20Attacks%20on%20LLM%20Agents"
+    desc: "Inserts and triggers backdoors in LLM agents (BadAgent). Demonstrates agent-level backdoors for OSAA.",
+    url: "https://scholar.google.com/scholar?q=BadAgent%20Inserting%20Activating%20Backdoor%20Attacks%20LLM%20Agents"
   },
   {
-    title: "A Survey of Backdoor Attacks and Defenses on LLMs",
+    title: "Survey Backdoor Attacks Defenses Large Language Models",
     type: "paper",
     topic: "Backdoor & Poisoning",
     year: 2024,
-    desc: "Surveys LLM backdoor attacks and defenses. Its offensive half catalogues backdoor techniques for OSAA.",
-    url: "https://scholar.google.com/scholar?q=A%20Survey%20of%20Backdoor%20Attacks%20and%20Defenses%20on%20LLMs"
+    desc: "Surveys the agent backdoors and poisoning literature. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Survey%20Backdoor%20Attacks%20Defenses%20Large%20Language%20Models"
   },
   {
-    title: "Watch Out for Your Agents: Backdoor Threats to LLM-Based Agents",
+    title: "Watch Out Agents Backdoor Threats LLM Based Agents",
     type: "paper",
     topic: "Backdoor & Poisoning",
     year: 2024,
-    desc: "Analyzes backdoor threats specific to agents. Frames agent backdoor risk for OSAA.",
-    url: "https://scholar.google.com/scholar?q=Watch%20Out%20for%20Your%20Agents%3A%20Backdoor%20Threats%20to%20LLM-Based%20Agents"
+    desc: "An attack/vulnerability study in agent backdoors and poisoning. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Watch%20Out%20Agents%20Backdoor%20Threats%20LLM%20Based%20Agents"
   },
   {
-    title: "Supply-Chain Poisoning of LLM Coding-Agent Skill Ecosystems",
+    title: "SupplyChain Poisoning LLM Coding Agent Skill Ecosystems",
     type: "paper",
     topic: "Backdoor & Poisoning",
     year: 2026,
-    desc: "Poisons the skill/plugin supply chain of coding agents. Exposes an OSAA supply-chain attack vector.",
-    url: "https://scholar.google.com/scholar?q=Supply-Chain%20Poisoning%20of%20LLM%20Coding-Agent%20Skill%20Ecosystems"
+    desc: "An attack/vulnerability study in agent backdoors and poisoning. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=SupplyChain%20Poisoning%20LLM%20Coding%20Agent%20Skill%20Ecosystems"
   },
   {
-    title: "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+    title: "Sleeper Agents Training Deceptive LLMs Safety Training",
     type: "paper",
     topic: "Backdoor & Poisoning",
     year: 2024,
     desc: "Shows backdoored 'sleeper' models survive safety training. Demonstrates a persistent deceptive-agent threat for OSAA.",
-    url: "https://scholar.google.com/scholar?q=Sleeper%20Agents%3A%20Training%20Deceptive%20LLMs%20that%20Persist%20Through%20Safety%20Training"
+    url: "https://scholar.google.com/scholar?q=Sleeper%20Agents%20Training%20Deceptive%20LLMs%20Safety%20Training"
   },
   {
-    title: "Targeting the Core: Attack on RAG Agents via Direct LLM Manipulation",
+    title: "Malice in Agentland Down the Rabbit Hole of Backdoors",
+    type: "paper",
+    topic: "Backdoor & Poisoning",
+    year: 2025,
+    desc: "An attack/vulnerability study in agent backdoors and poisoning. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
+    url: "https://scholar.google.com/scholar?q=Malice%20in%20Agentland%20Down%20the%20Rabbit%20Hole%20of%20Backdoors"
+  },
+  {
+    title: "Targeting Core Attack RAG Agents Direct LLM Manipulation",
     type: "paper",
     topic: "RAG Security",
     year: 2024,
-    desc: "Attacks RAG agents by directly manipulating the underlying LLM. A concrete OSAA attack on retrieval-augmented agents.",
-    url: "https://scholar.google.com/scholar?q=Targeting%20the%20Core%3A%20Attack%20on%20RAG%20Agents%20via%20Direct%20LLM%20Manipulation"
+    desc: "An attack/vulnerability study in retrieval-augmented agent attacks. It contributes to OSAA by exposing attacks on retrieval-augmented agents.",
+    url: "https://scholar.google.com/scholar?q=Targeting%20Core%20Attack%20RAG%20Agents%20Direct%20LLM%20Manipulation"
   },
   {
-    title: "Unveiling Privacy Risks in LLM Agent Memory",
+    title: "Unveiling Privacy Risks LLM Agent Memory",
     type: "paper",
     topic: "RAG Security",
     year: 2025,
-    desc: "Reveals privacy leakage from agent memory stores. Identifies an OSAA exfiltration risk in agent memory.",
-    url: "https://scholar.google.com/scholar?q=Unveiling%20Privacy%20Risks%20in%20LLM%20Agent%20Memory"
+    desc: "A security analysis of retrieval-augmented agent attacks. It contributes to OSAA by exposing attacks on retrieval-augmented agents.",
+    url: "https://scholar.google.com/scholar?q=Unveiling%20Privacy%20Risks%20LLM%20Agent%20Memory"
   },
   {
-    title: "Securing RAG: A Taxonomy of Attacks, Defenses and Future Directions",
+    title: "Securing RAG Taxonomy Attacks Defenses Future Directions",
     type: "paper",
     topic: "RAG Security",
     year: 2026,
-    desc: "Provides a taxonomy of RAG attacks and defenses. Its attack taxonomy informs OSAA against RAG agents.",
-    url: "https://scholar.google.com/scholar?q=Securing%20RAG%3A%20A%20Taxonomy%20of%20Attacks%2C%20Defenses%20and%20Future%20Directions"
+    desc: "An attack/vulnerability study in retrieval-augmented agent attacks. It contributes to OSAA by exposing attacks on retrieval-augmented agents.",
+    url: "https://scholar.google.com/scholar?q=Securing%20RAG%20Taxonomy%20Attacks%20Defenses%20Future%20Directions"
   },
   {
-    title: "Extending OWASP's Multi-Agentic System Threat-Modeling Guide",
+    title: "Extending OWASP MultiAgentic System Threat Modeling Guide",
     type: "paper",
     topic: "Multi-Agent Security",
     year: 2025,
-    desc: "Extends OWASP threat modeling to multi-agent systems. Provides OSAA threat-model structure for agent swarms.",
-    url: "https://scholar.google.com/scholar?q=Extending%20OWASP%27s%20Multi-Agentic%20System%20Threat-Modeling%20Guide"
+    desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=Extending%20OWASP%20MultiAgentic%20System%20Threat%20Modeling%20Guide"
   },
   {
-    title: "Multi-Agent Systems Can Execute Arbitrary Malicious Code",
+    title: "MultiAgent Systems Execute Arbitrary Malicious Code",
     type: "paper",
     topic: "Multi-Agent Security",
     year: 2025,
-    desc: "Shows multi-agent systems can be driven to run arbitrary malicious code. A high-severity OSAA multi-agent exploitation result.",
-    url: "https://scholar.google.com/scholar?q=Multi-Agent%20Systems%20Can%20Execute%20Arbitrary%20Malicious%20Code"
+    desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=MultiAgent%20Systems%20Execute%20Arbitrary%20Malicious%20Code"
   },
   {
-    title: "Open Challenges in Multi-Agent Security",
+    title: "Open Challenges MultiAgent Security Secure Systems AI Agents",
     type: "paper",
     topic: "Multi-Agent Security",
     year: 2025,
-    desc: "Lays out open problems for securing systems of AI agents. Defines the OSAA research frontier for multi-agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Open%20Challenges%20in%20Multi-Agent%20Security"
+    desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=Open%20Challenges%20MultiAgent%20Security%20Secure%20Systems%20AI%20Agents"
   },
   {
-    title: "Security of the Internet of Agents: Attacks and Countermeasures",
+    title: "Security Internet of Agents Attacks Countermeasures",
     type: "paper",
     topic: "Multi-Agent Security",
     year: 2025,
-    desc: "Studies attacks on interconnected agent ecosystems. Maps OSAA attacks across agent networks.",
-    url: "https://scholar.google.com/scholar?q=Security%20of%20the%20Internet%20of%20Agents%3A%20Attacks%20and%20Countermeasures"
+    desc: "An attack/vulnerability study in multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=Security%20Internet%20of%20Agents%20Attacks%20Countermeasures"
   },
   {
-    title: "PentestAgent: LLM Agents for Automated Penetration Testing (AsiaCCS 2025)",
+    title: "Exposing Weak Links in Multi Agent Systems under Adversarial",
+    type: "paper",
+    topic: "Multi-Agent Security",
+    year: 2025,
+    desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=Exposing%20Weak%20Links%20in%20Multi%20Agent%20Systems%20under%20Adversarial"
+  },
+  {
+    title: "MultiFuzz A Dense Retrieval based Multi Agent System for",
+    type: "paper",
+    topic: "Multi-Agent Security",
+    year: 2025,
+    desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=MultiFuzz%20A%20Dense%20Retrieval%20based%20Multi%20Agent%20System%20for"
+  },
+  {
+    title: "Multi Agent Security Tax Trading Off Security and Collaboration",
+    type: "paper",
+    topic: "Multi-Agent Security",
+    year: 2025,
+    desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=Multi%20Agent%20Security%20Tax%20Trading%20Off%20Security%20and%20Collaboration"
+  },
+  {
+    title: "TAMAS Benchmarking Adversarial Risks in Multi Agent LLM Systems",
+    type: "paper",
+    topic: "Multi-Agent Security",
+    year: 2025,
+    desc: "A benchmark for evaluating multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=TAMAS%20Benchmarking%20Adversarial%20Risks%20in%20Multi%20Agent%20LLM%20Systems"
+  },
+  {
+    title: "Towards Unifying Quantitative Security Benchmarking for Multi Agent Systems",
+    type: "paper",
+    topic: "Multi-Agent Security",
+    year: 2025,
+    desc: "A benchmark for evaluating multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
+    url: "https://scholar.google.com/scholar?q=Towards%20Unifying%20Quantitative%20Security%20Benchmarking%20for%20Multi%20Agent%20Systems"
+  },
+  {
+    title: "PentestAgent LLM Agents Automated Penetration Testing",
     type: "paper",
     topic: "Pentesting Frameworks",
     year: 2024,
-    desc: "Multi-agent framework automating penetration testing. A core OSAA offensive-capability system.",
-    url: "https://scholar.google.com/scholar?q=PentestAgent%3A%20LLM%20Agents%20for%20Automated%20Penetration%20Testing"
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=PentestAgent%20LLM%20Agents%20Automated%20Penetration%20Testing"
   },
   {
-    title: "AutoPentester: An LLM-Agent Framework for Automated Pentesting",
+    title: "AutoPentester LLM Agent Framework Automated Pentesting",
     type: "paper",
     topic: "Pentesting Frameworks",
     year: 2025,
-    desc: "Autonomous LLM penetration-testing framework. Advances automated OSAA offensive tooling.",
-    url: "https://scholar.google.com/scholar?q=AutoPentester%3A%20An%20LLM-Agent%20Framework%20for%20Automated%20Pentesting"
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=AutoPentester%20LLM%20Agent%20Framework%20Automated%20Pentesting"
   },
   {
-    title: "Cybersecurity AI: The OT-Focused Top-10 Ranker (Dragos OT CTF)",
+    title: "Cybersecurity AI OT AI Top10 Ranker Dragos OT CTF",
     type: "paper",
     topic: "Pentesting Frameworks",
     year: 2025,
-    desc: "Applies agentic AI to operational-technology security in a CTF setting. Demonstrates OSAA agents in OT offense.",
-    url: "https://scholar.google.com/scholar?q=Cybersecurity%20AI%3A%20The%20OT-Focused%20Top-10%20Ranker"
+    desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=Cybersecurity%20AI%20OT%20AI%20Top10%20Ranker%20Dragos%20OT%20CTF"
   },
   {
-    title: "Dynamic Risk Assessments for Offensive Cybersecurity Agents",
+    title: "Dynamic Risk Assessments Offensive Cybersecurity Agents",
     type: "paper",
     topic: "Pentesting Frameworks",
     year: 2025,
-    desc: "Method for dynamically assessing the risk of offensive cyber agents. Helps scope and measure OSAA agent capability and danger.",
-    url: "https://scholar.google.com/scholar?q=Dynamic%20Risk%20Assessments%20for%20Offensive%20Cybersecurity%20Agents"
+    desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=Dynamic%20Risk%20Assessments%20Offensive%20Cybersecurity%20Agents"
   },
   {
-    title: "xOffense: AI-Driven Autonomous Penetration Testing (Multi-Agent)",
+    title: "xOffense AI Driven Autonomous Penetration Testing MultiAgent",
     type: "paper",
     topic: "Pentesting Frameworks",
     year: 2025,
-    desc: "Multi-agent system for autonomous penetration testing. Strengthens OSAA autonomous offense.",
-    url: "https://scholar.google.com/scholar?q=xOffense%3A%20AI-Driven%20Autonomous%20Penetration%20Testing"
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=xOffense%20AI%20Driven%20Autonomous%20Penetration%20Testing%20MultiAgent"
   },
   {
-    title: "To Defend Against Cyber Attacks, Teach AI Agents to Hack",
+    title: "To Defend Against Cyber Attacks Teach AI Agents to Hack",
     type: "paper",
     topic: "Pentesting Frameworks",
     year: 2026,
-    desc: "Argues for and builds offensively-trained agents to improve defense. Frames offensive agent training that is central to OSAA.",
-    url: "https://scholar.google.com/scholar?q=To%20Defend%20Against%20Cyber%20Attacks%2C%20Teach%20AI%20Agents%20to%20Hack"
+    desc: "An attack/vulnerability study in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=To%20Defend%20Against%20Cyber%20Attacks%20Teach%20AI%20Agents%20to%20Hack"
   },
   {
-    title: "RedTeamLLM: An Agentic AI Framework for Offensive Security (IJCAI 2025)",
-    type: "paper",
-    topic: "Pentesting Frameworks",
-    year: 2025,
-    desc: "Agentic framework orchestrating offensive-security tasks. A direct OSAA red-team automation framework.",
-    url: "https://scholar.google.com/scholar?q=RedTeamLLM%3A%20An%20Agentic%20AI%20Framework%20for%20Offensive%20Security"
-  },
-  {
-    title: "PentestGPT: An LLM-Empowered Automatic Penetration-Testing Tool (USENIX 2024)",
+    title: "AutoPenBench A Vulnerability Testing Benchmark for Generative Agents",
     type: "paper",
     topic: "Pentesting Frameworks",
     year: 2024,
-    desc: "Influential LLM-driven automated penetration-testing tool. A foundational OSAA offensive agent.",
-    url: "https://scholar.google.com/scholar?q=PentestGPT%3A%20An%20LLM-Empowered%20Automatic%20Penetration-Testing%20Tool"
+    desc: "A benchmark for evaluating autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=AutoPenBench%20A%20Vulnerability%20Testing%20Benchmark%20for%20Generative%20Agents"
   },
   {
-    title: "AgentAuditor: Human-Level Safety and Security Evaluation of LLM Agents",
+    title: "BreachSeek A Multi Agent Automated Penetration Tester",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2024,
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=BreachSeek%20A%20Multi%20Agent%20Automated%20Penetration%20Tester"
+  },
+  {
+    title: "CAI An Open Bug Bounty Ready Cybersecurity AI",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2025,
+    desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=CAI%20An%20Open%20Bug%20Bounty%20Ready%20Cybersecurity%20AI"
+  },
+  {
+    title: "CIPHER Cybersecurity Intelligent Penetration testing Helper for Ethical Researcher",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2024,
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=CIPHER%20Cybersecurity%20Intelligent%20Penetration%20testing%20Helper%20for%20Ethical%20Researcher"
+  },
+  {
+    title: "RedTeamLLM Agentic AI Framework Offensive Security",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2025,
+    desc: "An agentic framework orchestrating offensive-security tasks (RedTeamLLM). A direct OSAA red-team automation framework.",
+    url: "https://scholar.google.com/scholar?q=RedTeamLLM%20Agentic%20AI%20Framework%20Offensive%20Security"
+  },
+  {
+    title: "Collaborative penetration testing suite for emerging generative AI algorithms",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: null,
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=Collaborative%20penetration%20testing%20suite%20for%20emerging%20generative%20AI%20algorithms"
+  },
+  {
+    title: "Comparing AI Agents to Cybersecurity Professionals in Real World",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2025,
+    desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=Comparing%20AI%20Agents%20to%20Cybersecurity%20Professionals%20in%20Real%20World"
+  },
+  {
+    title: "PentestGPT LLM Empowered Automatic Penetration Testing",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2024,
+    desc: "An influential LLM-driven automated penetration-testing tool (PentestGPT). A foundational OSAA offensive agent.",
+    url: "https://scholar.google.com/scholar?q=PentestGPT%20LLM%20Empowered%20Automatic%20Penetration%20Testing"
+  },
+  {
+    title: "HackSynth LLM Agent and Evaluation Framework for Autonomous Penetration",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2024,
+    desc: "A benchmark for evaluating autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=HackSynth%20LLM%20Agent%20and%20Evaluation%20Framework%20for%20Autonomous%20Penetration"
+  },
+  {
+    title: "Multi agent penetration testing AI for the web",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2025,
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=Multi%20agent%20penetration%20testing%20AI%20for%20the%20web"
+  },
+  {
+    title: "Penetration Testing of Agentic AI A Comparative Security Analysis",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2025,
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=Penetration%20Testing%20of%20Agentic%20AI%20A%20Comparative%20Security%20Analysis"
+  },
+  {
+    title: "Shell or Nothing Real World Benchmarks and Memory Activated",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2025,
+    desc: "A benchmark for evaluating autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=Shell%20or%20Nothing%20Real%20World%20Benchmarks%20and%20Memory%20Activated"
+  },
+  {
+    title: "VulnBot Autonomous Penetration Testing for A Multi Agent Collaborative",
+    type: "paper",
+    topic: "Pentesting Frameworks",
+    year: 2025,
+    desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
+    url: "https://scholar.google.com/scholar?q=VulnBot%20Autonomous%20Penetration%20Testing%20for%20A%20Multi%20Agent%20Collaborative"
+  },
+  {
+    title: "AgentAuditor Human Level Safety Security Evaluation LLM Agents",
     type: "paper",
     topic: "Red Teaming",
     year: 2025,
-    desc: "Framework for human-level auditing of agent safety and security. Improves the rigor of OSAA evaluation.",
-    url: "https://scholar.google.com/scholar?q=AgentAuditor%3A%20Human-Level%20Safety%20and%20Security%20Evaluation%20of%20LLM%20Agents"
+    desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=AgentAuditor%20Human%20Level%20Safety%20Security%20Evaluation%20LLM%20Agents"
   },
   {
-    title: "Hiding AI Traffic: Abusing MCP for LLM-Powered Agentic Red-Teaming",
+    title: "Hiding AI Traffic Abusing MCP LLM Powered Agentic RedTeaming",
     type: "paper",
     topic: "Red Teaming",
     year: 2025,
-    desc: "Abuses the Model Context Protocol to conceal malicious agent traffic. A novel OSAA evasion technique via protocol abuse.",
-    url: "https://scholar.google.com/scholar?q=Hiding%20AI%20Traffic%3A%20Abusing%20MCP%20for%20LLM-Powered%20Agentic%20Red-Teaming"
+    desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Hiding%20AI%20Traffic%20Abusing%20MCP%20LLM%20Powered%20Agentic%20RedTeaming"
   },
   {
-    title: "SIRAJ: Diverse, Efficient Red-Teaming of LLM Agents via Distilled Reasoning",
+    title: "SIRAJ Diverse Efficient RedTeaming LLM Agents Distilled Reasoning",
     type: "paper",
     topic: "Red Teaming",
     year: 2025,
-    desc: "Efficient automated red-teaming using distilled reasoning. Scales OSAA agent red-teaming.",
-    url: "https://scholar.google.com/scholar?q=SIRAJ%3A%20Diverse%2C%20Efficient%20Red-Teaming%20of%20LLM%20Agents%20via%20Distilled%20Reasoning"
+    desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=SIRAJ%20Diverse%20Efficient%20RedTeaming%20LLM%20Agents%20Distilled%20Reasoning"
   },
   {
-    title: "PISmith: RL-Based Red-Teaming of Prompt-Injection Defenses",
+    title: "PISmith RL Based RedTeaming Prompt Injection Defenses",
     type: "paper",
     topic: "Red Teaming",
     year: 2026,
-    desc: "Uses reinforcement learning to break prompt-injection defenses. Automates OSAA attack discovery against defenses.",
-    url: "https://scholar.google.com/scholar?q=PISmith%3A%20RL-Based%20Red-Teaming%20of%20Prompt-Injection%20Defenses"
+    desc: "An attack/vulnerability study in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=PISmith%20RL%20Based%20RedTeaming%20Prompt%20Injection%20Defenses"
   },
   {
-    title: "A Red-Teaming Framework for Evaluating Robustness of AI Security Orchestration",
+    title: "RedTeaming Framework Evaluating Robustness AI Security Orchestration",
     type: "paper",
     topic: "Red Teaming",
     year: 2026,
-    desc: "Framework to red-team AI security-orchestration systems. Extends OSAA to security-automation targets.",
-    url: "https://scholar.google.com/scholar?q=A%20Red-Teaming%20Framework%20for%20Evaluating%20Robustness%20of%20AI%20Security%20Orchestration"
+    desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=RedTeaming%20Framework%20Evaluating%20Robustness%20AI%20Security%20Orchestration"
   },
   {
-    title: "AgentVigil: Automatic Black-Box Red-Teaming for Indirect Prompt Injection",
+    title: "AGENTVIGIL Automatic BlackBox RedTeaming Indirect Prompt Injection LLM Agents",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2023,
+    desc: "An attack/vulnerability study in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=AGENTVIGIL%20Automatic%20BlackBox%20RedTeaming%20Indirect%20Prompt%20Injection%20LLM%20Agents"
+  },
+  {
+    title: "ALERT A Comprehensive Benchmark for Assessing Large Language Models",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2024,
+    desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=ALERT%20A%20Comprehensive%20Benchmark%20for%20Assessing%20Large%20Language%20Models"
+  },
+  {
+    title: "ARMs Adaptive Red Teaming Agent against Multimodal Models with",
     type: "paper",
     topic: "Red Teaming",
     year: 2025,
-    desc: "Automatic black-box red-teaming for indirect injection on agents. Automated OSAA discovery of injection flaws.",
-    url: "https://scholar.google.com/scholar?q=AgentVigil%3A%20Automatic%20Black-Box%20Red-Teaming%20for%20Indirect%20Prompt%20Injection"
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=ARMs%20Adaptive%20Red%20Teaming%20Agent%20against%20Multimodal%20Models%20with"
   },
   {
-    title: "Lessons from Red-Teaming 100 Generative AI Products",
+    title: "ASTRA Autonomous Spatial Temporal Red teaming for AI Software",
     type: "paper",
     topic: "Red Teaming",
     year: 2025,
-    desc: "Practitioner lessons from red-teaming 100 generative-AI products. Real-world OSAA red-team practice and pitfalls.",
-    url: "https://scholar.google.com/scholar?q=Lessons%20from%20Red-Teaming%20100%20Generative%20AI%20Products"
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=ASTRA%20Autonomous%20Spatial%20Temporal%20Red%20teaming%20for%20AI%20Software"
+  },
+  {
+    title: "Against The Achilles Heel A Survey on Red Teaming",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2024,
+    desc: "Surveys the agent red teaming literature. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Against%20The%20Achilles%20Heel%20A%20Survey%20on%20Red%20Teaming"
+  },
+  {
+    title: "AgentXploit End to End Red Teaming for AI Agents",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=AgentXploit%20End%20to%20End%20Red%20Teaming%20for%20AI%20Agents"
+  },
+  {
+    title: "AutoODD Agentic Audits via Bayesian Red Teaming in Black",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=AutoODD%20Agentic%20Audits%20via%20Bayesian%20Red%20Teaming%20in%20Black"
+  },
+  {
+    title: "AutoRedTeamer Autonomous Red Teaming with Lifelong Attack Integration",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=AutoRedTeamer%20Autonomous%20Red%20Teaming%20with%20Lifelong%20Attack%20Integration"
+  },
+  {
+    title: "Automated Red Teaming with GOAT the Generative Offensive Agent",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2024,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Automated%20Red%20Teaming%20with%20GOAT%20the%20Generative%20Offensive%20Agent"
+  },
+  {
+    title: "BlueCodeAgent A Blue Teaming Agent Enabled by Automated Red",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=BlueCodeAgent%20A%20Blue%20Teaming%20Agent%20Enabled%20by%20Automated%20Red"
+  },
+  {
+    title: "Genesis Evolving Attack Strategies for LLM Web Agent Red",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "An attack/vulnerability study in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Genesis%20Evolving%20Attack%20Strategies%20for%20LLM%20Web%20Agent%20Red"
+  },
+  {
+    title: "HarmBench A Standardized Evaluation Framework for Automated Red Teaming",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2024,
+    desc: "A standardized evaluation framework for automated red teaming (HarmBench). Standardizes OSAA red-team measurement.",
+    url: "https://scholar.google.com/scholar?q=HarmBench%20A%20Standardized%20Evaluation%20Framework%20for%20Automated%20Red%20Teaming"
+  },
+  {
+    title: "Holistic Automated Red Teaming for Large Language Models through",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2024,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Holistic%20Automated%20Red%20Teaming%20for%20Large%20Language%20Models%20through"
+  },
+  {
+    title: "Lessons From Red Teaming 100 Generative AI Products eBook",
+    type: "paper",
+    topic: "Red Teaming",
+    year: null,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Lessons%20From%20Red%20Teaming%20100%20Generative%20AI%20Products%20eBook"
+  },
+  {
+    title: "Mind the Gap Comparing Model vs Agentic Level Red",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Mind%20the%20Gap%20Comparing%20Model%20vs%20Agentic%20Level%20Red"
   },
   {
     title: "OpenAI's Approach to External Red Teaming",
     type: "paper",
     topic: "Red Teaming",
-    year: 2024,
-    desc: "Describes OpenAI's external red-teaming methodology. A reference for OSAA program design.",
+    year: 2025,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
     url: "https://scholar.google.com/scholar?q=OpenAI%27s%20Approach%20to%20External%20Red%20Teaming"
+  },
+  {
+    title: "OpenRT An Open Source Red Teaming Framework for Multimodal",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2026,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=OpenRT%20An%20Open%20Source%20Red%20Teaming%20Framework%20for%20Multimodal"
+  },
+  {
+    title: "PyRIT A Framework for Security Risk Identification and Red",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2024,
+    desc: "Presents PyRIT, a framework for security-risk identification and red teaming of generative AI. A widely used OSAA red-teaming toolkit.",
+    url: "https://scholar.google.com/scholar?q=PyRIT%20A%20Framework%20for%20Security%20Risk%20Identification%20and%20Red"
   },
   {
     title: "Red Teaming AI Red Teaming",
     type: "paper",
     topic: "Red Teaming",
     year: 2025,
-    desc: "Critically examines the practice of AI red-teaming itself. Sharpens OSAA methodology and rigor.",
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
     url: "https://scholar.google.com/scholar?q=Red%20Teaming%20AI%20Red%20Teaming"
   },
   {
-    title: "Red-Teaming LLM Multi-Agent Systems via Communication Attacks",
+    title: "RedAgent Red Teaming Large Language Models with Context aware",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2024,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=RedAgent%20Red%20Teaming%20Large%20Language%20Models%20with%20Context%20aware"
+  },
+  {
+    title: "RedBench A Universal Dataset for Comprehensive Red Teaming of",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2026,
+    desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=RedBench%20A%20Universal%20Dataset%20for%20Comprehensive%20Red%20Teaming%20of"
+  },
+  {
+    title: "RedCodeAgent Automatic Red teaming Agent against Diverse Code Agents",
     type: "paper",
     topic: "Red Teaming",
     year: 2025,
-    desc: "Attacks multi-agent systems through their communication channels. An OSAA technique for agent-to-agent compromise.",
-    url: "https://scholar.google.com/scholar?q=Red-Teaming%20LLM%20Multi-Agent%20Systems%20via%20Communication%20Attacks"
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=RedCodeAgent%20Automatic%20Red%20teaming%20Agent%20against%20Diverse%20Code%20Agents"
   },
   {
-    title: "LLM Agents Can Autonomously Hack Websites",
+    title: "RedTeamCUA Realistic Adversarial Testing of Computer Use Agents in",
     type: "paper",
-    topic: "Autonomous Exploitation",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=RedTeamCUA%20Realistic%20Adversarial%20Testing%20of%20Computer%20Use%20Agents%20in"
+  },
+  {
+    title: "Red Teaming LLM MultiAgent Systems via Communication Attacks",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2023,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=Red%20Teaming%20LLM%20MultiAgent%20Systems%20via%20Communication%20Attacks"
+  },
+  {
+    title: "SafeSearch Automated Red Teaming for the Safety of LLM",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=SafeSearch%20Automated%20Red%20Teaming%20for%20the%20Safety%20of%20LLM"
+  },
+  {
+    title: "The Automation Advantage in AI Red Teaming",
+    type: "paper",
+    topic: "Red Teaming",
+    year: 2025,
+    desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
+    url: "https://scholar.google.com/scholar?q=The%20Automation%20Advantage%20in%20AI%20Red%20Teaming"
+  },
+  {
+    title: "A Framework for Evaluating Emerging Cyberattack Capabilities of AI",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2025,
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=A%20Framework%20for%20Evaluating%20Emerging%20Cyberattack%20Capabilities%20of%20AI"
+  },
+  {
+    title: "CVE bench a benchmark for AI agents ability to",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2025,
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=CVE%20bench%20a%20benchmark%20for%20AI%20agents%20ability%20to"
+  },
+  {
+    title: "Catastrophic Cyber Capabilities Benchmark 3CB Robustly Evaluating LLM Agent",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
     year: 2024,
-    desc: "Demonstrates LLM agents autonomously exploiting real websites. Landmark proof of autonomous OSAA capability.",
-    url: "https://scholar.google.com/scholar?q=LLM%20Agents%20Can%20Autonomously%20Hack%20Websites"
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=Catastrophic%20Cyber%20Capabilities%20Benchmark%203CB%20Robustly%20Evaluating%20LLM%20Agent"
   },
   {
-    title: "Teams of LLM Agents Can Exploit Zero-Day Vulnerabilities",
+    title: "Cybench A Framework for Evaluating Cybersecurity Capabilities and Risk",
     type: "paper",
-    topic: "Autonomous Exploitation",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2024,
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=Cybench%20A%20Framework%20for%20Evaluating%20Cybersecurity%20Capabilities%20and%20Risk"
+  },
+  {
+    title: "CyberSecurity AI Evaluating agentic cybersecurity in attack defense CTFs",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2025,
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=CyberSecurity%20AI%20Evaluating%20agentic%20cybersecurity%20in%20attack%20defense%20CTFs"
+  },
+  {
+    title: "LLM Agents Autonomously Hack Websites",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2024,
+    desc: "Demonstrates LLM agents autonomously exploiting real websites. A landmark proof of autonomous OSAA capability.",
+    url: "https://scholar.google.com/scholar?q=LLM%20Agents%20Autonomously%20Hack%20Websites"
+  },
+  {
+    title: "Teams LLM Agents Exploit ZeroDay Vulnerabilities",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
     year: 2024,
     desc: "Shows teams of agents exploiting zero-day vulnerabilities. Escalates OSAA to coordinated zero-day exploitation.",
-    url: "https://scholar.google.com/scholar?q=Teams%20of%20LLM%20Agents%20Can%20Exploit%20Zero-Day%20Vulnerabilities"
+    url: "https://scholar.google.com/scholar?q=Teams%20LLM%20Agents%20Exploit%20ZeroDay%20Vulnerabilities"
   },
   {
-    title: "LLM Agents Can Leak Data: Exfiltration via Backdoored Tool Use",
+    title: "LLM Agents can Autonomously Exploit One day Vulnerabilities",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2024,
+    desc: "An autonomous offensive system in autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=LLM%20Agents%20can%20Autonomously%20Exploit%20One%20day%20Vulnerabilities"
+  },
+  {
+    title: "OCCULT Evaluating Large Language Models for Offensive Cyber Operation",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2025,
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=OCCULT%20Evaluating%20Large%20Language%20Models%20for%20Offensive%20Cyber%20Operation"
+  },
+  {
+    title: "PACEbench A Framework for Evaluating Practical AI Cyber Exploitation",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2025,
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=PACEbench%20A%20Framework%20for%20Evaluating%20Practical%20AI%20Cyber%20Exploitation"
+  },
+  {
+    title: "Pandora A Cyber Range Environment for the Safe Testing",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: null,
+    desc: "A security analysis of autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=Pandora%20A%20Cyber%20Range%20Environment%20for%20the%20Safe%20Testing"
+  },
+  {
+    title: "Purple Llama CyberSecEval A Secure Coding Benchmark for Language",
+    type: "paper",
+    topic: "Offensive Cyber / CTF / CVE",
+    year: 2023,
+    desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
+    url: "https://scholar.google.com/scholar?q=Purple%20Llama%20CyberSecEval%20A%20Secure%20Coding%20Benchmark%20for%20Language"
+  },
+  {
+    title: "LLM Agent Leak Data Exfiltration Backdoored Tool Use",
     type: "paper",
     topic: "Privacy & Exfiltration",
     year: 2026,
-    desc: "Exfiltrates data through backdoored agent tools. A concrete OSAA tool-based data-exfiltration attack.",
-    url: "https://scholar.google.com/scholar?q=LLM%20Agents%20Can%20Leak%20Data%3A%20Exfiltration%20via%20Backdoored%20Tool%20Use"
+    desc: "An attack/vulnerability study in agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
+    url: "https://scholar.google.com/scholar?q=LLM%20Agent%20Leak%20Data%20Exfiltration%20Backdoored%20Tool%20Use"
   },
   {
-    title: "Observable Channels: Privacy Leakage in LLM Agent Pipelines",
+    title: "Observable Channels Privacy Leakage LLM Agent Pipelines",
     type: "paper",
     topic: "Privacy & Exfiltration",
     year: 2026,
-    desc: "Analyzes privacy-leakage channels in agent pipelines. Maps OSAA side-channel and exfiltration paths.",
-    url: "https://scholar.google.com/scholar?q=Observable%20Channels%3A%20Privacy%20Leakage%20in%20LLM%20Agent%20Pipelines"
+    desc: "An attack/vulnerability study in agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
+    url: "https://scholar.google.com/scholar?q=Observable%20Channels%20Privacy%20Leakage%20LLM%20Agent%20Pipelines"
   },
   {
-    title: "Agentic AI as a Cybersecurity Attack Surface",
+    title: "AgentDAM Privacy Leakage Evaluation for Autonomous Web Agents",
+    type: "paper",
+    topic: "Privacy & Exfiltration",
+    year: 2025,
+    desc: "A benchmark for evaluating agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
+    url: "https://scholar.google.com/scholar?q=AgentDAM%20Privacy%20Leakage%20Evaluation%20for%20Autonomous%20Web%20Agents"
+  },
+  {
+    title: "Automating Prompt Leakage Attacks on Large Language Models Using",
+    type: "paper",
+    topic: "Privacy & Exfiltration",
+    year: 2025,
+    desc: "An attack/vulnerability study in agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
+    url: "https://scholar.google.com/scholar?q=Automating%20Prompt%20Leakage%20Attacks%20on%20Large%20Language%20Models%20Using"
+  },
+  {
+    title: "Agentic AI as Cybersecurity Attack Surface",
     type: "paper",
     topic: "Protocol Security",
     year: 2026,
-    desc: "Frames agentic AI itself as a new cybersecurity attack surface. A conceptual backbone for OSAA scoping.",
-    url: "https://scholar.google.com/scholar?q=Agentic%20AI%20as%20a%20Cybersecurity%20Attack%20Surface"
+    desc: "An attack/vulnerability study in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=Agentic%20AI%20as%20Cybersecurity%20Attack%20Surface"
   },
   {
-    title: "MCP Threat Modeling: Vulnerabilities, Tool Poisoning and Prompt Injection",
+    title: "MCP Threat Modeling Vulnerabilities Tool Poisoning Prompt Injection",
     type: "paper",
     topic: "Protocol Security",
     year: 2026,
-    desc: "Threat-models Model Context Protocol vulnerabilities including tool poisoning. Details OSAA protocol and supply-chain attacks.",
-    url: "https://scholar.google.com/scholar?q=MCP%20Threat%20Modeling%3A%20Vulnerabilities%2C%20Tool%20Poisoning%20and%20Prompt%20Injection"
+    desc: "An attack/vulnerability study in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=MCP%20Threat%20Modeling%20Vulnerabilities%20Tool%20Poisoning%20Prompt%20Injection"
   },
   {
-    title: "SoK: Security of Autonomous LLM Agents in Agentic Commerce",
+    title: "SoK Security Autonomous LLM Agents Agentic Commerce",
     type: "paper",
     topic: "Protocol Security",
     year: 2026,
-    desc: "Systematizes security of autonomous agents in commerce settings. Maps OSAA risks in transactional agent deployments.",
-    url: "https://scholar.google.com/scholar?q=SoK%3A%20Security%20of%20Autonomous%20LLM%20Agents%20in%20Agentic%20Commerce"
+    desc: "Surveys the agent protocol (e.g. MCP) security literature. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=SoK%20Security%20Autonomous%20LLM%20Agents%20Agentic%20Commerce"
   },
   {
-    title: "Towards Secure Agent Skills: Architecture and Threat Taxonomy",
+    title: "Towards Secure Agent Skills Architecture Threat Taxonomy Security",
     type: "paper",
     topic: "Protocol Security",
     year: 2026,
-    desc: "Proposes an architecture and threat taxonomy for agent 'skills'. Its threat taxonomy guides OSAA against skill ecosystems.",
-    url: "https://scholar.google.com/scholar?q=Towards%20Secure%20Agent%20Skills%3A%20Architecture%20and%20Threat%20Taxonomy"
+    desc: "A security analysis of agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=Towards%20Secure%20Agent%20Skills%20Architecture%20Threat%20Taxonomy%20Security"
   },
   {
-    title: "Towards Robust and Secure Embodied AI: A Survey of Vulnerabilities and Attacks",
+    title: "Automatic Red Teaming LLM based Agents with Model Context",
+    type: "paper",
+    topic: "Protocol Security",
+    year: 2025,
+    desc: "An autonomous offensive system in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=Automatic%20Red%20Teaming%20LLM%20based%20Agents%20with%20Model%20Context"
+  },
+  {
+    title: "Breaking the Protocol Security Analysis of the Model Context",
+    type: "paper",
+    topic: "Protocol Security",
+    year: 2026,
+    desc: "An attack/vulnerability study in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=Breaking%20the%20Protocol%20Security%20Analysis%20of%20the%20Model%20Context"
+  },
+  {
+    title: "MCPSecBench A Systematic Security Benchmark and Playground for Testing",
+    type: "paper",
+    topic: "Protocol Security",
+    year: 2025,
+    desc: "A benchmark for evaluating agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=MCPSecBench%20A%20Systematic%20Security%20Benchmark%20and%20Playground%20for%20Testing"
+  },
+  {
+    title: "MCPTox A Benchmark for Tool Poisoning Attack on Real",
+    type: "paper",
+    topic: "Protocol Security",
+    year: 2025,
+    desc: "A benchmark for evaluating agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=MCPTox%20A%20Benchmark%20for%20Tool%20Poisoning%20Attack%20on%20Real"
+  },
+  {
+    title: "MCP Security Bench MSB Benchmarking Attacks Against Model Context",
+    type: "paper",
+    topic: "Protocol Security",
+    year: 2025,
+    desc: "A benchmark for evaluating agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=MCP%20Security%20Bench%20MSB%20Benchmarking%20Attacks%20Against%20Model%20Context"
+  },
+  {
+    title: "Systematic Analysis of MCP Security",
+    type: "paper",
+    topic: "Protocol Security",
+    year: 2025,
+    desc: "A security analysis of agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
+    url: "https://scholar.google.com/scholar?q=Systematic%20Analysis%20of%20MCP%20Security"
+  },
+  {
+    title: "Towards Robust Secure Embodied AI Survey Vulnerabilities Attacks",
     type: "paper",
     topic: "Embodied & Robotic Security",
     year: 2025,
-    desc: "Surveys vulnerabilities and attacks on embodied AI systems. Extends OSAA to physical-world agents.",
-    url: "https://scholar.google.com/scholar?q=Towards%20Robust%20and%20Secure%20Embodied%20AI%3A%20A%20Survey%20of%20Vulnerabilities%20and%20Attacks"
+    desc: "Surveys the embodied and robotic agent security literature. It contributes to OSAA by extending agent attacks to the physical world.",
+    url: "https://scholar.google.com/scholar?q=Towards%20Robust%20Secure%20Embodied%20AI%20Survey%20Vulnerabilities%20Attacks"
   },
   {
-    title: "From Prompt to Physical Action: Backdoor Attacks on Embodied Agents",
+    title: "From Prompt to Physical Action Backdoor Attacks Embodied Agents",
     type: "paper",
     topic: "Embodied & Robotic Security",
     year: 2026,
-    desc: "Backdoors that turn prompts into malicious physical actions. Demonstrates OSAA with kinetic, real-world impact.",
-    url: "https://scholar.google.com/scholar?q=From%20Prompt%20to%20Physical%20Action%3A%20Backdoor%20Attacks%20on%20Embodied%20Agents"
+    desc: "An attack/vulnerability study in embodied and robotic agent security. It contributes to OSAA by extending agent attacks to the physical world.",
+    url: "https://scholar.google.com/scholar?q=From%20Prompt%20to%20Physical%20Action%20Backdoor%20Attacks%20Embodied%20Agents"
   },
   {
-    title: "What Breaks Embodied AI: LLM Vulnerabilities Meet Cyber-Physical Flaws",
+    title: "What Breaks Embodied AI Security LLM Vulnerabilities CPS Flaws",
     type: "paper",
     topic: "Embodied & Robotic Security",
     year: 2026,
-    desc: "Analyzes how LLM weaknesses combine with cyber-physical system flaws. Maps compound OSAA risk in embodied systems.",
-    url: "https://scholar.google.com/scholar?q=What%20Breaks%20Embodied%20AI%3A%20LLM%20Vulnerabilities%20Meet%20Cyber-Physical%20Flaws"
+    desc: "An attack/vulnerability study in embodied and robotic agent security. It contributes to OSAA by extending agent attacks to the physical world.",
+    url: "https://scholar.google.com/scholar?q=What%20Breaks%20Embodied%20AI%20Security%20LLM%20Vulnerabilities%20CPS%20Flaws"
   },
   {
-    title: "Security Challenges in AI Agent Deployment (Large-Scale Competition)",
+    title: "ANNIE Be Careful of Your Robots",
     type: "paper",
-    topic: "Additional / Emerging",
+    topic: "Embodied & Robotic Security",
     year: 2025,
-    desc: "Reports security failures from a large-scale agent red-teaming competition. Empirical OSAA evidence at scale, with tens of thousands of successful attacks.",
-    url: "https://scholar.google.com/scholar?q=Security%20Challenges%20in%20AI%20Agent%20Deployment"
+    desc: "A security analysis of embodied and robotic agent security. It contributes to OSAA by extending agent attacks to the physical world.",
+    url: "https://scholar.google.com/scholar?q=ANNIE%20Be%20Careful%20of%20Your%20Robots"
   },
   {
-    title: "Agent-Fence: Mapping Security Vulnerabilities of Deep-Research Agents",
+    title: "ASTRIDE A Security Threat Modeling Platform for Agentic AI",
     type: "paper",
-    topic: "Additional / Emerging",
-    year: 2026,
-    desc: "Systematically maps the vulnerabilities of deep-research agents. An OSAA vulnerability assessment for research agents.",
-    url: "https://scholar.google.com/scholar?q=Agent-Fence%3A%20Mapping%20Security%20Vulnerabilities%20of%20Deep-Research%20Agents"
-  },
-  {
-    title: "Atomicity for Agents: TOCTOU Vulnerabilities in Browser-Use Agents",
-    type: "paper",
-    topic: "Additional / Emerging",
-    year: 2026,
-    desc: "Finds time-of-check/time-of-use race vulnerabilities in browser agents. Introduces a systems-level OSAA bug class for agents.",
-    url: "https://scholar.google.com/scholar?q=Atomicity%20for%20Agents%3A%20TOCTOU%20Vulnerabilities%20in%20Browser-Use%20Agents"
-  },
-  {
-    title: "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents on a Real OS",
-    type: "paper",
-    topic: "Additional / Emerging",
-    year: 2026,
-    desc: "Benchmarks behavioral jailbreaks of agents operating a real OS. OSAA evaluation of OS-level agent compromise.",
-    url: "https://scholar.google.com/scholar?q=LITMUS%3A%20Benchmarking%20Behavioral%20Jailbreaks%20of%20LLM%20Agents%20on%20a%20Real%20OS"
-  },
-  {
-    title: "Security Considerations for Artificial Intelligence Agents",
-    type: "paper",
-    topic: "Additional / Emerging",
-    year: 2026,
-    desc: "Outlines security considerations and risks for AI agents. A reference framing for OSAA scoping.",
-    url: "https://scholar.google.com/scholar?q=Security%20Considerations%20for%20Artificial%20Intelligence%20Agents"
-  },
-  {
-    title: "Stop Fixating on Prompts: Reasoning-Hijacking Red-Teaming of LLM Agents",
-    type: "paper",
-    topic: "Additional / Emerging",
-    year: 2026,
-    desc: "Argues reasoning-level hijacking outperforms prompt-only attacks and red-teams it. Broadens OSAA beyond prompt injection.",
-    url: "https://scholar.google.com/scholar?q=Stop%20Fixating%20on%20Prompts%3A%20Reasoning-Hijacking%20Red-Teaming%20of%20LLM%20Agents"
-  },
-  {
-    title: "Taming OpenClaw: A Security Analysis of Autonomous LLM Agent Threats",
-    type: "paper",
-    topic: "Additional / Emerging",
-    year: 2026,
-    desc: "Security analysis of an autonomous agent's threat profile. A case-study OSAA threat enumeration.",
-    url: "https://scholar.google.com/scholar?q=Taming%20OpenClaw%3A%20A%20Security%20Analysis%20of%20Autonomous%20LLM%20Agent%20Threats"
-  },
-  {
-    title: "Trust No Tool: Evaluating LLM Agents Against Untrusted Feedback",
-    type: "paper",
-    topic: "Additional / Emerging",
-    year: 2026,
-    desc: "Evaluates agent susceptibility to untrusted tool feedback. Characterizes the OSAA untrusted-output attack surface.",
-    url: "https://scholar.google.com/scholar?q=Trust%20No%20Tool%3A%20Evaluating%20LLM%20Agents%20Against%20Untrusted%20Feedback"
-  },
-  {
-    title: "ASTRA: Agentic Steerability and Risk Assessment Framework",
-    type: "paper",
-    topic: "Additional / Emerging",
+    topic: "Threat Modeling",
     year: 2025,
-    desc: "Framework for assessing agent steerability and risk. Supports OSAA risk and vulnerability assessment.",
-    url: "https://scholar.google.com/scholar?q=ASTRA%3A%20Agentic%20Steerability%20and%20Risk%20Assessment%20Framework"
+    desc: "A security analysis of agent threat modeling and risk assessment. It contributes to OSAA by structuring threat models for offensive assessment.",
+    url: "https://scholar.google.com/scholar?q=ASTRIDE%20A%20Security%20Threat%20Modeling%20Platform%20for%20Agentic%20AI"
   },
   {
-    title: "Bridging AI and Software Security: Comparative Vulnerability Assessment of LLM Agent Paradigms",
+    title: "CIA TA Risk Assessment for AI Reasoning Vulnerabilities",
     type: "paper",
-    topic: "Additional / Emerging",
+    topic: "Threat Modeling",
+    year: 2025,
+    desc: "An attack/vulnerability study in agent threat modeling and risk assessment. It contributes to OSAA by structuring threat models for offensive assessment.",
+    url: "https://scholar.google.com/scholar?q=CIA%20TA%20Risk%20Assessment%20for%20AI%20Reasoning%20Vulnerabilities"
+  },
+  {
+    title: "Securing Agentic AI Threat Modeling and Risk Analysis for",
+    type: "paper",
+    topic: "Threat Modeling",
+    year: 2025,
+    desc: "A security analysis of agent threat modeling and risk assessment. It contributes to OSAA by structuring threat models for offensive assessment.",
+    url: "https://scholar.google.com/scholar?q=Securing%20Agentic%20AI%20Threat%20Modeling%20and%20Risk%20Analysis%20for"
+  },
+  {
+    title: "Agent Fence Mapping Security Vulnerabilities Deep Research Agents",
+    type: "paper",
+    topic: "Computer-Use & Web Agents",
     year: 2026,
-    desc: "Compares vulnerability across different LLM-agent design paradigms. Guides OSAA vulnerability assessment across architectures.",
-    url: "https://scholar.google.com/scholar?q=Bridging%20AI%20and%20Software%20Security%3A%20Comparative%20Vulnerability%20Assessment%20of%20LLM%20Agent%20Paradigms"
+    desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
+    url: "https://scholar.google.com/scholar?q=Agent%20Fence%20Mapping%20Security%20Vulnerabilities%20Deep%20Research%20Agents"
+  },
+  {
+    title: "Atomicity Agents TOCTOU Vulnerabilities Browser Use Agents",
+    type: "paper",
+    topic: "Computer-Use & Web Agents",
+    year: 2026,
+    desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
+    url: "https://scholar.google.com/scholar?q=Atomicity%20Agents%20TOCTOU%20Vulnerabilities%20Browser%20Use%20Agents"
+  },
+  {
+    title: "A Systematization of Security Vulnerabilities in Computer Use Agents",
+    type: "paper",
+    topic: "Computer-Use & Web Agents",
+    year: 2025,
+    desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
+    url: "https://scholar.google.com/scholar?q=A%20Systematization%20of%20Security%20Vulnerabilities%20in%20Computer%20Use%20Agents"
+  },
+  {
+    title: "HackWorld Evaluating Computer Use Agents on Exploiting Web Application",
+    type: "paper",
+    topic: "Computer-Use & Web Agents",
+    year: 2025,
+    desc: "A benchmark for evaluating computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
+    url: "https://scholar.google.com/scholar?q=HackWorld%20Evaluating%20Computer%20Use%20Agents%20on%20Exploiting%20Web%20Application"
+  },
+  {
+    title: "SecureWebArena A Holistic Security Evaluation Benchmark for LVLM based",
+    type: "paper",
+    topic: "Computer-Use & Web Agents",
+    year: 2025,
+    desc: "A benchmark for evaluating computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
+    url: "https://scholar.google.com/scholar?q=SecureWebArena%20A%20Holistic%20Security%20Evaluation%20Benchmark%20for%20LVLM%20based"
+  },
+  {
+    title: "WASP Benchmarking Web Agent Security Against Prompt Injection Attacks",
+    type: "paper",
+    topic: "Computer-Use & Web Agents",
+    year: 2025,
+    desc: "A benchmark for evaluating computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
+    url: "https://scholar.google.com/scholar?q=WASP%20Benchmarking%20Web%20Agent%20Security%20Against%20Prompt%20Injection%20Attacks"
+  },
+  {
+    title: "Why Are Web AI Agents More Vulnerable Than Standalone",
+    type: "paper",
+    topic: "Computer-Use & Web Agents",
+    year: 2025,
+    desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
+    url: "https://scholar.google.com/scholar?q=Why%20Are%20Web%20AI%20Agents%20More%20Vulnerable%20Than%20Standalone"
+  },
+  {
+    title: "Security Challenges AI Agent Deployment Large Scale Competition",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Security%20Challenges%20AI%20Agent%20Deployment%20Large%20Scale%20Competition"
+  },
+  {
+    title: "LITMUS Benchmarking Behavioral Jailbreaks LLM Agents Real OS",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2026,
+    desc: "A benchmark for evaluating agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=LITMUS%20Benchmarking%20Behavioral%20Jailbreaks%20LLM%20Agents%20Real%20OS"
+  },
+  {
+    title: "Security Considerations Artificial Intelligence Agents",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2026,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Security%20Considerations%20Artificial%20Intelligence%20Agents"
+  },
+  {
+    title: "Stop Fixating Prompts Reasoning Hijacking RedTeaming LLM Agents",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2026,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Stop%20Fixating%20Prompts%20Reasoning%20Hijacking%20RedTeaming%20LLM%20Agents"
+  },
+  {
+    title: "Taming OpenClaw Security Analysis Autonomous LLM Agent Threats",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2026,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Taming%20OpenClaw%20Security%20Analysis%20Autonomous%20LLM%20Agent%20Threats"
+  },
+  {
+    title: "Trust No Tool Evaluating Defending LLM Agents Untrusted Feedback",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2026,
+    desc: "A benchmark for evaluating agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Trust%20No%20Tool%20Evaluating%20Defending%20LLM%20Agents%20Untrusted%20Feedback"
+  },
+  {
+    title: "ASTRA Agentic Steerability and Risk Assessment Framework",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "An autonomous offensive system in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=ASTRA%20Agentic%20Steerability%20and%20Risk%20Assessment%20Framework"
+  },
+  {
+    title: "Agent Skills in the Wild An Empirical Study of",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2026,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Agent%20Skills%20in%20the%20Wild%20An%20Empirical%20Study%20of"
+  },
+  {
+    title: "Applying Refusal Vector Ablation to Llama 3 1 70B",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2024,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Applying%20Refusal%20Vector%20Ablation%20to%20Llama%203%201%2070B"
+  },
+  {
+    title: "Artificial Intelligence as the New Hacker Developing Agents for",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2024,
+    desc: "An autonomous offensive system in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Artificial%20Intelligence%20as%20the%20New%20Hacker%20Developing%20Agents%20for"
+  },
+  {
+    title: "Breaking Agents Compromising Autonomous LLM Agents Through Malfunction Amplification",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2024,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Breaking%20Agents%20Compromising%20Autonomous%20LLM%20Agents%20Through%20Malfunction%20Amplification"
+  },
+  {
+    title: "Bridging AI Software Security Comparative Vulnerability Assessment LLM Agent Paradigms",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Bridging%20AI%20Software%20Security%20Comparative%20Vulnerability%20Assessment%20LLM%20Agent%20Paradigms"
+  },
+  {
+    title: "DoomArena A framework for Testing AI Agents Against Evolving",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "An autonomous offensive system in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=DoomArena%20A%20framework%20for%20Testing%20AI%20Agents%20Against%20Evolving"
+  },
+  {
+    title: "Get the Agents Drunk Memory Perturbations in Autonomous Agent",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Get%20the%20Agents%20Drunk%20Memory%20Perturbations%20in%20Autonomous%20Agent"
+  },
+  {
+    title: "Image Hijacking Adversarial Images can Control Generative Models at",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2023,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Image%20Hijacking%20Adversarial%20Images%20can%20Control%20Generative%20Models%20at"
+  },
+  {
+    title: "Insights and Current Gaps in Open Source LLM Vulnerability",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2024,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Insights%20and%20Current%20Gaps%20in%20Open%20Source%20LLM%20Vulnerability"
+  },
+  {
+    title: "LibVulnWatch A Deep Assessment Agent System and Leaderboard for",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=LibVulnWatch%20A%20Deep%20Assessment%20Agent%20System%20and%20Leaderboard%20for"
+  },
+  {
+    title: "Quantifying Distributional Robustness of Agentic Tool Selection",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Quantifying%20Distributional%20Robustness%20of%20Agentic%20Tool%20Selection"
+  },
+  {
+    title: "SEAS Self Evolving Adversarial Safety Optimization for Large Language",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2024,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=SEAS%20Self%20Evolving%20Adversarial%20Safety%20Optimization%20for%20Large%20Language"
+  },
+  {
+    title: "Security of AI Agents",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2024,
+    desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=Security%20of%20AI%20Agents"
+  },
+  {
+    title: "TRAP Targeted Redirecting of Agentic Preferences",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2025,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=TRAP%20Targeted%20Redirecting%20of%20Agentic%20Preferences"
+  },
+  {
+    title: "The Silicon Psyche Anthropomorphic Vulnerabilities in Large Language Models",
+    type: "paper",
+    topic: "Misc Attacks & Other",
+    year: 2026,
+    desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
+    url: "https://scholar.google.com/scholar?q=The%20Silicon%20Psyche%20Anthropomorphic%20Vulnerabilities%20in%20Large%20Language%20Models"
   },
 
   /* ---------- GUIDES & WHITEPAPERS ---------- */
