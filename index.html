@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OffensiveAgentic — Offensive Security of Agentic AI</title>
+<meta name="description" content="The open reference for the offensive security of agentic AI: red teaming, penetration testing, vulnerability assessment, evaluation and benchmarking.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> OffensiveAgentic</div>
+    <h1>The offensive security of agentic&nbsp;AI, in one place.</h1>
+    <p class="lede">A curated, growing reference for everyone who red-teams, pentests, evaluates, or breaks AI agents — frameworks, tools, papers, benchmarks, guides and more.</p>
+    <div class="meta">
+      <span><b id="stat-total">0</b> resources</span>
+      <span><b id="stat-types">0</b> categories</span>
+      <span><a href="#mindmap">View the mind map ↓</a></span>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <label class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="search" type="search" placeholder="Search resources, tools, papers, tags…" autocomplete="off">
+    </label>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="count-line" id="count-line"></p>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">No matches. Try a different search or filter.</div>
+
+  <section id="mindmap">
+    <h2 class="section-head">Mind map</h2>
+    <p class="section-sub">The whole field at a glance. Click any node to expand or collapse it; scroll to zoom, drag to pan.</p>
+    <div id="mindmap-wrap">
+      <div class="markmap" data-markmap='{"initialExpandLevel":2,"spacingVertical":8,"spacingHorizontal":90,"paddingX":16,"fitRatio":0.92}'>
+        <script type="text/template">
+# Offensive Security of Agentic AI
+## Core Concepts
+### What is an AI agent
+- LLM + tools + memory + planning loop
+- Autonomy levels
+- Multi-agent systems
+### Why the attack surface differs
+- Tool / function calling
+- Memory & state
+- Multi-step reasoning
+- Inter-agent trust
+## Disciplines
+### Red Teaming
+### Penetration Testing
+### Vulnerability Assessment
+### Evaluation & Benchmarking
+## Threats & Attacks
+### Prompt injection (direct / indirect)
+### Tool misuse & hijacking
+### Memory poisoning
+### Privilege escalation
+### Excessive agency
+### Supply chain (models, plugins, MCP)
+### Multi-agent attacks
+## Frameworks & Standards
+### OWASP Top 10 for Agentic Apps
+### MITRE ATLAS
+### NIST / CAISI
+### CSA Red Teaming Guide
+## Tools
+### Garak
+### PyRIT
+### Promptfoo
+### AgentDojo
+## Process
+### Scoping & rules of engagement
+### Reporting & disclosure
+### Remediation & retesting
+### Continuous red teaming
+        </script>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Open reference · Contributions welcome on
+    <a href="https://github.com/apowfour/Offensive-Security-of-Agentic-AI" target="_blank" rel="noopener">GitHub</a>.
+    To add a resource, edit <code>data.js</code>.
+  </div>
+</footer>
+
+<!-- ===== content ===== -->
+<script src="data.js"></script>
+
+<!-- ===== rendering logic (no need to edit) ===== -->
+<script>
+const TYPE_LABELS = {
+  framework: "Frameworks & Standards",
+  methodology: "Methodologies & Playbooks",
+  tool: "Tools",
+  benchmark: "Benchmarks",
+  paper: "Research Papers",
+  guide: "Guides & Whitepapers",
+  book: "Books",
+  course: "Courses",
+  media: "Talks & Media",
+  blog: "Blogs & Newsletters"
+};
+
+let activeType = "all";
+let query = "";
+
+const grid = document.getElementById("grid");
+const chipsEl = document.getElementById("chips");
+const countLine = document.getElementById("count-line");
+const emptyEl = document.getElementById("empty");
+
+// stats
+document.getElementById("stat-total").textContent = RESOURCES.length;
+const presentTypes = [...new Set(RESOURCES.map(r => r.type))];
+document.getElementById("stat-types").textContent = presentTypes.length;
+
+// build filter chips
+function typeCount(t){ return RESOURCES.filter(r => r.type === t).length; }
+const chipData = [["all","All"]].concat(
+  presentTypes.map(t => [t, (TYPE_LABELS[t]||t)])
+);
+chipsEl.innerHTML = chipData.map(([val,label]) => {
+  const c = val === "all" ? RESOURCES.length : typeCount(val);
+  return `<button class="chip${val==='all'?' active':''}" data-type="${val}">${label}<span class="count">${c}</span></button>`;
+}).join("");
+chipsEl.addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if(!b) return;
+  activeType = b.dataset.type;
+  [...chipsEl.children].forEach(c => c.classList.toggle("active", c===b));
+  render();
+});
+
+// search
+document.getElementById("search").addEventListener("input", e => {
+  query = e.target.value.trim().toLowerCase(); render();
+});
+
+function matches(r){
+  if(activeType !== "all" && r.type !== activeType) return false;
+  if(!query) return true;
+  const hay = [r.title, r.org, r.desc, (r.tags||[]).join(" "), TYPE_LABELS[r.type]||r.type]
+    .join(" ").toLowerCase();
+  return hay.includes(query);
+}
+
+function card(r){
+  const tags = (r.tags||[]).map(t => `<span class="tag">${t}</span>`).join("");
+  const org = [r.org, r.year].filter(Boolean).join(" · ");
+  return `<article class="card">
+    <span class="type">${TYPE_LABELS[r.type]||r.type}</span>
+    <h3><a href="${r.url}" target="_blank" rel="noopener">${r.title}</a></h3>
+    ${org?`<p class="org">${org}</p>`:""}
+    <p class="desc">${r.desc||""}</p>
+    <a class="go" href="${r.url}" target="_blank" rel="noopener">Open <span class="arrow">→</span></a>
+    ${tags?`<div class="tags">${tags}</div>`:""}
+  </article>`;
+}
+
+function render(){
+  const list = RESOURCES.filter(matches);
+  grid.innerHTML = list.map(card).join("");
+  emptyEl.style.display = list.length ? "none" : "block";
+  const label = activeType==="all" ? "" : " in " + (TYPE_LABELS[activeType]||activeType);
+  countLine.textContent = `Showing ${list.length} of ${RESOURCES.length} resources${label}${query?` matching “${query}”`:""}.`;
+}
+render();
+</script>
+
+<!-- ===== mind map (Markmap autoloader from CDN) ===== -->
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18"></script>
+
+</body>
+</html>
