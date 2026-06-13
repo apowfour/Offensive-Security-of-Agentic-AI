@@ -340,6 +340,120 @@ const RESOURCES = [
     tags: ["evaluation", "offensive cyber"]
   },
 
+  {
+    title: "FuzzyAI",
+    type: "tool",
+    org: "CyberArk",
+    desc: "Automated LLM fuzzer that finds jailbreaks and prompt injections across many attack strategies (Crescendo, ASCII smuggling, and more) and providers.",
+    url: "https://github.com/cyberark/FuzzyAI",
+    tags: ["fuzzing", "jailbreak", "red-teaming"]
+  },
+  {
+    title: "redamon",
+    type: "tool",
+    org: "samugit83",
+    desc: "AI-powered agentic red-team framework that automates offensive operations end to end — reconnaissance, exploitation and post-exploitation — with zero human intervention.",
+    url: "https://github.com/samugit83/redamon",
+    tags: ["red-teaming", "autonomous", "pentest"]
+  },
+  {
+    title: "GPTFuzz",
+    type: "tool",
+    org: "sherdencooper",
+    desc: "Red-teams LLMs with auto-generated jailbreak prompts via a fuzzing approach that mutates seed templates.",
+    url: "https://github.com/sherdencooper/GPTFuzz",
+    tags: ["fuzzing", "jailbreak"]
+  },
+  {
+    title: "promptmap",
+    type: "tool",
+    org: "Utku Sen",
+    desc: "Automated prompt-injection scanner that tests LLM apps and system prompts against a library of injection attacks.",
+    url: "https://github.com/utkusen/promptmap",
+    tags: ["scanner", "prompt injection"]
+  },
+  {
+    title: "llm-attacks (GCG)",
+    type: "tool",
+    org: "Zou et al.",
+    desc: "Reference implementation of universal, transferable adversarial suffixes (GCG) that jailbreak aligned LLMs.",
+    url: "https://github.com/llm-attacks/llm-attacks",
+    tags: ["jailbreak", "adversarial"]
+  },
+  {
+    title: "LLMFuzzer",
+    type: "tool",
+    org: "mnns",
+    desc: "Fuzzing framework built specifically for LLM integrations and APIs (archived/unmaintained but a useful reference).",
+    url: "https://github.com/mnns/LLMFuzzer",
+    tags: ["fuzzing"]
+  },
+  {
+    title: "Spikee",
+    type: "tool",
+    org: "Reversec / WithSecure Labs",
+    desc: "Prompt-injection kit for evaluation and exploitation: builds custom test datasets, applies evasion (leetspeak, Unicode smuggling, decomposition) and runs dynamic attacks.",
+    url: "https://github.com/WithSecureLabs/spikee",
+    tags: ["prompt injection", "toolkit", "jailbreak"]
+  },
+  {
+    title: "Mindgard CLI",
+    type: "tool",
+    org: "Mindgard",
+    desc: "Open-source CLI for automated red teaming of LLMs and AI agents with attack scenarios aligned to MITRE ATLAS and the OWASP LLM Top 10.",
+    url: "https://github.com/Mindgard/cli",
+    tags: ["red-teaming", "mitre", "automation"]
+  },
+
+  {
+    title: "Red Teaming Agent (Vectara)",
+    type: "tool",
+    org: "Vectara",
+    desc: "Autonomous red-teaming framework using specialized LLM-powered agents to probe AI systems for vulnerabilities, biases and safety weaknesses.",
+    url: "https://github.com/vectara/red-teaming-agent",
+    tags: ["red-teaming", "autonomous", "agent"]
+  },
+  {
+    title: "Browser-Agent-Red-Teaming",
+    type: "tool",
+    org: "AIM Intelligence",
+    desc: "Red teaming and jailbreaking specifically targeting browser-use agents.",
+    url: "https://github.com/AIM-Intelligence/Browser-Agent-Red-Teaming",
+    tags: ["red-teaming", "browser agent", "jailbreak"]
+  },
+  {
+    title: "Red AI Range (RAR)",
+    type: "tool",
+    org: "ErdemOzgen",
+    desc: "A security platform that builds realistic environments for AI red teaming and vulnerability assessment, with controlled testing scenarios.",
+    url: "https://github.com/ErdemOzgen/RedAiRange",
+    tags: ["red-teaming", "range", "vuln assessment"]
+  },
+  {
+    title: "AI Red Teaming Playground Labs",
+    type: "tool",
+    org: "Microsoft",
+    desc: "Hands-on AI red-teaming challenges and infrastructure from Microsoft's Black Hat training, for practicing attacks on AI systems.",
+    url: "https://github.com/microsoft/AI-Red-Teaming-Playground-Labs",
+    tags: ["red-teaming", "training", "labs"]
+  },
+  {
+    title: "Red Teaming Copilot Studio Agent",
+    type: "tool",
+    org: "Azure-Samples",
+    desc: "AI Red Teaming Agent that assesses Microsoft Copilot Studio agents against adversarial prompt attacks, using PyRIT attack strategies.",
+    url: "https://github.com/Azure-Samples/red-teaming-copilot-studio-agent-modular",
+    tags: ["red-teaming", "copilot", "prompt injection"]
+  },
+  {
+    title: "Microsoft Graph AI Red Team Framework",
+    type: "tool",
+    org: "securelayer7",
+    desc: "Autonomous framework of GPT-4-powered agents that perform intelligent penetration testing against Microsoft Graph API endpoints, from recon to exploitation.",
+    url: "https://github.com/securelayer7/msg-ai-agent",
+    tags: ["pentest", "autonomous", "api"]
+  },
+
   /* ---------- BENCHMARKS & EVALUATION ---------- */
   {
     title: "Agent Security Bench (ASB)",
