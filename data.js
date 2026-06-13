@@ -184,7 +184,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2024,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Personal%20LLM%20Agents%20Capability%20Efficiency%20Security%20Survey"
+    url: "https://arxiv.org/abs/2401.05459"
   },
   {
     title: "Unique Security Privacy Threats LLMs Comprehensive Survey",
@@ -192,7 +192,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2024,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Unique%20Security%20Privacy%20Threats%20LLMs%20Comprehensive%20Survey"
+    url: "https://arxiv.org/abs/2406.07973"
   },
   {
     title: "Agentic AI Security Threats Defenses Evaluation Open Challenges",
@@ -200,7 +200,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "A benchmark for evaluating agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Agentic%20AI%20Security%20Threats%20Defenses%20Evaluation%20Open%20Challenges"
+    url: "https://doi.org/10.1109/ACCESS.2026.3675554"
   },
   {
     title: "Comprehensive Survey LLM Agent Full Stack Safety",
@@ -208,7 +208,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Comprehensive%20Survey%20LLM%20Agent%20Full%20Stack%20Safety"
+    url: "https://arxiv.org/abs/2504.15585"
   },
   {
     title: "Secure MultiLLM Agentic AI ZeroTrust Survey",
@@ -216,7 +216,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Secure%20MultiLLM%20Agentic%20AI%20ZeroTrust%20Survey"
+    url: "https://arxiv.org/abs/2508.19870"
   },
   {
     title: "Survey Agentic Security Applications Threats Defenses",
@@ -224,7 +224,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Survey%20Agentic%20Security%20Applications%20Threats%20Defenses"
+    url: "https://arxiv.org/abs/2510.06445"
   },
   {
     title: "Survey Attacks Large Language Models",
@@ -232,7 +232,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Survey%20Attacks%20Large%20Language%20Models"
+    url: "https://arxiv.org/abs/2505.12567"
   },
   {
     title: "Survey Autonomy Induced Security Risks Large Model Agents",
@@ -240,7 +240,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Survey%20Autonomy%20Induced%20Security%20Risks%20Large%20Model%20Agents"
+    url: "https://arxiv.org/abs/2506.23844"
   },
   {
     title: "From Secure Agentic AI to Secure Agentic Web",
@@ -248,7 +248,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2026,
     desc: "Surveys threats and directions as agents interconnect into an agentic web. Extends the OSAA attack surface to web-scale interactions.",
-    url: "https://scholar.google.com/scholar?q=From%20Secure%20Agentic%20AI%20to%20Secure%20Agentic%20Web"
+    url: "https://arxiv.org/abs/2603.01564"
   },
   {
     title: "SoK Attack Surface Agentic AI Tools Autonomy",
@@ -256,7 +256,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2026,
     desc: "Systematizes how tools and autonomy expand the agent attack surface. The clearest SoK of the OSAA attack surface to date.",
-    url: "https://scholar.google.com/scholar?q=SoK%20Attack%20Surface%20Agentic%20AI%20Tools%20Autonomy"
+    url: "https://arxiv.org/abs/2603.22928"
   },
   {
     title: "Survey Agentic AI Cybersecurity Challenges Opportunities",
@@ -264,7 +264,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2026,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Survey%20Agentic%20AI%20Cybersecurity%20Challenges%20Opportunities"
+    url: "https://arxiv.org/abs/2601.05293"
   },
   {
     title: "Navigating Risks Security Privacy Ethics LLM Agents",
@@ -272,7 +272,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2024,
     desc: "A security analysis of agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Navigating%20Risks%20Security%20Privacy%20Ethics%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2411.09523"
   },
   {
     title: "Emerged Security Privacy LLM Agent Survey Case Studies",
@@ -280,7 +280,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2024,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Emerged%20Security%20Privacy%20LLM%20Agent%20Survey%20Case%20Studies"
+    url: "https://arxiv.org/abs/2407.19354"
   },
   {
     title: "Attack Defense Landscape Agentic AI Comprehensive Survey",
@@ -288,7 +288,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2026,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Attack%20Defense%20Landscape%20Agentic%20AI%20Comprehensive%20Survey"
+    url: "https://arxiv.org/abs/2603.11088"
   },
   {
     title: "Large Model Based Agents Cooperation Paradigms Security Privacy Future Trends",
@@ -296,7 +296,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "A security analysis of agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Large%20Model%20Based%20Agents%20Cooperation%20Paradigms%20Security%20Privacy%20Future%20Trends"
+    url: "https://doi.org/10.1109/COMST.2025.3576176"
   },
   {
     title: "Evaluation Benchmarking LLM Agents Survey",
@@ -304,7 +304,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Evaluation%20Benchmarking%20LLM%20Agents%20Survey"
+    url: "https://arxiv.org/abs/2507.21504"
   },
   {
     title: "TRiSM Agentic AI Trust Risk Security Management LLM MultiAgent Systems",
@@ -312,7 +312,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "A security analysis of agentic AI security. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=TRiSM%20Agentic%20AI%20Trust%20Risk%20Security%20Management%20LLM%20MultiAgent%20Systems"
+    url: "https://arxiv.org/abs/2506.04133"
   },
   {
     title: "Forewarned Forearmed Survey LLM Agents Autonomous Cyberattacks",
@@ -320,7 +320,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Forewarned%20Forearmed%20Survey%20LLM%20Agents%20Autonomous%20Cyberattacks"
+    url: "https://arxiv.org/abs/2505.12786"
   },
   {
     title: "Survey Trustworthy LLM Agents Threats Countermeasures",
@@ -328,7 +328,7 @@ const RESOURCES = [
     topic: "Surveys",
     year: 2025,
     desc: "Surveys the agentic AI security literature. It contributes to OSAA by mapping the offensive landscape against AI agents.",
-    url: "https://scholar.google.com/scholar?q=Survey%20Trustworthy%20LLM%20Agents%20Threats%20Countermeasures"
+    url: "https://arxiv.org/abs/2503.09648"
   },
   {
     title: "Agent SafetyBench Evaluating Safety LLM Agents",
@@ -336,7 +336,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Agent%20SafetyBench%20Evaluating%20Safety%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2412.14470"
   },
   {
     title: "InjecAgent Benchmark Indirect Prompt Injection Tool Integrated",
@@ -344,7 +344,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark for indirect prompt injection against tool-integrated agents. A canonical OSAA benchmark for the highest-impact agent attack.",
-    url: "https://scholar.google.com/scholar?q=InjecAgent%20Benchmark%20Indirect%20Prompt%20Injection%20Tool%20Integrated"
+    url: "https://arxiv.org/abs/2403.02691"
   },
   {
     title: "JAWS BENCH Security Assessment AI Code Agents Jailbreaking",
@@ -352,7 +352,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=JAWS%20BENCH%20Security%20Assessment%20AI%20Code%20Agents%20Jailbreaking"
+    url: "https://arxiv.org/abs/2510.01359"
   },
   {
     title: "JailbreakBench Open Robustness Benchmark Jailbreaking LLMs",
@@ -360,7 +360,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=JailbreakBench%20Open%20Robustness%20Benchmark%20Jailbreaking%20LLMs"
+    url: "https://arxiv.org/abs/2404.01318"
   },
   {
     title: "ST WebAgentBench Benchmark Safety Trustworthiness Web Agents",
@@ -368,7 +368,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=ST%20WebAgentBench%20Benchmark%20Safety%20Trustworthiness%20Web%20Agents"
+    url: "https://arxiv.org/abs/2410.06703"
   },
   {
     title: "SafeAgentBench Benchmark Safe Task Planning Embodied LLM Agents",
@@ -376,7 +376,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=SafeAgentBench%20Benchmark%20Safe%20Task%20Planning%20Embodied%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2412.13178"
   },
   {
     title: "ToolSword Safety Issues LLMs Tool Learning",
@@ -384,7 +384,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A security analysis of agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=ToolSword%20Safety%20Issues%20LLMs%20Tool%20Learning"
+    url: "https://arxiv.org/abs/2402.10753"
   },
   {
     title: "OS HARM Benchmark Safety Computer Use Agents",
@@ -392,7 +392,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=OS%20HARM%20Benchmark%20Safety%20Computer%20Use%20Agents"
+    url: "https://arxiv.org/abs/2506.14866"
   },
   {
     title: "RAS Eval Comprehensive Benchmark LLM Agent Security RealWorld",
@@ -400,7 +400,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=RAS%20Eval%20Comprehensive%20Benchmark%20LLM%20Agent%20Security%20RealWorld"
+    url: "https://arxiv.org/abs/2506.15253"
   },
   {
     title: "AgentNoiseBench Robustness ToolUsing LLM Agents Noisy Conditions",
@@ -408,7 +408,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2026,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=AgentNoiseBench%20Robustness%20ToolUsing%20LLM%20Agents%20Noisy%20Conditions"
+    url: "https://arxiv.org/abs/2602.11348"
   },
   {
     title: "Benchmarking the Robustness of Agentic Systems to Adversarially Induced",
@@ -416,7 +416,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Benchmarking%20the%20Robustness%20of%20Agentic%20Systems%20to%20Adversarially%20Induced"
+    url: "https://arxiv.org/abs/2508.16481"
   },
   {
     title: "AgentHarm Benchmark Measuring Harmfulness LLM Agents",
@@ -424,7 +424,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark measuring how harmful agent behaviors can be elicited (AgentHarm). Quantifies attacker-achievable harm for OSAA.",
-    url: "https://scholar.google.com/scholar?q=AgentHarm%20Benchmark%20Measuring%20Harmfulness%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2410.09024"
   },
   {
     title: "Breaking Agent Backbones Evaluating the Security of Backbone LLMs",
@@ -432,7 +432,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Breaking%20Agent%20Backbones%20Evaluating%20the%20Security%20of%20Backbone%20LLMs"
+    url: "https://arxiv.org/abs/2510.22620"
   },
   {
     title: "CTRL ALT DECEIT Sabotage Evaluations for Automated AI R",
@@ -440,7 +440,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=CTRL%20ALT%20DECEIT%20Sabotage%20Evaluations%20for%20Automated%20AI%20R"
+    url: "https://arxiv.org/abs/2511.09904"
   },
   {
     title: "Creative Adversarial Testing CAT A Novel Framework for Evaluating",
@@ -448,7 +448,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Creative%20Adversarial%20Testing%20CAT%20A%20Novel%20Framework%20for%20Evaluating"
+    url: "https://arxiv.org/abs/2509.23006"
   },
   {
     title: "Cybersecurity AI Benchmark CAIBench A Meta Benchmark for Evaluating",
@@ -456,7 +456,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Cybersecurity%20AI%20Benchmark%20CAIBench%20A%20Meta%20Benchmark%20for%20Evaluating"
+    url: "https://arxiv.org/abs/2510.24317"
   },
   {
     title: "AgentDojo Evaluate Prompt Injection",
@@ -464,7 +464,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A dynamic environment to evaluate prompt-injection attacks and defenses on tool-using agents. A leading OSAA attack/defense harness and benchmark.",
-    url: "https://scholar.google.com/scholar?q=AgentDojo%20Evaluate%20Prompt%20Injection"
+    url: "https://arxiv.org/abs/2406.13352"
   },
   {
     title: "Evaluating Regulating Agentic AI Study of Benchmarks",
@@ -472,7 +472,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2026,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Evaluating%20Regulating%20Agentic%20AI%20Study%20of%20Benchmarks"
+    url: "https://doi.org/10.1016/j.inﬀus.2026.104444"
   },
   {
     title: "FinVault Benchmarking Financial Agent Safety in Execution Grounded Environments",
@@ -480,7 +480,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2026,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=FinVault%20Benchmarking%20Financial%20Agent%20Safety%20in%20Execution%20Grounded%20Environments"
+    url: "https://arxiv.org/abs/2601.07853"
   },
   {
     title: "Mind the Gap Evaluating Model and Agentic Level Vulnerabilities",
@@ -488,7 +488,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Mind%20the%20Gap%20Evaluating%20Model%20and%20Agentic%20Level%20Vulnerabilities"
+    url: "https://arxiv.org/abs/2509.04802"
   },
   {
     title: "OpenAgentSafety A Comprehensive Framework for Evaluating Real World AI",
@@ -496,7 +496,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=OpenAgentSafety%20A%20Comprehensive%20Framework%20for%20Evaluating%20Real%20World%20AI"
+    url: "https://arxiv.org/abs/2507.06134"
   },
   {
     title: "PEAR Planner Executor Agent Robustness Benchmark",
@@ -504,7 +504,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=PEAR%20Planner%20Executor%20Agent%20Robustness%20Benchmark"
+    url: "https://arxiv.org/abs/2510.07505"
   },
   {
     title: "PropensityBench Evaluating Latent Safety Risks in Large Language Models",
@@ -520,7 +520,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=RedCode%20Risky%20Code%20Execution%20and%20Generation%20Benchmark%20for%20Code"
+    url: "https://arxiv.org/abs/2411.07781"
   },
   {
     title: "Security Analysis of Agentic AI Communication Protocols A Comparative",
@@ -528,7 +528,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A security analysis of agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Security%20Analysis%20of%20Agentic%20AI%20Communication%20Protocols%20A%20Comparative"
+    url: "https://arxiv.org/abs/2511.03841"
   },
   {
     title: "Towards Effective Offensive Security LLM Agents Hyperparameter Tuning LLM",
@@ -536,7 +536,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2025,
     desc: "A security analysis of agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://scholar.google.com/scholar?q=Towards%20Effective%20Offensive%20Security%20LLM%20Agents%20Hyperparameter%20Tuning%20LLM"
+    url: "https://arxiv.org/abs/2508.05674"
   },
   {
     title: "ASB Agent Security Bench",
@@ -544,7 +544,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2024,
     desc: "Formalizes agent attack surfaces such as injection and tool misuse (Agent Security Bench). Enables reproducible OSAA evaluation across attack types.",
-    url: "https://scholar.google.com/scholar?q=ASB%20Agent%20Security%20Bench"
+    url: "https://arxiv.org/abs/2410.02644"
   },
   {
     title: "MemoryGraft Persistent Compromise LLM Agents Poisoned Experience",
@@ -552,7 +552,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2024,
     desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=MemoryGraft%20Persistent%20Compromise%20LLM%20Agents%20Poisoned%20Experience"
+    url: "https://arxiv.org/abs/2512.16962"
   },
   {
     title: "Context Manipulation Web Agents Susceptible Corrupted Memory",
@@ -560,7 +560,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2025,
     desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Context%20Manipulation%20Web%20Agents%20Susceptible%20Corrupted%20Memory"
+    url: "https://arxiv.org/abs/2506.17318"
   },
   {
     title: "Les Dissonances CrossTool Harvesting Pool of Tools LLM Agents",
@@ -568,7 +568,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2025,
     desc: "A security analysis of prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Les%20Dissonances%20CrossTool%20Harvesting%20Pool%20of%20Tools%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2504.03111"
   },
   {
     title: "Memory Poisoning Attack Defense Memory Based LLM Agents",
@@ -576,7 +576,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2025,
     desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Memory%20Poisoning%20Attack%20Defense%20Memory%20Based%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2601.05504"
   },
   {
     title: "Simple Prompt Injection Leak Personal Data LLM Agents",
@@ -584,7 +584,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2025,
     desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Simple%20Prompt%20Injection%20Leak%20Personal%20Data%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2506.01055"
   },
   {
     title: "Automating Agent Hijacking Structural Template Injection",
@@ -592,7 +592,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2026,
     desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Automating%20Agent%20Hijacking%20Structural%20Template%20Injection"
+    url: "https://arxiv.org/abs/2602.16958"
   },
   {
     title: "MCP Threat Modeling Tool Poisoning Prompt Injection",
@@ -600,7 +600,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2026,
     desc: "An attack/vulnerability study in prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=MCP%20Threat%20Modeling%20Tool%20Poisoning%20Prompt%20Injection"
+    url: "https://arxiv.org/abs/2603.22489"
   },
   {
     title: "Not What Signed Up For Indirect Prompt Injection",
@@ -608,7 +608,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2023,
     desc: "Seminal paper introducing indirect prompt injection of LLM-integrated applications. Foundational OSAA attack class for tool-using agents.",
-    url: "https://scholar.google.com/scholar?q=Not%20What%20Signed%20Up%20For%20Indirect%20Prompt%20Injection"
+    url: "https://arxiv.org/abs/2302.12173"
   },
   {
     title: "On the Security of Tool Invocation Prompts for LLM",
@@ -616,7 +616,7 @@ const RESOURCES = [
     topic: "Prompt Injection",
     year: 2025,
     desc: "A security analysis of prompt injection against agents. It contributes to OSAA by advancing prompt-injection attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=On%20the%20Security%20of%20Tool%20Invocation%20Prompts%20for%20LLM"
+    url: "https://arxiv.org/abs/2509.05755"
   },
   {
     title: "Jailbreaking Leading Safety Aligned LLMs Simple Adaptive Attacks",
@@ -624,7 +624,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2024,
     desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=Jailbreaking%20Leading%20Safety%20Aligned%20LLMs%20Simple%20Adaptive%20Attacks"
+    url: "https://arxiv.org/abs/2404.02151"
   },
   {
     title: "BadThink Triggered Overthinking Attacks CoT Reasoning LLMs",
@@ -632,7 +632,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2025,
     desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=BadThink%20Triggered%20Overthinking%20Attacks%20CoT%20Reasoning%20LLMs"
+    url: "https://arxiv.org/abs/2511.10714"
   },
   {
     title: "Jailbreaking to Jailbreak Autonomous Agent Red Teaming",
@@ -640,7 +640,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2025,
     desc: "An autonomous offensive system in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=Jailbreaking%20to%20Jailbreak%20Autonomous%20Agent%20Red%20Teaming"
+    url: "https://arxiv.org/abs/2502.09638"
   },
   {
     title: "ShadowCoT Cognitive Hijacking Stealthy Reasoning Backdoors",
@@ -648,7 +648,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2025,
     desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=ShadowCoT%20Cognitive%20Hijacking%20Stealthy%20Reasoning%20Backdoors"
+    url: "https://arxiv.org/abs/2504.05605"
   },
   {
     title: "Reasoning Hijacking Constraint Tightening RedTeaming LLM Agents",
@@ -656,7 +656,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2026,
     desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=Reasoning%20Hijacking%20Constraint%20Tightening%20RedTeaming%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2604.05549"
   },
   {
     title: "AmpleGCG Learning a Universal and Transferable Generative Model of",
@@ -664,7 +664,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2024,
     desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=AmpleGCG%20Learning%20a%20Universal%20and%20Transferable%20Generative%20Model%20of"
+    url: "https://arxiv.org/abs/2404.07921"
   },
   {
     title: "AutoDAN Turbo A Lifelong Agent for Strategy Self Exploration",
@@ -672,7 +672,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2024,
     desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=AutoDAN%20Turbo%20A%20Lifelong%20Agent%20for%20Strategy%20Self%20Exploration"
+    url: "https://arxiv.org/abs/2410.05295"
   },
   {
     title: "PAIR Jailbreaking Black Box LLMs Few Queries",
@@ -680,7 +680,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2023,
     desc: "A query-efficient automated black-box jailbreak (PAIR). An efficient OSAA jailbreak primitive.",
-    url: "https://scholar.google.com/scholar?q=PAIR%20Jailbreaking%20Black%20Box%20LLMs%20Few%20Queries"
+    url: "https://arxiv.org/abs/2310.08419"
   },
   {
     title: "How Johnny Can Persuade LLMs to Jailbreak Them Rethinking",
@@ -688,7 +688,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2024,
     desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=How%20Johnny%20Can%20Persuade%20LLMs%20to%20Jailbreak%20Them%20Rethinking"
+    url: "https://arxiv.org/abs/2401.06373"
   },
   {
     title: "Jailbreak Zero A Path to Pareto Optimal Red Teaming",
@@ -696,7 +696,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2026,
     desc: "An autonomous offensive system in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=Jailbreak%20Zero%20A%20Path%20to%20Pareto%20Optimal%20Red%20Teaming"
+    url: "https://arxiv.org/abs/2601.03265"
   },
   {
     title: "LLM Defenses Are Not Robust to Multi Turn Human",
@@ -704,7 +704,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2024,
     desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=LLM%20Defenses%20Are%20Not%20Robust%20to%20Multi%20Turn%20Human"
+    url: "https://arxiv.org/abs/2408.15221"
   },
   {
     title: "AutoDAN Generating Stealthy Jailbreak Prompts",
@@ -712,7 +712,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2024,
     desc: "Automatically generates stealthy, readable jailbreak prompts (AutoDAN). Automated OSAA prompt-attack generation.",
-    url: "https://scholar.google.com/scholar?q=AutoDAN%20Generating%20Stealthy%20Jailbreak%20Prompts"
+    url: "https://arxiv.org/abs/2310.04451"
   },
   {
     title: "STAC When Innocent Tools Form Dangerous Chains to Jailbreak",
@@ -720,7 +720,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2025,
     desc: "An attack/vulnerability study in LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=STAC%20When%20Innocent%20Tools%20Form%20Dangerous%20Chains%20to%20Jailbreak"
+    url: "https://arxiv.org/abs/2509.25624"
   },
   {
     title: "TextBugger Generating Adversarial Text Against Real world Applications",
@@ -728,7 +728,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2018,
     desc: "A security analysis of LLM and agent jailbreaking. It contributes to OSAA by strengthening jailbreak techniques used against agents.",
-    url: "https://scholar.google.com/scholar?q=TextBugger%20Generating%20Adversarial%20Text%20Against%20Real%20world%20Applications"
+    url: "https://arxiv.org/abs/1812.05271"
   },
   {
     title: "Tree of Attacks Jailbreaking Black Box LLMs Automatically",
@@ -736,7 +736,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2023,
     desc: "Automatically jailbreaks black-box LLMs via a tree search of attacks (TAP). A strong automated OSAA jailbreak method.",
-    url: "https://scholar.google.com/scholar?q=Tree%20of%20Attacks%20Jailbreaking%20Black%20Box%20LLMs%20Automatically"
+    url: "https://arxiv.org/abs/2312.02119"
   },
   {
     title: "Universal Transferable Adversarial Attacks GCG",
@@ -744,7 +744,7 @@ const RESOURCES = [
     topic: "Jailbreaking",
     year: 2023,
     desc: "Introduces transferable adversarial suffixes (GCG) that jailbreak aligned LLMs. A foundational transferable attack underpinning OSAA.",
-    url: "https://scholar.google.com/scholar?q=Universal%20Transferable%20Adversarial%20Attacks%20GCG"
+    url: "https://arxiv.org/abs/2307.15043"
   },
   {
     title: "AgentPoison RedTeaming LLM Agents Poisoning Memory",
@@ -752,7 +752,7 @@ const RESOURCES = [
     topic: "Backdoor & Poisoning",
     year: 2024,
     desc: "Red-teams agents by poisoning their memory or knowledge base (AgentPoison). A landmark OSAA memory-poisoning attack.",
-    url: "https://scholar.google.com/scholar?q=AgentPoison%20RedTeaming%20LLM%20Agents%20Poisoning%20Memory"
+    url: "https://arxiv.org/abs/2407.12784"
   },
   {
     title: "BadAgent Inserting Activating Backdoor Attacks LLM Agents",
@@ -760,7 +760,7 @@ const RESOURCES = [
     topic: "Backdoor & Poisoning",
     year: 2024,
     desc: "Inserts and triggers backdoors in LLM agents (BadAgent). Demonstrates agent-level backdoors for OSAA.",
-    url: "https://scholar.google.com/scholar?q=BadAgent%20Inserting%20Activating%20Backdoor%20Attacks%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2406.03007"
   },
   {
     title: "Survey Backdoor Attacks Defenses Large Language Models",
@@ -768,7 +768,7 @@ const RESOURCES = [
     topic: "Backdoor & Poisoning",
     year: 2024,
     desc: "Surveys the agent backdoors and poisoning literature. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Survey%20Backdoor%20Attacks%20Defenses%20Large%20Language%20Models"
+    url: "https://arxiv.org/abs/2406.06852"
   },
   {
     title: "Watch Out Agents Backdoor Threats LLM Based Agents",
@@ -776,7 +776,7 @@ const RESOURCES = [
     topic: "Backdoor & Poisoning",
     year: 2024,
     desc: "An attack/vulnerability study in agent backdoors and poisoning. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Watch%20Out%20Agents%20Backdoor%20Threats%20LLM%20Based%20Agents"
+    url: "https://arxiv.org/abs/2402.11208"
   },
   {
     title: "SupplyChain Poisoning LLM Coding Agent Skill Ecosystems",
@@ -784,7 +784,7 @@ const RESOURCES = [
     topic: "Backdoor & Poisoning",
     year: 2026,
     desc: "An attack/vulnerability study in agent backdoors and poisoning. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=SupplyChain%20Poisoning%20LLM%20Coding%20Agent%20Skill%20Ecosystems"
+    url: "https://arxiv.org/abs/2604.03081"
   },
   {
     title: "Sleeper Agents Training Deceptive LLMs Safety Training",
@@ -792,7 +792,7 @@ const RESOURCES = [
     topic: "Backdoor & Poisoning",
     year: 2024,
     desc: "Shows backdoored 'sleeper' models survive safety training. Demonstrates a persistent deceptive-agent threat for OSAA.",
-    url: "https://scholar.google.com/scholar?q=Sleeper%20Agents%20Training%20Deceptive%20LLMs%20Safety%20Training"
+    url: "https://arxiv.org/abs/2401.05566"
   },
   {
     title: "Malice in Agentland Down the Rabbit Hole of Backdoors",
@@ -800,7 +800,7 @@ const RESOURCES = [
     topic: "Backdoor & Poisoning",
     year: 2025,
     desc: "An attack/vulnerability study in agent backdoors and poisoning. It contributes to OSAA by demonstrating backdoor and poisoning attacks on agents.",
-    url: "https://scholar.google.com/scholar?q=Malice%20in%20Agentland%20Down%20the%20Rabbit%20Hole%20of%20Backdoors"
+    url: "https://arxiv.org/abs/2510.05159"
   },
   {
     title: "Targeting Core Attack RAG Agents Direct LLM Manipulation",
@@ -808,7 +808,7 @@ const RESOURCES = [
     topic: "RAG Security",
     year: 2024,
     desc: "An attack/vulnerability study in retrieval-augmented agent attacks. It contributes to OSAA by exposing attacks on retrieval-augmented agents.",
-    url: "https://scholar.google.com/scholar?q=Targeting%20Core%20Attack%20RAG%20Agents%20Direct%20LLM%20Manipulation"
+    url: "https://arxiv.org/abs/2412.04415"
   },
   {
     title: "Unveiling Privacy Risks LLM Agent Memory",
@@ -816,7 +816,7 @@ const RESOURCES = [
     topic: "RAG Security",
     year: 2025,
     desc: "A security analysis of retrieval-augmented agent attacks. It contributes to OSAA by exposing attacks on retrieval-augmented agents.",
-    url: "https://scholar.google.com/scholar?q=Unveiling%20Privacy%20Risks%20LLM%20Agent%20Memory"
+    url: "https://arxiv.org/abs/2502.13172"
   },
   {
     title: "Securing RAG Taxonomy Attacks Defenses Future Directions",
@@ -824,7 +824,7 @@ const RESOURCES = [
     topic: "RAG Security",
     year: 2026,
     desc: "An attack/vulnerability study in retrieval-augmented agent attacks. It contributes to OSAA by exposing attacks on retrieval-augmented agents.",
-    url: "https://scholar.google.com/scholar?q=Securing%20RAG%20Taxonomy%20Attacks%20Defenses%20Future%20Directions"
+    url: "https://arxiv.org/abs/2604.08304"
   },
   {
     title: "Extending OWASP MultiAgentic System Threat Modeling Guide",
@@ -832,7 +832,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=Extending%20OWASP%20MultiAgentic%20System%20Threat%20Modeling%20Guide"
+    url: "https://arxiv.org/abs/2508.09815"
   },
   {
     title: "MultiAgent Systems Execute Arbitrary Malicious Code",
@@ -840,7 +840,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=MultiAgent%20Systems%20Execute%20Arbitrary%20Malicious%20Code"
+    url: "https://arxiv.org/abs/2503.12188"
   },
   {
     title: "Open Challenges MultiAgent Security Secure Systems AI Agents",
@@ -848,7 +848,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=Open%20Challenges%20MultiAgent%20Security%20Secure%20Systems%20AI%20Agents"
+    url: "https://arxiv.org/abs/2505.02077"
   },
   {
     title: "Security Internet of Agents Attacks Countermeasures",
@@ -856,7 +856,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "An attack/vulnerability study in multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=Security%20Internet%20of%20Agents%20Attacks%20Countermeasures"
+    url: "https://arxiv.org/abs/2505.08807"
   },
   {
     title: "Exposing Weak Links in Multi Agent Systems under Adversarial",
@@ -864,7 +864,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=Exposing%20Weak%20Links%20in%20Multi%20Agent%20Systems%20under%20Adversarial"
+    url: "https://arxiv.org/abs/2511.10949"
   },
   {
     title: "MultiFuzz A Dense Retrieval based Multi Agent System for",
@@ -872,7 +872,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=MultiFuzz%20A%20Dense%20Retrieval%20based%20Multi%20Agent%20System%20for"
+    url: "https://arxiv.org/abs/2508.14300"
   },
   {
     title: "Multi Agent Security Tax Trading Off Security and Collaboration",
@@ -880,7 +880,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A security analysis of multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=Multi%20Agent%20Security%20Tax%20Trading%20Off%20Security%20and%20Collaboration"
+    url: "https://arxiv.org/abs/2502.19145"
   },
   {
     title: "TAMAS Benchmarking Adversarial Risks in Multi Agent LLM Systems",
@@ -888,7 +888,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A benchmark for evaluating multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=TAMAS%20Benchmarking%20Adversarial%20Risks%20in%20Multi%20Agent%20LLM%20Systems"
+    url: "https://arxiv.org/abs/2511.05269"
   },
   {
     title: "Towards Unifying Quantitative Security Benchmarking for Multi Agent Systems",
@@ -896,7 +896,7 @@ const RESOURCES = [
     topic: "Multi-Agent Security",
     year: 2025,
     desc: "A benchmark for evaluating multi-agent system attacks. It contributes to OSAA by revealing attacks across multi-agent systems.",
-    url: "https://scholar.google.com/scholar?q=Towards%20Unifying%20Quantitative%20Security%20Benchmarking%20for%20Multi%20Agent%20Systems"
+    url: "https://arxiv.org/abs/2507.21146"
   },
   {
     title: "PentestAgent LLM Agents Automated Penetration Testing",
@@ -904,7 +904,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2024,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=PentestAgent%20LLM%20Agents%20Automated%20Penetration%20Testing"
+    url: "https://arxiv.org/abs/2411.05185"
   },
   {
     title: "AutoPentester LLM Agent Framework Automated Pentesting",
@@ -912,7 +912,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=AutoPentester%20LLM%20Agent%20Framework%20Automated%20Pentesting"
+    url: "https://arxiv.org/abs/2510.05605"
   },
   {
     title: "Cybersecurity AI OT AI Top10 Ranker Dragos OT CTF",
@@ -920,7 +920,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=Cybersecurity%20AI%20OT%20AI%20Top10%20Ranker%20Dragos%20OT%20CTF"
+    url: "https://arxiv.org/abs/2511.05119"
   },
   {
     title: "Dynamic Risk Assessments Offensive Cybersecurity Agents",
@@ -928,7 +928,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=Dynamic%20Risk%20Assessments%20Offensive%20Cybersecurity%20Agents"
+    url: "https://arxiv.org/abs/2505.18384"
   },
   {
     title: "xOffense AI Driven Autonomous Penetration Testing MultiAgent",
@@ -936,7 +936,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=xOffense%20AI%20Driven%20Autonomous%20Penetration%20Testing%20MultiAgent"
+    url: "https://arxiv.org/abs/2509.13021"
   },
   {
     title: "To Defend Against Cyber Attacks Teach AI Agents to Hack",
@@ -944,7 +944,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2026,
     desc: "An attack/vulnerability study in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=To%20Defend%20Against%20Cyber%20Attacks%20Teach%20AI%20Agents%20to%20Hack"
+    url: "https://arxiv.org/abs/2602.02595"
   },
   {
     title: "AutoPenBench A Vulnerability Testing Benchmark for Generative Agents",
@@ -952,7 +952,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2024,
     desc: "A benchmark for evaluating autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=AutoPenBench%20A%20Vulnerability%20Testing%20Benchmark%20for%20Generative%20Agents"
+    url: "https://arxiv.org/abs/2410.03225"
   },
   {
     title: "BreachSeek A Multi Agent Automated Penetration Tester",
@@ -960,7 +960,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2024,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=BreachSeek%20A%20Multi%20Agent%20Automated%20Penetration%20Tester"
+    url: "https://arxiv.org/abs/2409.03789"
   },
   {
     title: "CAI An Open Bug Bounty Ready Cybersecurity AI",
@@ -968,7 +968,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=CAI%20An%20Open%20Bug%20Bounty%20Ready%20Cybersecurity%20AI"
+    url: "https://arxiv.org/abs/2504.06017"
   },
   {
     title: "CIPHER Cybersecurity Intelligent Penetration testing Helper for Ethical Researcher",
@@ -976,7 +976,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2024,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=CIPHER%20Cybersecurity%20Intelligent%20Penetration%20testing%20Helper%20for%20Ethical%20Researcher"
+    url: "https://arxiv.org/abs/2408.11650"
   },
   {
     title: "RedTeamLLM Agentic AI Framework Offensive Security",
@@ -984,7 +984,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "An agentic framework orchestrating offensive-security tasks (RedTeamLLM). A direct OSAA red-team automation framework.",
-    url: "https://scholar.google.com/scholar?q=RedTeamLLM%20Agentic%20AI%20Framework%20Offensive%20Security"
+    url: "https://arxiv.org/abs/2505.06913"
   },
   {
     title: "Collaborative penetration testing suite for emerging generative AI algorithms",
@@ -1000,7 +1000,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "A security analysis of autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=Comparing%20AI%20Agents%20to%20Cybersecurity%20Professionals%20in%20Real%20World"
+    url: "https://arxiv.org/abs/2512.09882"
   },
   {
     title: "PentestGPT LLM Empowered Automatic Penetration Testing",
@@ -1008,7 +1008,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2024,
     desc: "An influential LLM-driven automated penetration-testing tool (PentestGPT). A foundational OSAA offensive agent.",
-    url: "https://scholar.google.com/scholar?q=PentestGPT%20LLM%20Empowered%20Automatic%20Penetration%20Testing"
+    url: "https://arxiv.org/abs/2308.06782"
   },
   {
     title: "HackSynth LLM Agent and Evaluation Framework for Autonomous Penetration",
@@ -1016,7 +1016,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2024,
     desc: "A benchmark for evaluating autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=HackSynth%20LLM%20Agent%20and%20Evaluation%20Framework%20for%20Autonomous%20Penetration"
+    url: "https://arxiv.org/abs/2412.01778"
   },
   {
     title: "Multi agent penetration testing AI for the web",
@@ -1024,7 +1024,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=Multi%20agent%20penetration%20testing%20AI%20for%20the%20web"
+    url: "https://arxiv.org/abs/2508.20816"
   },
   {
     title: "Penetration Testing of Agentic AI A Comparative Security Analysis",
@@ -1032,7 +1032,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=Penetration%20Testing%20of%20Agentic%20AI%20A%20Comparative%20Security%20Analysis"
+    url: "https://arxiv.org/abs/2512.14860"
   },
   {
     title: "Shell or Nothing Real World Benchmarks and Memory Activated",
@@ -1040,7 +1040,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "A benchmark for evaluating autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=Shell%20or%20Nothing%20Real%20World%20Benchmarks%20and%20Memory%20Activated"
+    url: "https://arxiv.org/abs/2509.09207"
   },
   {
     title: "VulnBot Autonomous Penetration Testing for A Multi Agent Collaborative",
@@ -1048,7 +1048,7 @@ const RESOURCES = [
     topic: "Pentesting Frameworks",
     year: 2025,
     desc: "An autonomous offensive system in autonomous penetration testing. It contributes to OSAA by automating offensive penetration testing with agents.",
-    url: "https://scholar.google.com/scholar?q=VulnBot%20Autonomous%20Penetration%20Testing%20for%20A%20Multi%20Agent%20Collaborative"
+    url: "https://arxiv.org/abs/2501.13411"
   },
   {
     title: "AgentAuditor Human Level Safety Security Evaluation LLM Agents",
@@ -1056,7 +1056,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=AgentAuditor%20Human%20Level%20Safety%20Security%20Evaluation%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2506.00641"
   },
   {
     title: "Hiding AI Traffic Abusing MCP LLM Powered Agentic RedTeaming",
@@ -1064,7 +1064,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=Hiding%20AI%20Traffic%20Abusing%20MCP%20LLM%20Powered%20Agentic%20RedTeaming"
+    url: "https://arxiv.org/abs/2511.15998"
   },
   {
     title: "SIRAJ Diverse Efficient RedTeaming LLM Agents Distilled Reasoning",
@@ -1072,7 +1072,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=SIRAJ%20Diverse%20Efficient%20RedTeaming%20LLM%20Agents%20Distilled%20Reasoning"
+    url: "https://arxiv.org/abs/2510.26037"
   },
   {
     title: "PISmith RL Based RedTeaming Prompt Injection Defenses",
@@ -1080,7 +1080,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2026,
     desc: "An attack/vulnerability study in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=PISmith%20RL%20Based%20RedTeaming%20Prompt%20Injection%20Defenses"
+    url: "https://arxiv.org/abs/2603.13026"
   },
   {
     title: "RedTeaming Framework Evaluating Robustness AI Security Orchestration",
@@ -1088,7 +1088,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2026,
     desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=RedTeaming%20Framework%20Evaluating%20Robustness%20AI%20Security%20Orchestration"
+    url: "https://arxiv.org/abs/2605.17075"
   },
   {
     title: "AGENTVIGIL Automatic BlackBox RedTeaming Indirect Prompt Injection LLM Agents",
@@ -1104,7 +1104,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2024,
     desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=ALERT%20A%20Comprehensive%20Benchmark%20for%20Assessing%20Large%20Language%20Models"
+    url: "https://arxiv.org/abs/2404.08676"
   },
   {
     title: "ARMs Adaptive Red Teaming Agent against Multimodal Models with",
@@ -1112,7 +1112,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=ARMs%20Adaptive%20Red%20Teaming%20Agent%20against%20Multimodal%20Models%20with"
+    url: "https://arxiv.org/abs/2510.02677"
   },
   {
     title: "ASTRA Autonomous Spatial Temporal Red teaming for AI Software",
@@ -1120,7 +1120,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=ASTRA%20Autonomous%20Spatial%20Temporal%20Red%20teaming%20for%20AI%20Software"
+    url: "https://arxiv.org/abs/2508.03936"
   },
   {
     title: "Against The Achilles Heel A Survey on Red Teaming",
@@ -1128,7 +1128,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2024,
     desc: "Surveys the agent red teaming literature. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=Against%20The%20Achilles%20Heel%20A%20Survey%20on%20Red%20Teaming"
+    url: "https://arxiv.org/abs/2404.00629"
   },
   {
     title: "AgentXploit End to End Red Teaming for AI Agents",
@@ -1136,7 +1136,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=AgentXploit%20End%20to%20End%20Red%20Teaming%20for%20AI%20Agents"
+    url: "https://arxiv.org/abs/2505.05849"
   },
   {
     title: "AutoODD Agentic Audits via Bayesian Red Teaming in Black",
@@ -1144,7 +1144,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=AutoODD%20Agentic%20Audits%20via%20Bayesian%20Red%20Teaming%20in%20Black"
+    url: "https://arxiv.org/abs/2509.08638"
   },
   {
     title: "AutoRedTeamer Autonomous Red Teaming with Lifelong Attack Integration",
@@ -1152,7 +1152,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=AutoRedTeamer%20Autonomous%20Red%20Teaming%20with%20Lifelong%20Attack%20Integration"
+    url: "https://arxiv.org/abs/2503.15754"
   },
   {
     title: "Automated Red Teaming with GOAT the Generative Offensive Agent",
@@ -1160,7 +1160,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2024,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=Automated%20Red%20Teaming%20with%20GOAT%20the%20Generative%20Offensive%20Agent"
+    url: "https://arxiv.org/abs/2410.01606"
   },
   {
     title: "BlueCodeAgent A Blue Teaming Agent Enabled by Automated Red",
@@ -1168,7 +1168,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=BlueCodeAgent%20A%20Blue%20Teaming%20Agent%20Enabled%20by%20Automated%20Red"
+    url: "https://arxiv.org/abs/2510.18131"
   },
   {
     title: "Genesis Evolving Attack Strategies for LLM Web Agent Red",
@@ -1176,7 +1176,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An attack/vulnerability study in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=Genesis%20Evolving%20Attack%20Strategies%20for%20LLM%20Web%20Agent%20Red"
+    url: "https://arxiv.org/abs/2510.18314"
   },
   {
     title: "HarmBench A Standardized Evaluation Framework for Automated Red Teaming",
@@ -1184,7 +1184,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2024,
     desc: "A standardized evaluation framework for automated red teaming (HarmBench). Standardizes OSAA red-team measurement.",
-    url: "https://scholar.google.com/scholar?q=HarmBench%20A%20Standardized%20Evaluation%20Framework%20for%20Automated%20Red%20Teaming"
+    url: "https://arxiv.org/abs/2402.04249"
   },
   {
     title: "Holistic Automated Red Teaming for Large Language Models through",
@@ -1192,7 +1192,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2024,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=Holistic%20Automated%20Red%20Teaming%20for%20Large%20Language%20Models%20through"
+    url: "https://arxiv.org/abs/2409.16783"
   },
   {
     title: "Lessons From Red Teaming 100 Generative AI Products eBook",
@@ -1208,7 +1208,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=Mind%20the%20Gap%20Comparing%20Model%20vs%20Agentic%20Level%20Red"
+    url: "https://arxiv.org/abs/2509.17259"
   },
   {
     title: "OpenAI's Approach to External Red Teaming",
@@ -1216,7 +1216,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=OpenAI%27s%20Approach%20to%20External%20Red%20Teaming"
+    url: "https://arxiv.org/abs/2503.16431"
   },
   {
     title: "OpenRT An Open Source Red Teaming Framework for Multimodal",
@@ -1224,7 +1224,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2026,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=OpenRT%20An%20Open%20Source%20Red%20Teaming%20Framework%20for%20Multimodal"
+    url: "https://arxiv.org/abs/2601.01592"
   },
   {
     title: "PyRIT A Framework for Security Risk Identification and Red",
@@ -1232,7 +1232,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2024,
     desc: "Presents PyRIT, a framework for security-risk identification and red teaming of generative AI. A widely used OSAA red-teaming toolkit.",
-    url: "https://scholar.google.com/scholar?q=PyRIT%20A%20Framework%20for%20Security%20Risk%20Identification%20and%20Red"
+    url: "https://arxiv.org/abs/2410.02828"
   },
   {
     title: "Red Teaming AI Red Teaming",
@@ -1240,7 +1240,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=Red%20Teaming%20AI%20Red%20Teaming"
+    url: "https://arxiv.org/abs/2507.05538"
   },
   {
     title: "RedAgent Red Teaming Large Language Models with Context aware",
@@ -1248,7 +1248,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2024,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=RedAgent%20Red%20Teaming%20Large%20Language%20Models%20with%20Context%20aware"
+    url: "https://arxiv.org/abs/2407.16667"
   },
   {
     title: "RedBench A Universal Dataset for Comprehensive Red Teaming of",
@@ -1256,7 +1256,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2026,
     desc: "A benchmark for evaluating agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=RedBench%20A%20Universal%20Dataset%20for%20Comprehensive%20Red%20Teaming%20of"
+    url: "https://arxiv.org/abs/2601.03699"
   },
   {
     title: "RedCodeAgent Automatic Red teaming Agent against Diverse Code Agents",
@@ -1264,7 +1264,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=RedCodeAgent%20Automatic%20Red%20teaming%20Agent%20against%20Diverse%20Code%20Agents"
+    url: "https://arxiv.org/abs/2510.02609"
   },
   {
     title: "RedTeamCUA Realistic Adversarial Testing of Computer Use Agents in",
@@ -1272,7 +1272,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "A security analysis of agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=RedTeamCUA%20Realistic%20Adversarial%20Testing%20of%20Computer%20Use%20Agents%20in"
+    url: "https://arxiv.org/abs/2505.21936"
   },
   {
     title: "Red Teaming LLM MultiAgent Systems via Communication Attacks",
@@ -1288,7 +1288,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=SafeSearch%20Automated%20Red%20Teaming%20for%20the%20Safety%20of%20LLM"
+    url: "https://arxiv.org/abs/2509.23694"
   },
   {
     title: "The Automation Advantage in AI Red Teaming",
@@ -1296,7 +1296,7 @@ const RESOURCES = [
     topic: "Red Teaming",
     year: 2025,
     desc: "An autonomous offensive system in agent red teaming. It contributes to OSAA by advancing automated red teaming of agents.",
-    url: "https://scholar.google.com/scholar?q=The%20Automation%20Advantage%20in%20AI%20Red%20Teaming"
+    url: "https://arxiv.org/abs/2504.19855"
   },
   {
     title: "A Framework for Evaluating Emerging Cyberattack Capabilities of AI",
@@ -1304,7 +1304,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2025,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=A%20Framework%20for%20Evaluating%20Emerging%20Cyberattack%20Capabilities%20of%20AI"
+    url: "https://arxiv.org/abs/2503.11917"
   },
   {
     title: "CVE bench a benchmark for AI agents ability to",
@@ -1312,7 +1312,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2025,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=CVE%20bench%20a%20benchmark%20for%20AI%20agents%20ability%20to"
+    url: "https://arxiv.org/abs/2503.17332"
   },
   {
     title: "Catastrophic Cyber Capabilities Benchmark 3CB Robustly Evaluating LLM Agent",
@@ -1320,7 +1320,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2024,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=Catastrophic%20Cyber%20Capabilities%20Benchmark%203CB%20Robustly%20Evaluating%20LLM%20Agent"
+    url: "https://arxiv.org/abs/2410.09114"
   },
   {
     title: "Cybench A Framework for Evaluating Cybersecurity Capabilities and Risk",
@@ -1328,7 +1328,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2024,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=Cybench%20A%20Framework%20for%20Evaluating%20Cybersecurity%20Capabilities%20and%20Risk"
+    url: "https://arxiv.org/abs/2408.08926"
   },
   {
     title: "CyberSecurity AI Evaluating agentic cybersecurity in attack defense CTFs",
@@ -1336,7 +1336,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2025,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=CyberSecurity%20AI%20Evaluating%20agentic%20cybersecurity%20in%20attack%20defense%20CTFs"
+    url: "https://arxiv.org/abs/2510.17521"
   },
   {
     title: "LLM Agents Autonomously Hack Websites",
@@ -1344,7 +1344,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2024,
     desc: "Demonstrates LLM agents autonomously exploiting real websites. A landmark proof of autonomous OSAA capability.",
-    url: "https://scholar.google.com/scholar?q=LLM%20Agents%20Autonomously%20Hack%20Websites"
+    url: "https://arxiv.org/abs/2402.06664"
   },
   {
     title: "Teams LLM Agents Exploit ZeroDay Vulnerabilities",
@@ -1352,7 +1352,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2024,
     desc: "Shows teams of agents exploiting zero-day vulnerabilities. Escalates OSAA to coordinated zero-day exploitation.",
-    url: "https://scholar.google.com/scholar?q=Teams%20LLM%20Agents%20Exploit%20ZeroDay%20Vulnerabilities"
+    url: "https://arxiv.org/abs/2406.01637"
   },
   {
     title: "LLM Agents can Autonomously Exploit One day Vulnerabilities",
@@ -1360,7 +1360,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2024,
     desc: "An autonomous offensive system in autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=LLM%20Agents%20can%20Autonomously%20Exploit%20One%20day%20Vulnerabilities"
+    url: "https://arxiv.org/abs/2404.08144"
   },
   {
     title: "OCCULT Evaluating Large Language Models for Offensive Cyber Operation",
@@ -1368,7 +1368,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2025,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=OCCULT%20Evaluating%20Large%20Language%20Models%20for%20Offensive%20Cyber%20Operation"
+    url: "https://arxiv.org/abs/2502.15797"
   },
   {
     title: "PACEbench A Framework for Evaluating Practical AI Cyber Exploitation",
@@ -1376,7 +1376,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2025,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=PACEbench%20A%20Framework%20for%20Evaluating%20Practical%20AI%20Cyber%20Exploitation"
+    url: "https://arxiv.org/abs/2510.11688"
   },
   {
     title: "Pandora A Cyber Range Environment for the Safe Testing",
@@ -1392,7 +1392,7 @@ const RESOURCES = [
     topic: "Offensive Cyber / CTF / CVE",
     year: 2023,
     desc: "A benchmark for evaluating autonomous offensive-cyber capability. It contributes to OSAA by evaluating agents' autonomous offensive-cyber capability.",
-    url: "https://scholar.google.com/scholar?q=Purple%20Llama%20CyberSecEval%20A%20Secure%20Coding%20Benchmark%20for%20Language"
+    url: "https://arxiv.org/abs/2312.04724"
   },
   {
     title: "LLM Agent Leak Data Exfiltration Backdoored Tool Use",
@@ -1400,7 +1400,7 @@ const RESOURCES = [
     topic: "Privacy & Exfiltration",
     year: 2026,
     desc: "An attack/vulnerability study in agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
-    url: "https://scholar.google.com/scholar?q=LLM%20Agent%20Leak%20Data%20Exfiltration%20Backdoored%20Tool%20Use"
+    url: "https://arxiv.org/abs/2604.05432"
   },
   {
     title: "Observable Channels Privacy Leakage LLM Agent Pipelines",
@@ -1408,7 +1408,7 @@ const RESOURCES = [
     topic: "Privacy & Exfiltration",
     year: 2026,
     desc: "An attack/vulnerability study in agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
-    url: "https://scholar.google.com/scholar?q=Observable%20Channels%20Privacy%20Leakage%20LLM%20Agent%20Pipelines"
+    url: "https://arxiv.org/abs/2603.22751"
   },
   {
     title: "AgentDAM Privacy Leakage Evaluation for Autonomous Web Agents",
@@ -1416,7 +1416,7 @@ const RESOURCES = [
     topic: "Privacy & Exfiltration",
     year: 2025,
     desc: "A benchmark for evaluating agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
-    url: "https://scholar.google.com/scholar?q=AgentDAM%20Privacy%20Leakage%20Evaluation%20for%20Autonomous%20Web%20Agents"
+    url: "https://arxiv.org/abs/2503.09780"
   },
   {
     title: "Automating Prompt Leakage Attacks on Large Language Models Using",
@@ -1424,7 +1424,7 @@ const RESOURCES = [
     topic: "Privacy & Exfiltration",
     year: 2025,
     desc: "An attack/vulnerability study in agent data exfiltration and privacy leakage. It contributes to OSAA by exposing data-exfiltration and privacy-leakage paths in agents.",
-    url: "https://scholar.google.com/scholar?q=Automating%20Prompt%20Leakage%20Attacks%20on%20Large%20Language%20Models%20Using"
+    url: "https://arxiv.org/abs/2502.12630"
   },
   {
     title: "Agentic AI as Cybersecurity Attack Surface",
@@ -1432,7 +1432,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2026,
     desc: "An attack/vulnerability study in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=Agentic%20AI%20as%20Cybersecurity%20Attack%20Surface"
+    url: "https://arxiv.org/abs/2602.19555"
   },
   {
     title: "MCP Threat Modeling Vulnerabilities Tool Poisoning Prompt Injection",
@@ -1440,7 +1440,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2026,
     desc: "An attack/vulnerability study in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=MCP%20Threat%20Modeling%20Vulnerabilities%20Tool%20Poisoning%20Prompt%20Injection"
+    url: "https://arxiv.org/abs/2603.22489"
   },
   {
     title: "SoK Security Autonomous LLM Agents Agentic Commerce",
@@ -1448,7 +1448,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2026,
     desc: "Surveys the agent protocol (e.g. MCP) security literature. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=SoK%20Security%20Autonomous%20LLM%20Agents%20Agentic%20Commerce"
+    url: "https://arxiv.org/abs/2604.15367"
   },
   {
     title: "Towards Secure Agent Skills Architecture Threat Taxonomy Security",
@@ -1456,7 +1456,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2026,
     desc: "A security analysis of agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=Towards%20Secure%20Agent%20Skills%20Architecture%20Threat%20Taxonomy%20Security"
+    url: "https://arxiv.org/abs/2604.02837"
   },
   {
     title: "Automatic Red Teaming LLM based Agents with Model Context",
@@ -1464,7 +1464,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2025,
     desc: "An autonomous offensive system in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=Automatic%20Red%20Teaming%20LLM%20based%20Agents%20with%20Model%20Context"
+    url: "https://arxiv.org/abs/2509.21011"
   },
   {
     title: "Breaking the Protocol Security Analysis of the Model Context",
@@ -1472,7 +1472,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2026,
     desc: "An attack/vulnerability study in agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=Breaking%20the%20Protocol%20Security%20Analysis%20of%20the%20Model%20Context"
+    url: "https://arxiv.org/abs/2601.17549"
   },
   {
     title: "MCPSecBench A Systematic Security Benchmark and Playground for Testing",
@@ -1480,7 +1480,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2025,
     desc: "A benchmark for evaluating agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=MCPSecBench%20A%20Systematic%20Security%20Benchmark%20and%20Playground%20for%20Testing"
+    url: "https://arxiv.org/abs/2508.13220"
   },
   {
     title: "MCPTox A Benchmark for Tool Poisoning Attack on Real",
@@ -1488,7 +1488,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2025,
     desc: "A benchmark for evaluating agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=MCPTox%20A%20Benchmark%20for%20Tool%20Poisoning%20Attack%20on%20Real"
+    url: "https://arxiv.org/abs/2508.14925"
   },
   {
     title: "MCP Security Bench MSB Benchmarking Attacks Against Model Context",
@@ -1496,7 +1496,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2025,
     desc: "A benchmark for evaluating agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=MCP%20Security%20Bench%20MSB%20Benchmarking%20Attacks%20Against%20Model%20Context"
+    url: "https://arxiv.org/abs/2510.15994"
   },
   {
     title: "Systematic Analysis of MCP Security",
@@ -1504,7 +1504,7 @@ const RESOURCES = [
     topic: "Protocol Security",
     year: 2025,
     desc: "A security analysis of agent protocol (e.g. MCP) security. It contributes to OSAA by mapping protocol-level attack surfaces such as MCP.",
-    url: "https://scholar.google.com/scholar?q=Systematic%20Analysis%20of%20MCP%20Security"
+    url: "https://arxiv.org/abs/2508.12538"
   },
   {
     title: "Towards Robust Secure Embodied AI Survey Vulnerabilities Attacks",
@@ -1512,7 +1512,7 @@ const RESOURCES = [
     topic: "Embodied & Robotic Security",
     year: 2025,
     desc: "Surveys the embodied and robotic agent security literature. It contributes to OSAA by extending agent attacks to the physical world.",
-    url: "https://scholar.google.com/scholar?q=Towards%20Robust%20Secure%20Embodied%20AI%20Survey%20Vulnerabilities%20Attacks"
+    url: "https://arxiv.org/abs/2502.13175"
   },
   {
     title: "From Prompt to Physical Action Backdoor Attacks Embodied Agents",
@@ -1520,7 +1520,7 @@ const RESOURCES = [
     topic: "Embodied & Robotic Security",
     year: 2026,
     desc: "An attack/vulnerability study in embodied and robotic agent security. It contributes to OSAA by extending agent attacks to the physical world.",
-    url: "https://scholar.google.com/scholar?q=From%20Prompt%20to%20Physical%20Action%20Backdoor%20Attacks%20Embodied%20Agents"
+    url: "https://arxiv.org/abs/2604.03890"
   },
   {
     title: "What Breaks Embodied AI Security LLM Vulnerabilities CPS Flaws",
@@ -1528,7 +1528,7 @@ const RESOURCES = [
     topic: "Embodied & Robotic Security",
     year: 2026,
     desc: "An attack/vulnerability study in embodied and robotic agent security. It contributes to OSAA by extending agent attacks to the physical world.",
-    url: "https://scholar.google.com/scholar?q=What%20Breaks%20Embodied%20AI%20Security%20LLM%20Vulnerabilities%20CPS%20Flaws"
+    url: "https://arxiv.org/abs/2602.17345"
   },
   {
     title: "ANNIE Be Careful of Your Robots",
@@ -1536,7 +1536,7 @@ const RESOURCES = [
     topic: "Embodied & Robotic Security",
     year: 2025,
     desc: "A security analysis of embodied and robotic agent security. It contributes to OSAA by extending agent attacks to the physical world.",
-    url: "https://scholar.google.com/scholar?q=ANNIE%20Be%20Careful%20of%20Your%20Robots"
+    url: "https://arxiv.org/abs/2509.03383"
   },
   {
     title: "ASTRIDE A Security Threat Modeling Platform for Agentic AI",
@@ -1544,7 +1544,7 @@ const RESOURCES = [
     topic: "Threat Modeling",
     year: 2025,
     desc: "A security analysis of agent threat modeling and risk assessment. It contributes to OSAA by structuring threat models for offensive assessment.",
-    url: "https://scholar.google.com/scholar?q=ASTRIDE%20A%20Security%20Threat%20Modeling%20Platform%20for%20Agentic%20AI"
+    url: "https://arxiv.org/abs/2512.04785"
   },
   {
     title: "CIA TA Risk Assessment for AI Reasoning Vulnerabilities",
@@ -1552,7 +1552,7 @@ const RESOURCES = [
     topic: "Threat Modeling",
     year: 2025,
     desc: "An attack/vulnerability study in agent threat modeling and risk assessment. It contributes to OSAA by structuring threat models for offensive assessment.",
-    url: "https://scholar.google.com/scholar?q=CIA%20TA%20Risk%20Assessment%20for%20AI%20Reasoning%20Vulnerabilities"
+    url: "https://arxiv.org/abs/2508.15839"
   },
   {
     title: "Securing Agentic AI Threat Modeling and Risk Analysis for",
@@ -1560,7 +1560,7 @@ const RESOURCES = [
     topic: "Threat Modeling",
     year: 2025,
     desc: "A security analysis of agent threat modeling and risk assessment. It contributes to OSAA by structuring threat models for offensive assessment.",
-    url: "https://scholar.google.com/scholar?q=Securing%20Agentic%20AI%20Threat%20Modeling%20and%20Risk%20Analysis%20for"
+    url: "https://arxiv.org/abs/2508.10043"
   },
   {
     title: "Agent Fence Mapping Security Vulnerabilities Deep Research Agents",
@@ -1568,7 +1568,7 @@ const RESOURCES = [
     topic: "Computer-Use & Web Agents",
     year: 2026,
     desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
-    url: "https://scholar.google.com/scholar?q=Agent%20Fence%20Mapping%20Security%20Vulnerabilities%20Deep%20Research%20Agents"
+    url: "https://arxiv.org/abs/2602.07652"
   },
   {
     title: "Atomicity Agents TOCTOU Vulnerabilities Browser Use Agents",
@@ -1576,7 +1576,7 @@ const RESOURCES = [
     topic: "Computer-Use & Web Agents",
     year: 2026,
     desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
-    url: "https://scholar.google.com/scholar?q=Atomicity%20Agents%20TOCTOU%20Vulnerabilities%20Browser%20Use%20Agents"
+    url: "https://arxiv.org/abs/2603.00476"
   },
   {
     title: "A Systematization of Security Vulnerabilities in Computer Use Agents",
@@ -1584,7 +1584,7 @@ const RESOURCES = [
     topic: "Computer-Use & Web Agents",
     year: 2025,
     desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
-    url: "https://scholar.google.com/scholar?q=A%20Systematization%20of%20Security%20Vulnerabilities%20in%20Computer%20Use%20Agents"
+    url: "https://arxiv.org/abs/2507.05445"
   },
   {
     title: "HackWorld Evaluating Computer Use Agents on Exploiting Web Application",
@@ -1592,7 +1592,7 @@ const RESOURCES = [
     topic: "Computer-Use & Web Agents",
     year: 2025,
     desc: "A benchmark for evaluating computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
-    url: "https://scholar.google.com/scholar?q=HackWorld%20Evaluating%20Computer%20Use%20Agents%20on%20Exploiting%20Web%20Application"
+    url: "https://arxiv.org/abs/2510.12200"
   },
   {
     title: "SecureWebArena A Holistic Security Evaluation Benchmark for LVLM based",
@@ -1600,7 +1600,7 @@ const RESOURCES = [
     topic: "Computer-Use & Web Agents",
     year: 2025,
     desc: "A benchmark for evaluating computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
-    url: "https://scholar.google.com/scholar?q=SecureWebArena%20A%20Holistic%20Security%20Evaluation%20Benchmark%20for%20LVLM%20based"
+    url: "https://arxiv.org/abs/2510.10073"
   },
   {
     title: "WASP Benchmarking Web Agent Security Against Prompt Injection Attacks",
@@ -1608,7 +1608,7 @@ const RESOURCES = [
     topic: "Computer-Use & Web Agents",
     year: 2025,
     desc: "A benchmark for evaluating computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
-    url: "https://scholar.google.com/scholar?q=WASP%20Benchmarking%20Web%20Agent%20Security%20Against%20Prompt%20Injection%20Attacks"
+    url: "https://arxiv.org/abs/2504.18575"
   },
   {
     title: "Why Are Web AI Agents More Vulnerable Than Standalone",
@@ -1616,7 +1616,7 @@ const RESOURCES = [
     topic: "Computer-Use & Web Agents",
     year: 2025,
     desc: "An attack/vulnerability study in computer-use and web agent security. It contributes to OSAA by exposing vulnerabilities in computer-use and web agents.",
-    url: "https://scholar.google.com/scholar?q=Why%20Are%20Web%20AI%20Agents%20More%20Vulnerable%20Than%20Standalone"
+    url: "https://arxiv.org/abs/2502.20383"
   },
   {
     title: "Security Challenges AI Agent Deployment Large Scale Competition",
@@ -1624,7 +1624,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Security%20Challenges%20AI%20Agent%20Deployment%20Large%20Scale%20Competition"
+    url: "https://arxiv.org/abs/2507.20526"
   },
   {
     title: "LITMUS Benchmarking Behavioral Jailbreaks LLM Agents Real OS",
@@ -1632,7 +1632,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2026,
     desc: "A benchmark for evaluating agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=LITMUS%20Benchmarking%20Behavioral%20Jailbreaks%20LLM%20Agents%20Real%20OS"
+    url: "https://arxiv.org/abs/2605.10779"
   },
   {
     title: "Security Considerations Artificial Intelligence Agents",
@@ -1640,7 +1640,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2026,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Security%20Considerations%20Artificial%20Intelligence%20Agents"
+    url: "https://arxiv.org/abs/2603.12230"
   },
   {
     title: "Stop Fixating Prompts Reasoning Hijacking RedTeaming LLM Agents",
@@ -1648,7 +1648,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2026,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Stop%20Fixating%20Prompts%20Reasoning%20Hijacking%20RedTeaming%20LLM%20Agents"
+    url: "https://arxiv.org/abs/2604.05549"
   },
   {
     title: "Taming OpenClaw Security Analysis Autonomous LLM Agent Threats",
@@ -1656,7 +1656,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2026,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Taming%20OpenClaw%20Security%20Analysis%20Autonomous%20LLM%20Agent%20Threats"
+    url: "https://arxiv.org/abs/2603.11619"
   },
   {
     title: "Trust No Tool Evaluating Defending LLM Agents Untrusted Feedback",
@@ -1664,7 +1664,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2026,
     desc: "A benchmark for evaluating agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Trust%20No%20Tool%20Evaluating%20Defending%20LLM%20Agents%20Untrusted%20Feedback"
+    url: "https://arxiv.org/abs/2605.17453"
   },
   {
     title: "ASTRA Agentic Steerability and Risk Assessment Framework",
@@ -1672,7 +1672,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "An autonomous offensive system in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=ASTRA%20Agentic%20Steerability%20and%20Risk%20Assessment%20Framework"
+    url: "https://arxiv.org/abs/2511.18114"
   },
   {
     title: "Agent Skills in the Wild An Empirical Study of",
@@ -1680,7 +1680,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2026,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Agent%20Skills%20in%20the%20Wild%20An%20Empirical%20Study%20of"
+    url: "https://arxiv.org/abs/2601.10338"
   },
   {
     title: "Applying Refusal Vector Ablation to Llama 3 1 70B",
@@ -1688,7 +1688,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2024,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Applying%20Refusal%20Vector%20Ablation%20to%20Llama%203%201%2070B"
+    url: "https://arxiv.org/abs/2410.10871"
   },
   {
     title: "Artificial Intelligence as the New Hacker Developing Agents for",
@@ -1696,7 +1696,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2024,
     desc: "An autonomous offensive system in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Artificial%20Intelligence%20as%20the%20New%20Hacker%20Developing%20Agents%20for"
+    url: "https://arxiv.org/abs/2406.07561"
   },
   {
     title: "Breaking Agents Compromising Autonomous LLM Agents Through Malfunction Amplification",
@@ -1704,7 +1704,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2024,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Breaking%20Agents%20Compromising%20Autonomous%20LLM%20Agents%20Through%20Malfunction%20Amplification"
+    url: "https://arxiv.org/abs/2407.20859"
   },
   {
     title: "Bridging AI Software Security Comparative Vulnerability Assessment LLM Agent Paradigms",
@@ -1712,7 +1712,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Bridging%20AI%20Software%20Security%20Comparative%20Vulnerability%20Assessment%20LLM%20Agent%20Paradigms"
+    url: "https://arxiv.org/abs/2507.06323"
   },
   {
     title: "DoomArena A framework for Testing AI Agents Against Evolving",
@@ -1720,7 +1720,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "An autonomous offensive system in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=DoomArena%20A%20framework%20for%20Testing%20AI%20Agents%20Against%20Evolving"
+    url: "https://arxiv.org/abs/2504.14064"
   },
   {
     title: "Get the Agents Drunk Memory Perturbations in Autonomous Agent",
@@ -1728,7 +1728,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Get%20the%20Agents%20Drunk%20Memory%20Perturbations%20in%20Autonomous%20Agent"
+    url: "https://arxiv.org/abs/2503.23804"
   },
   {
     title: "Image Hijacking Adversarial Images can Control Generative Models at",
@@ -1736,7 +1736,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2023,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Image%20Hijacking%20Adversarial%20Images%20can%20Control%20Generative%20Models%20at"
+    url: "https://arxiv.org/abs/2309.00236"
   },
   {
     title: "Insights and Current Gaps in Open Source LLM Vulnerability",
@@ -1744,7 +1744,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2024,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Insights%20and%20Current%20Gaps%20in%20Open%20Source%20LLM%20Vulnerability"
+    url: "https://arxiv.org/abs/2410.16527"
   },
   {
     title: "LibVulnWatch A Deep Assessment Agent System and Leaderboard for",
@@ -1752,7 +1752,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=LibVulnWatch%20A%20Deep%20Assessment%20Agent%20System%20and%20Leaderboard%20for"
+    url: "https://arxiv.org/abs/2505.08842"
   },
   {
     title: "Quantifying Distributional Robustness of Agentic Tool Selection",
@@ -1760,7 +1760,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Quantifying%20Distributional%20Robustness%20of%20Agentic%20Tool%20Selection"
+    url: "https://arxiv.org/abs/2510.03992"
   },
   {
     title: "SEAS Self Evolving Adversarial Safety Optimization for Large Language",
@@ -1768,7 +1768,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2024,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=SEAS%20Self%20Evolving%20Adversarial%20Safety%20Optimization%20for%20Large%20Language"
+    url: "https://arxiv.org/abs/2408.02632"
   },
   {
     title: "Security of AI Agents",
@@ -1776,7 +1776,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2024,
     desc: "A security analysis of agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=Security%20of%20AI%20Agents"
+    url: "https://arxiv.org/abs/2406.08689"
   },
   {
     title: "TRAP Targeted Redirecting of Agentic Preferences",
@@ -1784,7 +1784,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2025,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=TRAP%20Targeted%20Redirecting%20of%20Agentic%20Preferences"
+    url: "https://arxiv.org/abs/2505.23518"
   },
   {
     title: "The Silicon Psyche Anthropomorphic Vulnerabilities in Large Language Models",
@@ -1792,7 +1792,7 @@ const RESOURCES = [
     topic: "Misc Attacks & Other",
     year: 2026,
     desc: "An attack/vulnerability study in agent attacks and vulnerabilities. It contributes to OSAA by documenting novel agent attacks and vulnerabilities.",
-    url: "https://scholar.google.com/scholar?q=The%20Silicon%20Psyche%20Anthropomorphic%20Vulnerabilities%20in%20Large%20Language%20Models"
+    url: "https://arxiv.org/abs/2601.00867"
   },
 
   /* ---------- GUIDES & WHITEPAPERS ---------- */
