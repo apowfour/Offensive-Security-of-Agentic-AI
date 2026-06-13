@@ -155,6 +155,191 @@ const RESOURCES = [
     tags: ["framework", "owasp"]
   },
 
+  {
+    title: "Giskard",
+    type: "tool",
+    org: "Giskard AI",
+    desc: "Open-source library to evaluate and red-team LLMs and AI agents. Auto-generates adversarial test suites (prompt injection, leakage, harmful content) mapped to the OWASP LLM Top 10.",
+    url: "https://github.com/Giskard-AI/giskard",
+    tags: ["evaluation", "red-teaming", "owasp"]
+  },
+  {
+    title: "DeepEval",
+    type: "tool",
+    org: "Confident AI",
+    desc: "Developer-friendly framework for testing LLM and agent outputs with metrics for hallucination, toxicity and more. Includes red-teaming and CI integration.",
+    url: "https://github.com/confident-ai/deepeval",
+    tags: ["evaluation", "ci"]
+  },
+  {
+    title: "agentic_security",
+    type: "tool",
+    org: "msoedov",
+    desc: "Agentic LLM vulnerability scanner and red-teaming kit. Probes agent workflows with jailbreaks, fuzzing and multimodal attacks.",
+    url: "https://github.com/msoedov/agentic_security",
+    tags: ["scanner", "red-teaming", "jailbreak"]
+  },
+  {
+    title: "Agentic Radar",
+    type: "tool",
+    org: "SplxAI",
+    desc: "Security scanner that maps an agent's workflow and surfaces vulnerabilities via static analysis plus runtime adversarial testing. Generates an OWASP-aligned report.",
+    url: "https://github.com/splx-ai/agentic-radar",
+    tags: ["scanner", "workflow", "owasp"]
+  },
+  {
+    title: "Snyk agent-scan",
+    type: "tool",
+    org: "Snyk",
+    desc: "Discovers and scans AI agents, MCP servers and agent skills for prompt injection and other threats. Keeps an inventory of agent components.",
+    url: "https://github.com/snyk/agent-scan",
+    tags: ["scanner", "mcp", "supply chain"]
+  },
+  {
+    title: "OpenHack",
+    type: "tool",
+    org: "OpenHackAI",
+    desc: "Open-source agentic security scanner for probing AI agents and LLM apps.",
+    url: "https://github.com/openhackai/OpenHack",
+    tags: ["scanner", "red-teaming"]
+  },
+  {
+    title: "PentestGPT",
+    type: "tool",
+    org: "GreyDGL",
+    desc: "LLM-powered framework that guides and automates penetration testing, especially web and CTF-style targets.",
+    url: "https://github.com/GreyDGL/PentestGPT",
+    tags: ["pentest", "automation"]
+  },
+  {
+    title: "PentAGI",
+    type: "tool",
+    org: "vxcontrol",
+    desc: "Fully autonomous multi-agent pentesting system that integrates 20+ tools (nmap, Metasploit, sqlmap) in a sandboxed environment and plans attacks end to end.",
+    url: "https://github.com/vxcontrol/pentagi",
+    tags: ["pentest", "multi-agent", "autonomous"]
+  },
+  {
+    title: "Strix",
+    type: "tool",
+    org: "usestrix",
+    desc: "Autonomous AI 'hackers' that explore an app via proxy, browser and terminal, find vulnerabilities and confirm them with working proof-of-concepts.",
+    url: "https://github.com/usestrix/strix",
+    tags: ["pentest", "autonomous", "bug bounty"]
+  },
+  {
+    title: "CAI (Cybersecurity AI)",
+    type: "tool",
+    org: "Alias Robotics",
+    desc: "Lightweight framework for building offensive and defensive security agents. Bug-bounty ready, with native security-tool integrations.",
+    url: "https://github.com/aliasrobotics/cai",
+    tags: ["pentest", "framework", "bug bounty"]
+  },
+  {
+    title: "HackingBuddyGPT",
+    type: "tool",
+    org: "IPA Lab",
+    desc: "AI assistant that executes shell commands inside a sandbox, reads the output and decides the next step to autonomously pentest a target.",
+    url: "https://github.com/ipa-lab/hackingBuddyGPT",
+    tags: ["pentest", "autonomous"]
+  },
+  {
+    title: "Nebula",
+    type: "tool",
+    org: "Beryllium Security",
+    desc: "AI-powered penetration-testing assistant that automates recon, note-taking and vulnerability analysis from the command line.",
+    url: "https://github.com/berylliumsec/nebula",
+    tags: ["pentest", "recon"]
+  },
+  {
+    title: "Vulnhuntr",
+    type: "tool",
+    org: "Protect AI",
+    desc: "Uses LLMs to trace entire code call chains from user input to output, detecting complex multi-step vulnerabilities.",
+    url: "https://github.com/protectai/vulnhuntr",
+    tags: ["vuln assessment", "code", "sast"]
+  },
+  {
+    title: "Shannon",
+    type: "tool",
+    org: "Keygraph",
+    desc: "White-box AI pentester that reads source, identifies attack vectors and executes real exploits to prove vulnerabilities.",
+    url: "https://github.com/KeygraphHQ/shannon",
+    tags: ["pentest", "white-box"]
+  },
+  {
+    title: "Pentest-Swarm-AI",
+    type: "tool",
+    org: "Armur AI",
+    desc: "Swarm of AI agents that orchestrates recon, classification, exploitation and reporting specialists with ReAct reasoning. Supports bug-bounty, monitoring and CTF modes.",
+    url: "https://github.com/Armur-Ai/Pentest-Swarm-AI",
+    tags: ["pentest", "multi-agent"]
+  },
+  {
+    title: "Xalgorix",
+    type: "tool",
+    org: "xalgord",
+    desc: "Self-hosted AI pentesting agent combining an LLM, browser automation and a 22-phase testing methodology with reporting.",
+    url: "https://github.com/xalgord/xalgorix",
+    tags: ["pentest", "bug bounty"]
+  },
+  {
+    title: "Pentest Copilot",
+    type: "tool",
+    org: "BugBase",
+    desc: "AI-powered ethical-hacking assistant that connects to a Kali box, runs tools autonomously and analyzes results.",
+    url: "https://github.com/bugbasesecurity/pentest-copilot",
+    tags: ["pentest", "assistant"]
+  },
+  {
+    title: "agentic-ai-pentest",
+    type: "tool",
+    org: "HardenedLinux",
+    desc: "Agentic AI that performs penetration testing autonomously.",
+    url: "https://github.com/hardenedlinux/agentic-ai-pentest",
+    tags: ["pentest", "autonomous"]
+  },
+  {
+    title: "Inspect",
+    type: "tool",
+    org: "UK AI Security Institute",
+    desc: "Framework for evaluating multi-turn, tool-using LLM agents with secure sandboxing, parallel execution and a trajectory trace viewer.",
+    url: "https://github.com/UKGovernmentBEIS/inspect_ai",
+    tags: ["evaluation", "harness"]
+  },
+  {
+    title: "AgentDojo-Inspect",
+    type: "tool",
+    org: "NIST",
+    desc: "Inspect-compatible fork of AgentDojo used in US/UK AISI joint red-teaming to evaluate prompt-injection attacks and defenses on agents.",
+    url: "https://github.com/usnistgov/agentdojo-inspect",
+    tags: ["evaluation", "prompt injection"]
+  },
+  {
+    title: "HarmBench",
+    type: "tool",
+    org: "Center for AI Safety",
+    desc: "Standardized evaluation framework for automated red teaming of LLMs, providing adversarial baselines for agent-underlying models.",
+    url: "https://github.com/centerforaisafety/HarmBench",
+    tags: ["red-teaming", "benchmark"]
+  },
+  {
+    title: "JailbreakBench",
+    type: "tool",
+    org: "JailbreakBench",
+    desc: "Open robustness benchmark and leaderboard for jailbreaking LLMs, reusable as an adversarial baseline for agents.",
+    url: "https://github.com/JailbreakBench/jailbreakbench",
+    tags: ["jailbreak", "benchmark"]
+  },
+  {
+    title: "Purple Llama (CyberSecEval)",
+    type: "tool",
+    org: "Meta",
+    desc: "Suite including CyberSecEval, benchmarks that measure models' offensive-cyber capability and insecure-code generation.",
+    url: "https://github.com/meta-llama/PurpleLlama",
+    tags: ["evaluation", "offensive cyber"]
+  },
+
   /* ---------- BENCHMARKS & EVALUATION ---------- */
   {
     title: "Agent Security Bench (ASB)",
@@ -472,7 +657,7 @@ const RESOURCES = [
     topic: "Benchmarks",
     year: 2026,
     desc: "A benchmark for evaluating agent security and safety. It contributes to OSAA by enabling reproducible measurement of agent attacks.",
-    url: "https://doi.org/10.1016/j.inﬀus.2026.104444"
+    url: "https://doi.org/10.1016/j.inffus.2026.104444"
   },
   {
     title: "FinVault Benchmarking Financial Agent Safety in Execution Grounded Environments",
