@@ -16,8 +16,8 @@ const CATEGORIES = [
   { type:"paper",      label:"Research Papers", icon:"file-text",      blurb:"Surveys, attacks, defenses and systematizations." },
   { type:"guide",      label:"Guides",          icon:"book-2",         blurb:"Practitioner explainers and how-tos." },
   { type:"whitepaper", label:"Whitepapers",     icon:"file-description",blurb:"Vendor and community deep-dives." },
-  { type:"blog",       label:"Blogs",           icon:"news",           blurb:"Sites that publish ongoing analysis." },
-  { type:"newsletter", label:"Newsletters",     icon:"mail",           blurb:"Regular digests to follow the field." }
+  { type:"blog_post",  label:"Blog Posts",     icon:"news",           blurb:"Blogs, newsletters, and podcasts tracking the field." },
+  { type:"course",     label:"Courses",        icon:"school",         blurb:"Training, certifications, and workshops on offensive AI security." }
 ];
 
 /* The hierarchy tree shown on the home page.
@@ -81,11 +81,17 @@ const TREE = [
     {label:"Vendor"},
     {label:"Community"}
   ]},
-  { label:"Blogs", cat:"blog", children:[
+  { label:"Blog Posts", cat:"blog_post", children:[
     {label:"Vendor blogs"},
-    {label:"Research blogs"}
+    {label:"Researcher blogs"},
+    {label:"Newsletters"},
+    {label:"Podcasts"}
   ]},
-  { label:"Newsletters", cat:"newsletter", children:[
-    {label:"Field digests"}
+  { label:"Courses", cat:"course", children:[
+    {label:"Professional training"},
+    {label:"Vendor training"},
+    {label:"MOOCs"},
+    {label:"Certifications"},
+    {label:"Free / open"}
   ]}
 ];

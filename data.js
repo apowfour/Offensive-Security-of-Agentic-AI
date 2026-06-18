@@ -1,17 +1,19 @@
 /* ============================================================
    OffensiveAgentic — YOUR CONTENT LIVES HERE
    ------------------------------------------------------------
-   734 entries across 11 categories.
-   Last updated: 2026-06-18 by data collection pipeline.
+   880 entries across 11 categories.
+   Last updated: 2026-06-18 by data collection pipeline (v2).
 
-   To add a reference: copy one block, paste it inside the [ ]
-   below, fill in the fields, save. That's it.
+   Categories: framework, standard, methodology, book, tool,
+               benchmark, paper, guide, whitepaper, course, blog_post
+
+   Note: blog and newsletter types are deprecated — merged into
+   blog_post (with tag "blog" or "newsletter" preserved).
 
    Fields:
      title : name of the resource
      type  : one of  framework | standard | methodology | book | tool
-                     benchmark | paper | guide | whitepaper | blog | newsletter
-             (these decide which page the entry appears on)
+                     benchmark | paper | guide | whitepaper | course | blog_post
      topic : paper-only sub-grouping (e.g. "Prompt Injection")
      org   : who made it (optional)
      authors: list of authors (optional)
@@ -6369,56 +6371,1056 @@ const RESOURCES = [
     tags: ["red team", "openai", "program", "external red teaming"]
   },
 
-  /* ---------- BLOGS & NEWSLETTERS ---------- */
+  /* ---------- COURSES ---------- */
+  {
+    title: "A2A: The Agent2Agent Protocol",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2025,
+    desc: "Free short course on Google's Agent2Agent (A2A) protocol for inter-agent communication, covering agent cards, task delegation, multi-vendor agent orchestration, and streaming interactions. ~1-2 hours; intermediate; code-first.",
+    url: "https://www.deeplearning.ai/courses/a2a-the-agent2agent-protocol",
+    tags: ["agent2agent", "multi-agent", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "AI Red Team Learning Path",
+    type: "course",
+    org: "TryHackMe",
+    year: 2025,
+    desc: "THM learning path teaching red team operations against AI systems: prompt injection, agent exploitation, jailbreaking, and AI-augmented offensive security. Beginner-friendly; gamified labs.",
+    url: "https://tryhackme.com/path/outline/airedteam",
+    tags: ["learning path", "beginner", "gamified", "tryhackme", "red teaming"]
+  },
+  {
+    title: "AI Red Team Module",
+    type: "course",
+    org: "HackTheBox Academy",
+    year: 2025,
+    desc: "HTB Academy module on red teaming AI systems: tool misuse, indirect prompt injection, multi-turn attack chains. Intermediate; hands-on.",
+    url: "https://academy.hackthebox.com/course/preview/ai-red-team",
+    tags: ["red teaming", "intermediate", "hands-on", "hackthebox", "ai attacks"]
+  },
+  {
+    title: "AIS247: AI Security Essentials",
+    type: "course",
+    org: "SANS Institute",
+    year: 2025,
+    desc: "SANS two-day course on AI security essentials for security practitioners: threat modeling for LLM apps, agent security, guardrail deployment, and incident response. Beginner-friendly.",
+    url: "https://www.sans.org/cyber-security-courses/ai-security-essentials-ais247/",
+    tags: ["essentials", "ai security", "beginner", "sans", "video"]
+  },
+  {
+    title: "AIS477: AI Security Foundation",
+    type: "course",
+    org: "SANS Institute",
+    year: 2025,
+    desc: "SANS OnDemand course establishing foundational AI security knowledge: ML basics, LLM internals, attack surface mapping, OWASP LLM Top 10. Self-paced.",
+    url: "https://www.sans.org/cyber-security-courses/ai-security-foundation-ais477/",
+    tags: ["foundation", "self-paced", "beginner", "sans", "ondemand"]
+  },
+  {
+    title: "Agent Memory: Building Memory-Aware Agents",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2025,
+    desc: "Free short course on building memory-aware AI agents with Mem0, covering short-term, long-term, and entity memory patterns and the security implications of persistent agent state. ~1-2 hours; intermediate; hands-on.",
+    url: "https://www.deeplearning.ai/courses/agent-memory-building-memory-aware-agents",
+    tags: ["agent memory", "agents", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "Amazon Bedrock Security",
+    type: "course",
+    org: "AWS Skill Builder",
+    year: 2025,
+    desc: "AWS Skill Builder course on securing Amazon Bedrock deployments: guardrails, data privacy, model selection criteria, and audit logging for LLM applications. Intermediate; self-paced.",
+    url: "https://explore.skillbuilder.aws/learn/public/learning_plan/view/1947/generative-ai-security",
+    tags: ["bedrock", "intermediate", "aws", "self-paced", "guardrails"]
+  },
+  {
+    title: "Cisco AI Defense Training",
+    type: "course",
+    org: "Cisco",
+    year: 2025,
+    desc: "Cisco's training on AI Defense product: detecting prompt injection, monitoring agent behavior, and integrating AI security into existing Cisco Secure architectures. Intermediate; instructor-led.",
+    url: "https://www.cisco.com/c/en/us/training-events.html",
+    tags: ["cisco", "intermediate", "instructor-led", "ai defense", "monitoring"]
+  },
+  {
+    title: "Evaluating AI Agents",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2025,
+    desc: "Free short course on evaluating autonomous AI agents, covering trajectory metrics, tool-use correctness, end-to-end task success, and benchmarking frameworks with hands-on eval design. ~1-2 hours; intermediate; code-first.",
+    url: "https://www.deeplearning.ai/courses/evaluating-ai-agents",
+    tags: ["evaluation", "agents", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "GIAC GAIH: Google AI for Security Hands-on Certification",
+    type: "course",
+    org: "GIAC / SANS",
+    year: 2025,
+    desc: "Hands-on GIAC certification validating practical AI red team skills using open-source tools. Proctored exam tests attack execution, defense implementation, and analysis.",
+    url: "https://www.giac.org/certifications/ai-hands-on-gaih/",
+    tags: ["certification", "giac", "advanced", "hands-on", "exam"]
+  },
+  {
+    title: "Generative AI Security Learning Path",
+    type: "course",
+    org: "Google Cloud Skills Boost",
+    year: 2025,
+    desc: "Google Cloud's structured learning path covering Generative AI security: model security, prompt attack defense, Vertex AI security controls, and Cloud DLP for AI. Intermediate; self-paced.",
+    url: "https://www.cloudskillsboost.google/paths",
+    tags: ["generative ai", "intermediate", "google", "vertex ai", "self-paced"]
+  },
+  {
+    title: "Generative AI Security Learning Plan",
+    type: "course",
+    org: "AWS Skill Builder",
+    year: 2025,
+    desc: "AWS Skill Builder learning plan covering Gen AI security on AWS: Amazon Bedrock security, data protection, IAM for AI services, and responsible AI governance. Intermediate; self-paced; free tier.",
+    url: "https://explore.skillbuilder.aws/learn/public/learning_plan/view/1946/generative-ai-learning-plan-for-security",
+    tags: ["aws", "intermediate", "self-paced", "bedrock", "free"]
+  },
+  {
+    title: "Governing AI Agents",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2025,
+    desc: "Free short course on governance patterns for autonomous AI agents, covering permission models, human-in-the-loop controls, audit trails, and policy enforcement for agentic systems. ~1-2 hours; intermediate; conceptual.",
+    url: "https://www.deeplearning.ai/courses/governing-ai-agents",
+    tags: ["governance", "agents", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "HiddenLayer AI Security Training",
+    type: "course",
+    org: "HiddenLayer",
+    year: 2025,
+    desc: "HiddenLayer's training course covering ML model security: adversarial attacks, model theft, AIMS product deployment, and AI red team methodology. Intermediate; instructor-led.",
+    url: "https://hiddenlayer.com/training",
+    tags: ["hiddenlayer", "intermediate", "instructor-led", "model security", "aims"]
+  },
+  {
+    title: "Immersive Labs AI Security Labs",
+    type: "course",
+    org: "Immersive Labs",
+    year: 2025,
+    desc: "Immersive Labs' hands-on AI security labs: prompt injection, jailbreaking, agent exploitation, and AI-augmented offensive security operations. Intermediate; team-based labs.",
+    url: "https://www.immersivelabs.com/ai-security-labs",
+    tags: ["immersive labs", "intermediate", "hands-on", "labs", "team"]
+  },
+  {
+    title: "Introduction to AI Security",
+    type: "course",
+    org: "HackTheBox Academy",
+    year: 2025,
+    desc: "HTB Academy module covering the fundamentals of AI/LLM security including prompt injection, jailbreaking, and basic agent attacks. Beginner-friendly; hands-on labs.",
+    url: "https://academy.hackthebox.com/course/preview/introduction-to-ai-security",
+    tags: ["beginner", "hands-on", "hackthebox", "llm security", "prompt injection"]
+  },
+  {
+    title: "LLM Attacks Module",
+    type: "course",
+    org: "HackTheBox Academy",
+    year: 2025,
+    desc: "HTB Academy module covering concrete LLM attacks: jailbreaks, prompt injection, training data extraction, and model inversion techniques. Intermediate; hands-on.",
+    url: "https://academy.hackthebox.com/course/preview/llm-attacks",
+    tags: ["llm attacks", "intermediate", "hands-on", "hackthebox", "jailbreaking"]
+  },
+  {
+    title: "LLM Security Learning Path",
+    type: "course",
+    org: "TryHackMe",
+    year: 2025,
+    desc: "THM path focused on LLM security: prompt injection, jailbreaking, model attacks, and defensive guardrails. Beginner-to-intermediate; hands-on rooms.",
+    url: "https://tryhackme.com/path/outline/llmsecurity",
+    tags: ["learning path", "beginner", "hands-on", "tryhackme", "llm security"]
+  },
+  {
+    title: "Lakera Red Team Certification (LRTC)",
+    type: "course",
+    org: "Lakera AI",
+    year: 2025,
+    desc: "Lakera's practitioner certification covering AI red team methodology, Lakera Guard deployment, and the prompt injection kill chain. Includes hands-on exam; intermediate-to-advanced.",
+    url: "https://www.lakera.ai/lakera-ai-red-team-certification-lrtc",
+    tags: ["certification", "intermediate", "lakera", "red teaming", "guardrails"]
+  },
+  {
+    title: "MCP: Build Rich-Context AI Apps with Anthropic",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2025,
+    desc: "Free short course on building agentic applications with the Model Context Protocol (MCP) and Anthropic Claude, covering MCP server/client architecture, tool exposure, resource injection, and agent integration patterns. ~1-2 hours; intermediate; code-first.",
+    url: "https://www.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic",
+    tags: ["mcp", "agents", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "Mandiant AI Red Team Training",
+    type: "course",
+    org: "Mandiant (Google Cloud)",
+    year: 2025,
+    desc: "Mandiant's training on AI red team operations: threat modeling for AI systems, prompt injection chains, agentic system compromise, and incident response for AI security. Advanced; instructor-led.",
+    url: "https://www.mandiant.com/resources/blog/mandiant-ai-red-team",
+    tags: ["mandiant", "advanced", "instructor-led", "red teaming", "incident response"]
+  },
+  {
+    title: "Microsoft Defender for Cloud Apps AI Security",
+    type: "course",
+    org: "Microsoft Learn",
+    year: 2025,
+    desc: "Microsoft Learn path on configuring Defender for Cloud Apps to monitor and protect AI usage: shadow AI discovery, prompt filtering, and user risk scoring. Intermediate; self-paced; free.",
+    url: "https://learn.microsoft.com/en-us/defender-cloud-apps/ai-security",
+    tags: ["defender", "intermediate", "microsoft", "free", "monitoring"]
+  },
+  {
+    title: "Prompt Injection Module",
+    type: "course",
+    org: "HackTheBox Academy",
+    year: 2025,
+    desc: "HTB Academy module focusing specifically on prompt injection: direct vs indirect, multi-turn, and chained attacks against real LLM-powered applications. Beginner-to-intermediate; hands-on.",
+    url: "https://academy.hackthebox.com/course/preview/prompt-injection",
+    tags: ["prompt injection", "beginner", "hands-on", "hackthebox"]
+  },
+  {
+    title: "Protect AI Radar Practitioner",
+    type: "course",
+    org: "Protect AI",
+    year: 2025,
+    desc: "Protect AI's practitioner training on Radar (their AI security posture management tool): discovering AI assets, scanning for vulnerabilities, model supply chain security. Intermediate; self-paced.",
+    url: "https://www.protectai.com/training",
+    tags: ["protect ai", "intermediate", "self-paced", "radar", "supply chain"]
+  },
+  {
+    title: "SEC510: Open-Source Tools for AI Red Teaming",
+    type: "course",
+    org: "SANS Institute",
+    year: 2025,
+    desc: "6-day hands-on SANS course covering open-source AI red team tooling including PyRIT, Garak, AgentDojo, and Promptfoo. Intermediate level; includes GIAC GAIH certification attempt.",
+    url: "https://www.sans.org/cyber-security-courses/open-source-tools-for-ai-red-teaming/",
+    tags: ["red teaming", "hands-on", "intermediate", "sans", "tools", "certification"]
+  },
+  {
+    title: "StationX AI Security Course",
+    type: "course",
+    org: "StationX",
+    year: 2025,
+    desc: "StationX's online course on AI security fundamentals: prompt injection, model attacks, agent vulnerabilities, and AI governance. Beginner-friendly; self-paced video.",
+    url: "https://www.stationx.net/ai-security-training/",
+    tags: ["stationx", "beginner", "self-paced", "video", "fundamentals"]
+  },
+  {
+    title: "AI Agents in LangGraph (DeepLearning.AI)",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2024,
+    authors: ["Harrison Chase", "Andrew Ng"],
+    desc: "Free short course on building stateful, multi-step LLM agent workflows with LangGraph, covering state machines, tool use, and human-in-the-loop patterns. Intermediate; code-first.",
+    url: "https://www.deeplearning.ai/courses/ai-agents-in-langgraph",
+    tags: ["ai agents", "langgraph", "free", "short course", "intermediate"],
+    license: "free"
+  },
+  {
+    title: "AI Associate Certification",
+    type: "course",
+    org: "Salesforce Trailhead",
+    year: 2024,
+    desc: "Salesforce entry-level cert covering AI fundamentals, Einstein GPT, responsible AI, and AI security essentials. Beginner-friendly; self-paced.",
+    url: "https://trailhead.salesforce.com/credentials/aiassociatetrailhead",
+    tags: ["certification", "beginner", "salesforce", "ai associate"]
+  },
+  {
+    title: "AI Fundamentals and the Cloud",
+    type: "course",
+    org: "Coursera (IBM)",
+    year: 2024,
+    desc: "Coursera course by IBM introducing AI fundamentals with a cloud computing focus, covering ML, deep learning, AI ethics, and IBM watsonx with attention to responsible-AI guardrails. Beginner; ~10 hours; certificate available.",
+    url: "https://www.coursera.org/learn/ai-fundamentals-and-the-cloud",
+    tags: ["ai fundamentals", "ibm", "beginner", "coursera", "certificate"]
+  },
+  {
+    title: "AI Security (FutureLearn)",
+    type: "course",
+    org: "FutureLearn",
+    year: 2024,
+    desc: "FutureLearn course on AI security covering the AI threat landscape, adversarial attacks on ML systems, organizational defenses, and responsible-AI governance frameworks. Beginner-to-intermediate; paid; certificate available.",
+    url: "https://www.futurelearn.com/courses/ai-security",
+    tags: ["ai security", "adversarial", "beginner", "futurelearn", "paid"]
+  },
+  {
+    title: "AI Security Fundamentals Badge",
+    type: "course",
+    org: "IBM Training",
+    year: 2024,
+    desc: "IBM's badge course covering AI/ML security fundamentals: adversarial ML, model theft, IBM watsonx security, and AI governance with AI Fairness 360. Beginner-to-intermediate; self-paced.",
+    url: "https://www.ibm.com/training/badges/ai-security-fundamentals",
+    tags: ["fundamentals", "beginner", "ibm", "badge", "watsonx", "self-paced"]
+  },
+  {
+    title: "AI Security Learning Path",
+    type: "course",
+    org: "INE",
+    year: 2024,
+    desc: "INE's structured learning path covering AI/ML security fundamentals, adversarial ML attacks, LLM red teaming, and defensive AI. Intermediate; hands-on labs.",
+    url: "https://my.ine.com/learning-paths",
+    tags: ["learning path", "intermediate", "ine", "hands-on", "video"]
+  },
+  {
+    title: "AI Security on Trailhead",
+    type: "course",
+    org: "Salesforce Trailhead",
+    year: 2024,
+    desc: "Salesforce Trailhead trail covering AI security fundamentals: Einstein Trust Layer, prompt injection defense, data masking for AI, and audit logging. Beginner-friendly; self-paced; free.",
+    url: "https://trailhead.salesforce.com/content/learn/trails/ai-security",
+    tags: ["salesforce", "beginner", "free", "self-paced", "einstein"]
+  },
+  {
+    title: "AI for Cybersecurity",
+    type: "course",
+    org: "Coursera",
+    year: 2024,
+    desc: "Coursera course on applying AI to cybersecurity workflows, covering threat detection, automated triage, adversarial use of LLMs, and risks of deploying AI in security operations. Intermediate; self-paced; certificate available.",
+    url: "https://www.coursera.org/learn/ai-for-cybersecurity",
+    tags: ["ai", "cybersecurity", "intermediate", "coursera", "certificate"]
+  },
+  {
+    title: "AI-102: Designing and Implementing a Microsoft Azure AI Solution",
+    type: "course",
+    org: "Microsoft Learn",
+    year: 2024,
+    desc: "Microsoft's associate-level cert covering Azure AI deployment, including responsible AI practices, content filtering, and Azure AI security controls. Intermediate; self-paced.",
+    url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+    tags: ["azure", "intermediate", "certification", "microsoft", "deployment"]
+  },
+  {
+    title: "AI-900: Microsoft Azure AI Fundamentals",
+    type: "course",
+    org: "Microsoft Learn",
+    year: 2024,
+    desc: "Microsoft's foundational AI certification covering Azure AI services with embedded responsible AI and security modules. Beginner-friendly; self-paced; free.",
+    url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+    tags: ["fundamentals", "beginner", "certification", "microsoft", "free", "azure"]
+  },
+  {
+    title: "Anthropic Responsible Scaling Policy Training",
+    type: "course",
+    org: "Anthropic",
+    year: 2024,
+    desc: "Anthropic's published training material on their Responsible Scaling Policy: ASL levels, capability evaluations, and red team integration into model deployment. Advanced; self-paced; free.",
+    url: "https://www.anthropic.com/engineering/claude-red-team",
+    tags: ["responsible scaling", "advanced", "anthropic", "free", "policy"]
+  },
+  {
+    title: "Automated Testing for LLMOps",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2024,
+    desc: "Free short course on automating LLM application tests in CI/CD pipelines, covering prompt regression tests, evaluation harnesses, and LLM-as-judge patterns for catching safety regressions. ~1-2 hours; intermediate; code-first.",
+    url: "https://www.deeplearning.ai/courses/automated-testing-llmops",
+    tags: ["testing", "llmops", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "Azure OpenAI Red Teaming",
+    type: "course",
+    org: "Microsoft Learn",
+    year: 2024,
+    desc: "Microsoft Learn module on red teaming Azure OpenAI deployments: planning, executing, and documenting red team operations using PyRIT and internal tools. Intermediate; self-paced; free.",
+    url: "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming",
+    tags: ["red teaming", "intermediate", "microsoft", "azure", "free", "self-paced"]
+  },
+  {
+    title: "Building Toward Computer Use with Anthropic",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2024,
+    desc: "Free short course on building computer-use agents with Anthropic Claude, covering screen interaction, tool use, agentic UI patterns, and the security implications of agent-driven OS interaction. ~1-2 hours; intermediate; hands-on.",
+    url: "https://www.deeplearning.ai/courses/building-toward-computer-use-with-anthropic",
+    tags: ["computer use", "agents", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "ChatGPT Prompt Injection Attacks (Udemy)",
+    type: "course",
+    org: "Udemy",
+    year: 2024,
+    desc: "Udemy course on prompt injection attacks against ChatGPT and similar LLMs, covering attack vectors, jailbreak techniques, indirect injection via tools, and defensive prompting patterns. Intermediate; paid; certificate of completion.",
+    url: "https://www.udemy.com/course/chatgpt-prompt-injection-attacks/",
+    tags: ["prompt injection", "chatgpt", "intermediate", "udemy", "paid"]
+  },
+  {
+    title: "Evaluating and Debugging Generative AI (DeepLearning.AI)",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2024,
+    authors: ["Andrew Ng", "Anup Kulkarni"],
+    desc: "Free short course on evaluating and debugging LLM applications using DeepEval and promptfoo, covering test case design, metrics, and CI integration. Intermediate; code-first.",
+    url: "https://www.deeplearning.ai/courses/evaluating-debugging-generative-ai",
+    tags: ["evaluation", "deepeval", "promptfoo", "free", "short course"],
+    license: "free"
+  },
+  {
+    title: "Hugging Face LLM Course",
+    type: "course",
+    org: "Hugging Face",
+    year: 2024,
+    desc: "Free open-source course on LLMs covering architecture, training, fine-tuning, and a dedicated chapter on LLM security including prompt injection and model poisoning. Beginner-to-intermediate; self-paced; free.",
+    url: "https://huggingface.co/learn/llm-course",
+    tags: ["llm", "beginner", "free", "self-paced", "hugging face", "open source"]
+  },
+  {
+    title: "Introduction to AI Safety (Codecademy)",
+    type: "course",
+    org: "Codecademy",
+    year: 2024,
+    desc: "Codecademy course introducing AI safety concepts including alignment, robustness, monitoring, and governance for ML/LLM systems, with hands-on Python exercises. Beginner; self-paced; free tier available.",
+    url: "https://www.codecademy.com/learn/intro-to-ai-safety",
+    tags: ["ai safety", "beginner", "self-paced", "python", "free tier"],
+    license: "free"
+  },
+  {
+    title: "Introduction to AI Safety (DataCamp)",
+    type: "course",
+    org: "DataCamp",
+    year: 2024,
+    desc: "DataCamp course introducing AI safety concepts including alignment, interpretability, robustness, and governance, with practical Python examples illustrating safety failure modes. Beginner; paid; certificate available.",
+    url: "https://www.datacamp.com/courses/introduction-to-ai-safety",
+    tags: ["ai safety", "alignment", "beginner", "datacamp", "paid"]
+  },
+  {
+    title: "LLM Security (DataCamp)",
+    type: "course",
+    org: "DataCamp",
+    year: 2024,
+    desc: "DataCamp course on LLM security covering the threat landscape, OWASP LLM Top 10, prompt injection, model access controls, and securing LLM applications with hands-on Python exercises. Intermediate; paid; certificate available.",
+    url: "https://www.datacamp.com/courses/llm-security",
+    tags: ["llm security", "owasp llm", "intermediate", "datacamp", "paid"]
+  },
+  {
+    title: "LLM Security and Vulnerabilities",
+    type: "course",
+    org: "Coursera",
+    year: 2024,
+    desc: "Coursera course on security vulnerabilities specific to large language model applications, covering prompt injection, data poisoning, model theft, insecure output handling, and defensive controls. Intermediate; self-paced; certificate available.",
+    url: "https://www.coursera.org/learn/llm-security-and-vulnerabilities",
+    tags: ["llm security", "vulnerabilities", "intermediate", "coursera", "certificate"]
+  },
+  {
+    title: "Multi AI Agent Systems with CrewAI (DeepLearning.AI)",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2024,
+    authors: ["Joao Moura"],
+    desc: "Free short course on orchestrating multiple specialized AI agents with the CrewAI framework, covering role-based agents, task delegation, and tools. Hands-on; intermediate.",
+    url: "https://www.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai",
+    tags: ["multi agent", "crewai", "free", "short course", "agents"],
+    license: "free"
+  },
+  {
+    title: "NeMo Guardrails Tutorial",
+    type: "course",
+    org: "NVIDIA Deep Learning Institute",
+    year: 2024,
+    desc: "NVIDIA DLI tutorial on building programmable guardrails for LLMs using NeMo Guardrails: topical, safety, and security rails. Intermediate; hands-on; free.",
+    url: "https://developer.nvidia.com/nemo-guardrails",
+    tags: ["guardrails", "intermediate", "nvidia", "free", "hands-on", "nemo"]
+  },
+  {
+    title: "OpenAI Safety Systems Documentation",
+    type: "course",
+    org: "OpenAI",
+    year: 2024,
+    desc: "OpenAI's published documentation on their safety systems approach: model cards, red teaming methodology, deployment safety reviews, and the Preparedness Framework. Intermediate; self-paced; free.",
+    url: "https://openai.com/safety/",
+    tags: ["openai", "intermediate", "free", "self-paced", "safety systems"]
+  },
+  {
+    title: "PEN-200: Penetration Testing with Kali Linux (OSCP)",
+    type: "course",
+    org: "Offensive Security",
+    year: 2024,
+    desc: "OffSec's flagship pen-testing course (OSCP cert). 2024+ editions include AI-augmented pentesting modules covering LLM-assisted exploit development and AI tool misuse scenarios. Advanced.",
+    url: "https://www.offensive-security.com/courses/pen-200/",
+    tags: ["penetration testing", "oscp", "advanced", "offsec", "certification", "hands-on"]
+  },
+  {
+    title: "PEN-300: Evasion Techniques and Breaching Defenses (OSEP)",
+    type: "course",
+    org: "Offensive Security",
+    year: 2024,
+    desc: "Advanced OffSec course on evasion and breach techniques. Includes modules on AI-assisted payload generation and LLM-assisted offensive tooling. Advanced.",
+    url: "https://www.offensive-security.com/courses/pen-300/",
+    tags: ["evasion", "advanced", "offsec", "certification", "hands-on"]
+  },
+  {
+    title: "Practical AI Red Teaming (Udemy)",
+    type: "course",
+    org: "Udemy",
+    year: 2024,
+    desc: "Udemy course on practical AI red teaming, covering prompt injection, jailbreaks, model attacks, and adversarial testing workflows with hands-on lab exercises against live LLM endpoints. Intermediate; paid; certificate of completion.",
+    url: "https://www.udemy.com/course/practical-ai-red-teaming/",
+    tags: ["red teaming", "hands-on", "intermediate", "udemy", "paid"]
+  },
+  {
+    title: "Practical LLM Security (Udemy)",
+    type: "course",
+    org: "Udemy",
+    year: 2024,
+    desc: "Udemy course on practical LLM application security, covering API security, data leakage prevention, model access controls, runtime defenses, and abuse monitoring. Intermediate; paid; certificate of completion.",
+    url: "https://www.udemy.com/course/practical-llm-security/",
+    tags: ["llm security", "api security", "intermediate", "udemy", "paid"]
+  },
+  {
+    title: "Red Teaming LLM Applications (DeepLearning.AI)",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2024,
+    authors: ["Dmitry Panichev", "Ansaf Sboui"],
+    desc: "Free short course on red-teaming LLM applications covering pyRIT and PyRIT-style adversarial prompt generation, attack taxonomies, and evaluation methodology. Hands-on; intermediate.",
+    url: "https://www.deeplearning.ai/courses/red-teaming-llm-applications",
+    tags: ["red teaming", "free", "short course", "llm", "hands-on"],
+    license: "free"
+  },
+  {
+    title: "SC-900: Microsoft Security, Compliance, and Identity Fundamentals",
+    type: "course",
+    org: "Microsoft Learn",
+    year: 2024,
+    desc: "Microsoft's foundational security cert includes AI/Copilot security modules covering Purview AI discovery and Defender for AI. Beginner-friendly; self-paced; free.",
+    url: "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+    tags: ["fundamentals", "beginner", "certification", "microsoft", "free"]
+  },
+  {
+    title: "SEC574: Continuous Security Testing for AI and ML",
+    type: "course",
+    org: "SANS Institute",
+    year: 2024,
+    desc: "Live SANS course on building continuous AI/ML security testing pipelines: regression testing, automated adversarial probing, and CI integration. Intermediate; hands-on labs.",
+    url: "https://www.sans.org/cyber-security-courses/continuous-security-testing-sec574/",
+    tags: ["continuous testing", "ci", "intermediate", "sans", "hands-on"]
+  },
+  {
+    title: "SEC595: Foundations of AI Engineering",
+    type: "course",
+    org: "SANS Institute",
+    year: 2024,
+    desc: "6-day SANS course introducing AI/ML engineering fundamentals with a security lens: data preparation, model training, deployment, and adversarial considerations. Beginner-to-intermediate.",
+    url: "https://www.sans.org/cyber-security-courses/foundations-of-ai-engineering/",
+    tags: ["ai engineering", "foundations", "beginner", "sans", "video"]
+  },
+  {
+    title: "Safe and Reliable AI via Guardrails",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2024,
+    desc: "Free short course on building safe generative AI applications using NeMo Guardrails, covering input/output rails, dialog safety, topic control, and jailbreak-resistant flows. ~1-2 hours; intermediate; hands-on.",
+    url: "https://www.deeplearning.ai/courses/safe-and-reliable-ai-via-guardrails",
+    tags: ["guardrails", "safety", "intermediate", "short course", "free"],
+    license: "free"
+  },
+  {
+    title: "Secure AI Framework (SAIF) Learning Path",
+    type: "course",
+    org: "Google Cloud Skills Boost",
+    year: 2024,
+    desc: "Google Cloud's learning path on SAIF — Secure AI Framework. Covers threat modeling for AI systems, model security, and Vertex AI security controls. Intermediate; self-paced.",
+    url: "https://www.cloudskillsboost.google/paths/2240",
+    tags: ["saif", "intermediate", "google", "self-paced", "framework"]
+  },
+  {
+    title: "Securing Generative AI Applications (Udemy)",
+    type: "course",
+    org: "Udemy",
+    year: 2024,
+    desc: "Udemy course on securing generative AI applications, covering OWASP LLM Top 10 risks, prompt injection defenses, RAG security, and deployment patterns with code examples. Intermediate; paid; certificate of completion.",
+    url: "https://www.udemy.com/course/securing-generative-ai-applications/",
+    tags: ["generative ai", "owasp llm", "intermediate", "udemy", "paid"]
+  },
+  {
+    title: "Stanford CS25: Transformers United",
+    type: "course",
+    org: "Stanford University",
+    year: 2024,
+    desc: "Stanford seminar course featuring guest lectures from researchers on transformer architectures, large-scale training, alignment, and LLM safety. Public lecture videos and slides available free; graduate-level.",
+    url: "https://cs25.stanford.edu/",
+    tags: ["transformers", "graduate", "lecture series", "free", "self-paced"],
+    license: "free"
+  },
+  {
+    title: "Stanford CS329S: Machine Learning Systems Design",
+    type: "course",
+    org: "Stanford University",
+    year: 2024,
+    authors: ["Chip Huyen"],
+    desc: "Stanford course on production ML systems design including data, deployment, monitoring, and continuous learning. Lecture slides and notes freely available; graduate-level.",
+    url: "https://web.stanford.edu/class/cs329s/",
+    tags: ["mlops", "graduate", "lecture notes", "free", "production"],
+    license: "free"
+  },
+  {
+    title: "fast.ai Practical Deep Learning",
+    type: "course",
+    org: "fast.ai",
+    year: 2024,
+    authors: ["Jeremy Howard", "Rachel Thomas"],
+    desc: "Free, top-down, code-first deep learning course teaching practical neural network training with PyTorch. Includes lectures, Jupyter notebooks, and community forums; beginner-friendly.",
+    url: "https://course.fast.ai/",
+    tags: ["deep learning", "free", "self-paced", "beginner", "pytorch"],
+    license: "free"
+  },
+  {
+    title: "ChatGPT Prompt Engineering for Developers (DeepLearning.AI)",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2023,
+    authors: ["Andrew Ng", "Isa Fulford"],
+    desc: "Free 1-hour short course teaching practical prompt engineering with the OpenAI API, including summarization, inference, transformation, and chatbot patterns. Code-first; beginner-to-intermediate.",
+    url: "https://www.deeplearning.ai/courses/chatgpt-prompt-eng",
+    tags: ["prompt engineering", "free", "short course", "self-paced", "openai api"],
+    license: "free"
+  },
+  {
+    title: "Generative AI for Everyone",
+    type: "course",
+    org: "Coursera (DeepLearning.AI)",
+    year: 2023,
+    authors: ["Andrew Ng"],
+    desc: "Coursera course by Andrew Ng on what generative AI is, how it works, lifecycle considerations, and how it can be applied across business functions including responsible-use patterns. Beginner; ~10 hours; certificate available.",
+    url: "https://www.coursera.org/learn/generative-ai-for-everyone",
+    tags: ["generative ai", "beginner", "coursera", "certificate", "lifecycle"]
+  },
+  {
+    title: "Generative AI with LLMs (DeepLearning.AI)",
+    type: "course",
+    org: "DeepLearning.AI",
+    year: 2023,
+    authors: ["Andrew Ng", "Cindy Leung"],
+    desc: "Free intermediate course on the LLM lifecycle from pre-training to RLHF, fine-tuning, and deployment, with hands-on labs using PyTorch and Hugging Face. Multi-week; intermediate.",
+    url: "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+    tags: ["llm", "rlhf", "fine-tuning", "free", "intermediate"],
+    license: "free"
+  },
+  {
+    title: "Hugging Face NLP Course",
+    type: "course",
+    org: "Hugging Face",
+    year: 2023,
+    desc: "Free open-source NLP course using the Transformers library. Includes tokenization, fine-tuning, and a section on NLP model security including adversarial examples. Beginner; self-paced; free.",
+    url: "https://huggingface.co/learn/nlp-course",
+    tags: ["nlp", "beginner", "free", "self-paced", "hugging face"]
+  },
+  {
+    title: "Introduction to Generative AI",
+    type: "course",
+    org: "Coursera (Google Cloud)",
+    year: 2023,
+    desc: "Coursera course by Google Cloud introducing generative AI concepts, the GenAI stack, and Google's tools including Vertex AI, Gemini, and responsible AI principles. Beginner; ~8 hours; certificate available.",
+    url: "https://www.coursera.org/learn/introduction-to-generative-ai",
+    tags: ["generative ai", "google cloud", "beginner", "coursera", "certificate"]
+  },
+  {
+    title: "LearnPrompting Course Curriculum",
+    type: "course",
+    org: "LearnPrompting",
+    year: 2023,
+    authors: ["Sander Schulhoff"],
+    desc: "Free open-source, peer-reviewed curriculum on prompt engineering covering basics through advanced techniques with dedicated sections on prompt injection, jailbreaking, red teaming, and defensive measures. Self-paced; beginner-to-advanced.",
+    url: "https://learnprompting.org/docs/introduction",
+    tags: ["prompt engineering", "free", "self-paced", "open source", "beginner"],
+    license: "MIT"
+  },
+  {
+    title: "MIT Cybersecurity Leadership",
+    type: "course",
+    org: "edX (MIT Sloan School of Management)",
+    year: 2023,
+    desc: "edX course by MIT Sloan covering cybersecurity leadership, risk management, governance, and emerging AI/ML threat considerations for executives managing security programs. Intermediate; self-paced; paid certificate.",
+    url: "https://www.edx.org/learn/cybersecurity/mit-cybersecurity-leadership",
+    tags: ["cybersecurity", "leadership", "intermediate", "edx", "certificate"]
+  },
+  {
+    title: "Prompt Engineering for ChatGPT",
+    type: "course",
+    org: "Coursera (Vanderbilt University)",
+    year: 2023,
+    authors: ["Jules White"],
+    desc: "Coursera course by Vanderbilt University teaching prompt engineering patterns for ChatGPT, covering few-shot, chain-of-thought, role-based, and complex prompt design with security-adjacent considerations. Beginner-to-intermediate; ~18 hours; certificate available.",
+    url: "https://www.coursera.org/learn/prompt-engineering",
+    tags: ["prompt engineering", "chatgpt", "beginner", "coursera", "certificate"]
+  },
+  {
+    title: "SEC580: AI and ML Security Essentials",
+    type: "course",
+    org: "SANS Institute",
+    year: 2023,
+    desc: "Two-day SANS course covering the offensive and defensive essentials of ML/AI security: attack taxonomy, model theft, adversarial examples, prompt injection. Beginner-to-intermediate.",
+    url: "https://www.sans.org/cyber-security-courses/sec580-ai-ml-security-essentials/",
+    tags: ["essentials", "ml security", "beginner", "sans"]
+  },
+  {
+    title: "Stanford CS324: Large Language Models",
+    type: "course",
+    org: "Stanford University",
+    year: 2023,
+    authors: ["Percy Liang", "Tatsunori Hashimoto"],
+    desc: "Stanford graduate course covering LLM modeling, training, and societal impact including safety, alignment, and harms. Course website provides free lecture notes, assignments, and readings.",
+    url: "https://stanford-cs324.github.io/",
+    tags: ["llm", "graduate", "lecture notes", "free", "safety"],
+    license: "free"
+  },
+  {
+    title: "AI Ethics",
+    type: "course",
+    org: "Coursera",
+    year: 2022,
+    desc: "Coursera course covering AI ethics frameworks, fairness, accountability, transparency, and practical guidance for deploying responsible AI systems across organizational contexts. Beginner-to-intermediate; self-paced; certificate available.",
+    url: "https://www.coursera.org/learn/ai-ethics",
+    tags: ["ai ethics", "fairness", "beginner", "coursera", "certificate"]
+  },
+  {
+    title: "Kaggle Learn — Intro to AI Ethics",
+    type: "course",
+    org: "Kaggle",
+    year: 2022,
+    desc: "Free short course introducing AI ethics concepts including bias, fairness, and responsible AI practice with hands-on Python notebooks. Self-paced; beginner.",
+    url: "https://www.kaggle.com/learn/intro-to-ai-ethics",
+    tags: ["ai ethics", "free", "self-paced", "beginner", "hands-on"],
+    license: "free"
+  },
+  {
+    title: "CS50's Introduction to Artificial Intelligence with Python",
+    type: "course",
+    org: "edX (Harvard University)",
+    year: 2020,
+    authors: ["David J. Malan", "Brian Yu"],
+    desc: "edX course by Harvard covering AI concepts including search algorithms, optimization, reinforcement learning, and neural networks using Python, with discussion of AI safety and ethics implications. Intermediate; self-paced; free audit, paid certificate.",
+    url: "https://www.edx.org/learn/artificial-intelligence/harvard-university-cs50-s-introduction-to-artificial-intelligence-with-python",
+    tags: ["ai", "python", "intermediate", "edx", "certificate"]
+  },
+  {
+    title: "AI for Everyone",
+    type: "course",
+    org: "Coursera (DeepLearning.AI)",
+    year: 2019,
+    authors: ["Andrew Ng"],
+    desc: "Coursera course by Andrew Ng providing a non-technical overview of AI for business and project leaders, covering AI project planning, ethics, team workflows, and limitations. Beginner; ~6 hours; certificate available.",
+    url: "https://www.coursera.org/learn/ai-for-everyone",
+    tags: ["ai fundamentals", "beginner", "coursera", "certificate", "non-technical"]
+  },
+  {
+    title: "Introduction to Cyber Attacks",
+    type: "course",
+    org: "edX (NYU Tandon School of Engineering)",
+    year: 2019,
+    desc: "edX course by NYU covering foundational cyber attack concepts including threats, vulnerabilities, adversary motivations, and the evolving AI-enabled threat landscape. Beginner; self-paced; free audit, paid certificate.",
+    url: "https://www.edx.org/learn/cybersecurity/nyu-introduction-to-cyber-attacks",
+    tags: ["cyber attacks", "beginner", "edx", "certificate", "free audit"]
+  },
+  {
+    title: "AI Pentesting (Pluralsight)",
+    type: "course",
+    org: "Pluralsight",
+    desc: "Pluralsight course on penetration testing AI/ML systems, covering model inversion, membership inference attacks, API abuse, and end-to-end AI red team engagement methodology. Intermediate-to-advanced; video; subscription.",
+    url: "https://app.pluralsight.com/library/courses/ai-pentesting",
+    tags: ["pentesting", "ai", "intermediate", "video", "subscription"]
+  },
+  {
+    title: "AI Security Foundations (Pluralsight)",
+    type: "course",
+    org: "Pluralsight",
+    desc: "Foundational Pluralsight course on securing AI systems, covering AI threat models, the OWASP LLM Top 10, adversarial ML concepts, and defensive controls for ML/LLM workloads. Beginner-to-intermediate; video; subscription.",
+    url: "https://app.pluralsight.com/library/courses/ai-security-foundations",
+    tags: ["ai security", "foundations", "beginner", "video", "subscription"]
+  },
+  {
+    title: "AI Village YouTube Channel (DEF CON)",
+    type: "course",
+    org: "AI Village",
+    desc: "YouTube channel of the DEF CON AI Village featuring talks, panels, and tutorials on LLM security, prompt injection, AI red teaming, and AI CTFs. Free; intermediate-to-advanced.",
+    url: "https://www.youtube.com/@AIVillage",
+    tags: ["youtube", "free", "talks", "ai village", "self-paced"]
+  },
+  {
+    title: "Adversarial Machine Learning (Pluralsight)",
+    type: "course",
+    org: "Pluralsight",
+    desc: "Pluralsight course on adversarial ML attacks and defenses, covering evasion, poisoning, model extraction, membership inference, and the NIST adversarial ML taxonomy. Intermediate; video; subscription.",
+    url: "https://app.pluralsight.com/library/courses/adversarial-machine-learning",
+    tags: ["adversarial ml", "intermediate", "video", "subscription", "defenses"]
+  },
+  {
+    title: "Anthropic Alignment Research Archive",
+    type: "course",
+    org: "Anthropic",
+    desc: "Anthropic's published alignment and safety research archive, including Constitutional AI, RLHF methods, and interpretability studies — usable as structured self-study material. Free; advanced.",
+    url: "https://alignment.anthropic.com/",
+    tags: ["alignment", "research", "free", "advanced", "anthropic"],
+    license: "free"
+  },
+  {
+    title: "Black Hat Official YouTube",
+    type: "course",
+    org: "Black Hat",
+    desc: "Official Black Hat YouTube channel publishing recorded briefings and selected training previews including AI/LLM security content. Free; intermediate-to-advanced.",
+    url: "https://www.youtube.com/@BlackHatOfficialYT",
+    tags: ["youtube", "free", "briefings", "conference", "ai security"]
+  },
+  {
+    title: "Bluedot AI Safety Courses",
+    type: "course",
+    org: "Bluedot Impact",
+    desc: "Free, cohort-based online courses on AI safety, alignment, governance, and catastrophic risks with structured curricula and weekly discussion groups. Self-paced options also available; beginner-to-advanced.",
+    url: "https://www.bluedot.org/courses",
+    tags: ["ai safety", "free", "cohort", "alignment", "self-paced"],
+    license: "free"
+  },
+  {
+    title: "Cloud Security Alliance Education",
+    type: "course",
+    org: "Cloud Security Alliance",
+    desc: "CSA education portal with free and paid training, certifications (CCSK, Certificate of Cloud Security Knowledge), and AI Safety Initiative training resources. Free and paid; beginner-to-intermediate.",
+    url: "https://cloudsecurityalliance.org/education/",
+    tags: ["certification", "cloud security", "free", "paid", "self-paced"]
+  },
+  {
+    title: "DEF CON — Hacker Convention",
+    type: "course",
+    org: "DEF CON",
+    desc: "Annual hacker convention with dedicated AI Village talks, workshops, and CTFs on LLM/agent security; recorded talks freely available via media.defcon.org. Free talk archives; conference paid.",
+    url: "https://defcon.org/",
+    tags: ["conference", "talks", "free archives", "ai village", "ctf"]
+  },
+  {
+    title: "DEFCON YouTube Channel",
+    type: "course",
+    org: "DEF CON",
+    desc: "Official DEF CON YouTube channel publishing recorded conference talks including AI Village sessions, recon village, and red team content. Free; intermediate-to-advanced.",
+    url: "https://www.youtube.com/@DEFCON",
+    tags: ["youtube", "free", "talks", "conference", "ai village"]
+  },
+  {
+    title: "Daniel Miessler — AI Security Blog",
+    type: "course",
+    org: "Daniel Miessler",
+    desc: "Personal blog of Daniel Miessler covering applied AI security, prompt injection analysis, agent threat models, and the AI attack surface map. Free; practitioner-level.",
+    url: "https://danielmiessler.com/",
+    tags: ["ai security", "free", "self-paced", "blog", "practitioner"]
+  },
+  {
+    title: "Distill.pub — Research Communication",
+    type: "course",
+    org: "Distill",
+    desc: "Open-access research journal with rich interactive visualizations explaining neural network interpretability, feature visualization, and adversarial examples. Functions as a teaching archive; free; advanced.",
+    url: "https://distill.pub/",
+    tags: ["interpretability", "research", "free", "visualization", "advanced"],
+    license: "CC-BY-4.0"
+  },
+  {
+    title: "EC-Council Certified Ethical Hacker (CEH)",
+    type: "course",
+    org: "EC-Council",
+    desc: "Vendor-neutral ethical hacking certification covering reconnaissance, scanning, exploitation, and post-exploitation; recent curricula include AI-augmented offensive techniques. Paid instructor-led or self-study.",
+    url: "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/",
+    tags: ["certification", "paid", "ethical hacking", "self-study", "practitioner"]
+  },
+  {
+    title: "Embrace The Red — Johann Rehberger's Security Blog",
+    type: "course",
+    org: "Embrace The Red",
+    authors: ["Johann Rehberger"],
+    desc: "Detailed write-ups on LLM/agent security including prompt injection, exfiltration attacks, multi-agent attacks, and tool-use exploitation with reproducible demos. Free; practitioner-to-advanced.",
+    url: "https://embracethered.com/blog/",
+    tags: ["prompt injection", "agent security", "free", "blog", "practitioner"]
+  },
+  {
+    title: "Generative AI Security (Pluralsight)",
+    type: "course",
+    org: "Pluralsight",
+    desc: "Pluralsight course on security considerations for generative AI adoption, covering model supply-chain risks, training-data governance, prompt injection, and enterprise deployment guardrails. Intermediate; video; subscription.",
+    url: "https://app.pluralsight.com/library/courses/generative-ai-security",
+    tags: ["generative ai", "security", "intermediate", "video", "subscription"]
+  },
+  {
+    title: "ISC2 CISSP Certification",
+    type: "course",
+    org: "ISC2",
+    desc: "Vendor-neutral Certified Information Systems Security Professional credential covering all eight CBK domains; recent updates include AI/ML security topics in the Security and Risk Management domain. Paid exam; self-study materials widely available.",
+    url: "https://www.isc2.org/certifications/cissp",
+    tags: ["certification", "paid", "self-study", "practitioner", "governance"]
+  },
+  {
+    title: "LiveOverflow — Security & CTF Education",
+    type: "course",
+    org: "LiveOverflow",
+    desc: "YouTube channel teaching offensive security, CTF techniques, and increasingly AI/LLM security including prompt injection and agent exploitation. Free; intermediate-to-advanced.",
+    url: "https://www.youtube.com/@LiveOverflow",
+    tags: ["youtube", "free", "ctf", "self-paced", "offensive"]
+  },
+  {
+    title: "MIT OpenCourseWare — Artificial Intelligence",
+    type: "course",
+    org: "Massachusetts Institute of Technology",
+    desc: "Free, openly licensed MIT AI course materials including lectures, assignments, and exams from courses across deep learning, ML, and AI ethics. Self-paced; undergraduate-to-graduate.",
+    url: "https://ocw.mit.edu/",
+    tags: ["academic", "free", "self-paced", "lecture notes", "open license"]
+  },
+  {
+    title: "Microsoft Learn — Azure OpenAI Red Teaming",
+    type: "course",
+    org: "Microsoft",
+    desc: "Microsoft Learn module covering red-teaming concepts for Azure OpenAI models, including adversarial testing workflows, failure categories, and integration with Microsoft AI red team tooling. Free; intermediate.",
+    url: "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/red-teaming",
+    tags: ["red teaming", "microsoft", "free", "self-paced", "azure"],
+    license: "free"
+  },
+  {
+    title: "NDSS Symposium — Network and Distributed System Security",
+    type: "course",
+    org: "Internet Society",
+    desc: "Top-tier academic security conference featuring peer-reviewed AI security papers, workshops (e.g., AI Safety, Decentralized AI), and tutorials. Papers and presentations freely available; advanced.",
+    url: "https://www.ndss-symposium.org/",
+    tags: ["conference", "academic", "free papers", "workshops", "advanced"]
+  },
+  {
+    title: "Red Teaming LLM Applications (Pluralsight)",
+    type: "course",
+    org: "Pluralsight",
+    desc: "Pluralsight course on adversarially testing LLM applications, covering jailbreak techniques, prompt injection methodology, attack taxonomies, and structured red-team workflow design. Intermediate; video; subscription.",
+    url: "https://app.pluralsight.com/library/courses/red-teaming-llm-applications",
+    tags: ["red teaming", "llm", "intermediate", "video", "subscription"]
+  },
+  {
+    title: "SANS Free Webcasts",
+    type: "course",
+    org: "SANS Institute",
+    desc: "Free monthly webcast series by SANS instructors covering current AI/LLM security topics, red-teaming techniques, and defensive controls. Live + recorded archives; practitioner-level.",
+    url: "https://www.sans.org/webcasts/",
+    tags: ["webcast", "free", "self-paced", "practitioner", "ai security"]
+  },
+  {
+    title: "Securing OpenAI LLM Applications (Pluralsight)",
+    type: "course",
+    org: "Pluralsight",
+    desc: "Pluralsight course on securing applications built on OpenAI APIs, covering prompt injection defenses, API key management, data leakage prevention, content filtering, and deployment hardening. Intermediate; video; subscription.",
+    url: "https://app.pluralsight.com/library/courses/securing-openai-llm-applications",
+    tags: ["openai", "llm security", "intermediate", "video", "subscription"]
+  },
+  {
+    title: "Security BSides — Community Conference Network",
+    type: "course",
+    org: "Security BSides",
+    desc: "Decentralized community-run security conference network with free recorded talks on AI/LLM security, red teaming, and adversarial ML from local BSides events worldwide. Free archives; intermediate.",
+    url: "https://www.securitybsides.com/",
+    tags: ["conference", "community", "free archives", "talks", "intermediate"]
+  },
+  {
+    title: "Transformer Circuits Research (Anthropic interpretability)",
+    type: "course",
+    org: "Anthropic",
+    desc: "Anthropic's interpretability research publication series — structured like a research-as-curriculum archive covering induction heads, grokking, toy models of superposition, and mechanistic interpretability. Free; advanced.",
+    url: "https://transformer-circuits.pub/",
+    tags: ["interpretability", "research", "free", "advanced", "mechanistic"],
+    license: "free"
+  },
+  {
+    title: "USENIX Security Symposium",
+    type: "course",
+    org: "USENIX",
+    desc: "Premier academic security conference with AI/ML security papers, adversarial ML track, and recorded talks freely available post-event. Self-paced from archives; advanced.",
+    url: "https://www.usenix.org/conference/usenixsecurity26",
+    tags: ["conference", "academic", "free talks", "adversarial ml", "advanced"]
+  },
+  {
+    title: "Yannic Kilcher — ML Papers Explained",
+    type: "course",
+    org: "Yannic Kilcher",
+    desc: "YouTube channel walking through seminal LLM, ML, and AI safety papers (GPT, RLHF, Constitutional AI, jailbreaks) with detailed technical explanations. Free; intermediate-to-advanced.",
+    url: "https://www.youtube.com/@YannicKilcher",
+    tags: ["youtube", "free", "papers", "self-paced", "advanced"]
+  },
+
+  /* ---------- BLOG POSTS & PODCASTS ---------- */
   {
     title: "CSA Labs research notes",
-    type: "blog",
+    type: "blog_post",
     org: "Cloud Security Alliance",
     year: 2026,
     desc: "Research notes on NIST agent standards and red-teaming.",
     url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-agent-red-teaming-standards-202603/",
-    tags: ["csa", "nist"]
+    tags: ["csa", "nist", "blog"]
   },
   {
     title: "OWASP Gen AI Security Project",
-    type: "blog",
+    type: "blog_post",
     org: "OWASP",
     year: 2025,
     desc: "Initiative updates and resource drops — follow for new agentic security material.",
     url: "https://genai.owasp.org/",
-    tags: ["owasp"]
+    tags: ["owasp", "blog"]
+  },
+  {
+    title: "AI Snake Oil Podcast",
+    type: "blog_post",
+    org: "AI Snake Oil",
+    year: 2024,
+    authors: ["Sayash Kapoor", "Arvind Narayanan"],
+    desc: "Companion podcast to the AI Snake Oil Substack by Kapoor and Narayanan, critically examining AI hype, AI security marketing claims, and limitations of AI red teaming and safety evaluations.",
+    url: "https://aisnakeoil.com/podcast",
+    tags: ["podcast", "ai", "ai safety", "critique", "research"]
+  },
+  {
+    title: "CyberWire AI Security Brief",
+    type: "blog_post",
+    org: "CyberWire",
+    year: 2024,
+    authors: ["Maria Vello", "Dave Bittner"],
+    desc: "Dedicated AI security podcast covering adversarial machine learning, model attacks, agentic AI threats, and AI governance. Practical interviews with red teamers and vendors in the AI security space.",
+    url: "https://thecyberwire.com/podcasts/ai-security-brief",
+    tags: ["podcast", "ai security", "red teaming", "news", "interview"]
   },
   {
     title: "Gray Swan News",
-    type: "newsletter",
+    type: "blog_post",
     org: "Gray Swan AI",
     year: 2024,
     authors: ["Gray Swan AI"],
     desc: "News and research feed from Gray Swan AI, an AI-security startup founded by former CSET researchers, publishing technical write-ups on LLM jailbreaks, robustness evaluations, and the CiderGuard defense.",
     url: "https://grayswan.ai/news",
-    tags: ["jailbreaking", "robustness", "llm security", "vendor blog"]
+    tags: ["jailbreaking", "robustness", "llm security", "vendor blog", "newsletter"]
+  },
+  {
+    title: "Microsoft Threat Intelligence Podcast",
+    type: "blog_post",
+    org: "Microsoft (CyberWire network)",
+    year: 2024,
+    authors: ["Sherrod DeGrippo", "Jessica Payne"],
+    desc: "Microsoft Threat Intelligence podcast covering nation-state AI campaigns, AI-driven social engineering, and threats targeting AI infrastructure. Frequent MSTIR analysts as guests.",
+    url: "https://thecyberwire.com/podcasts/microsoft-threat-intelligence",
+    tags: ["podcast", "threat intel", "ai security", "microsoft", "nation-state"]
   },
   {
     title: "Mozilla.ai Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Mozilla.ai",
     year: 2024,
     desc: "Blog from Mozilla.ai, Mozilla's AI-focused subsidiary, publishing open-source AI research, model evaluations, and security analyses of open-weight LLMs and agentic frameworks. Covers topics like Llamafile, Lantern, and local-agent security.",
     url: "https://blog.mozilla.ai/",
-    tags: ["open source ai", "ai evaluation", "open weights", "vendor blog"]
+    tags: ["open source ai", "ai evaluation", "open weights", "vendor blog", "blog"]
   },
   {
     title: "Pillar Security Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Pillar Security",
     year: 2024,
     desc: "Vendor blog from Pillar Security, focused on AI security policy, threat modeling, and runtime defenses for GenAI applications. Publishes research on agentic-AI risks and enterprise security frameworks for LLM deployments.",
     url: "https://www.pillar.security/blog",
-    tags: ["ai security", "threat modeling", "agentic security", "vendor blog"]
+    tags: ["ai security", "threat modeling", "agentic security", "vendor blog", "blog"]
   },
   {
     title: "The Real Threats of Artificial Intelligence – AI Security Newsletter",
-    type: "newsletter",
+    type: "blog_post",
     org: "Hackstery",
     year: 2024,
     authors: ["Wesley Thiessen"],
@@ -6428,46 +7430,86 @@ const RESOURCES = [
   },
   {
     title: "AI Snake Oil",
-    type: "newsletter",
+    type: "blog_post",
     org: "Sayash Kapoor, Arvind Narayanan",
     year: 2023,
     authors: ["Sayash Kapoor", "Arvind Narayanan"],
     desc: "Substack newsletter (now renamed 'AI as Normal Technology') critiquing AI hype and documenting real-world AI failures, security incidents, and jailbreak demonstrations. Authored by researchers at Princeton's Center for Information Technology Policy.",
     url: "https://aisnakeoil.substack.com/",
-    tags: ["ai incidents", "ai safety", "jailbreaking", "critique", "substack"]
+    tags: ["ai incidents", "ai safety", "jailbreaking", "critique", "substack", "newsletter"]
   },
   {
     title: "Apollo Research Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Apollo Research",
     year: 2023,
     authors: ["Apollo Research"],
     desc: "Blog from Apollo Research publishing frontier-model evaluations focused on scheming, deception, and sandbagging behavior in LLM agents. Runs pre-deployment evaluations for major frontier labs and policymakers.",
     url: "https://www.apolloresearch.ai/blog",
-    tags: ["scheming", "deception", "frontier models", "evaluation", "research blog"]
+    tags: ["scheming", "deception", "frontier models", "evaluation", "research blog", "newsletter"]
+  },
+  {
+    title: "Cognitive Revolution",
+    type: "blog_post",
+    org: "Cognitive Revolution",
+    year: 2023,
+    authors: ["Nathan Labenz"],
+    desc: "AI research podcast featuring deep technical interviews with leading researchers, including extensive coverage of AI evals, model red teaming, agentic AI risks, and frontier safety incidents.",
+    url: "https://www.cognitiverevolution.ai/",
+    tags: ["podcast", "ai", "ai safety", "red teaming", "interview"]
   },
   {
     title: "Embrace the Red",
-    type: "newsletter",
+    type: "blog_post",
     org: "Johann Rehberger",
     year: 2023,
     authors: ["Johann Rehberger"],
     desc: "Independent blog and newsletter tracking real-world prompt injection, indirect prompt injection, and agentic AI security incidents with detailed technical write-ups and reproducible demos. Frequently cited for documenting attacks against ChatGPT, Copilot, and other consumer LLM agents.",
     url: "https://embracethered.com/",
-    tags: ["prompt injection", "agentic security", "incident", "red teaming", "research blog"]
+    tags: ["prompt injection", "agentic security", "incident", "red teaming", "research blog", "newsletter"]
+  },
+  {
+    title: "Hard Fork",
+    type: "blog_post",
+    org: "The New York Times",
+    year: 2023,
+    authors: ["Kevin Roose", "Casey Newton"],
+    desc: "New York Times technology podcast covering AI industry developments, AI safety debates, and notable AI security incidents including jailbreaks, agent misbehavior, and frontier model red teaming disclosures.",
+    url: "https://www.nytimes.com/column/hard-fork",
+    tags: ["podcast", "ai", "tech news", "ai safety", "weekly"]
   },
   {
     title: "Lasso Security Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Lasso Security",
     year: 2023,
     desc: "Vendor blog from Lasso Security covering LLM and agentic-AI threat research, prompt-injection defenses, and enterprise GenAI deployment guidance. Includes technical write-ups of new attacks and CVEs against LLM frameworks.",
     url: "https://www.lasso.security/blog",
-    tags: ["llm security", "agentic security", "prompt injection", "vendor blog"]
+    tags: ["llm security", "agentic security", "prompt injection", "vendor blog", "blog"]
+  },
+  {
+    title: "Latent Space Podcast",
+    type: "blog_post",
+    org: "Latent Space",
+    year: 2023,
+    authors: ["Swyx", "Alessio Fanelli"],
+    desc: "AI engineering podcast covering frontier model development, AI infrastructure, and AI security topics including prompt injection defenses, evals, agent security, and AI red team tooling.",
+    url: "https://www.latent.space/podcast",
+    tags: ["podcast", "ai", "ai security", "engineering", "interview"]
+  },
+  {
+    title: "Lightcone (YC)",
+    type: "blog_post",
+    org: "Y Combinator",
+    year: 2023,
+    authors: ["Garry Tan", "Jared Friedman", "Harj Taggar", "Diana Hu"],
+    desc: "Y Combinator partner discussion podcast covering startup trends including AI safety, agentic AI startup risks, and frontier AI security considerations for AI-native founders.",
+    url: "https://www.youtube.com/@ycombinator",
+    tags: ["podcast", "ai", "startups", "ai safety", "interview"]
   },
   {
     title: "OWASP Gen AI Security Project Newsletter",
-    type: "newsletter",
+    type: "blog_post",
     org: "OWASP",
     year: 2023,
     authors: ["OWASP Gen AI Security Project"],
@@ -6477,27 +7519,37 @@ const RESOURCES = [
   },
   {
     title: "Prompt Security Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Prompt Security",
     year: 2023,
     authors: ["Prompt Security"],
     desc: "Vendor blog from Prompt Security covering LLM and agentic-AI threat research, new prompt-injection and exfiltration techniques, and enterprise guidance on protecting GenAI deployments.",
     url: "https://www.prompt.security/blog",
-    tags: ["llm security", "prompt injection", "agentic security", "vendor blog"]
+    tags: ["llm security", "prompt injection", "agentic security", "vendor blog", "newsletter"]
   },
   {
     title: "Rez",
-    type: "newsletter",
+    type: "blog_post",
     org: "Joseph Thacker",
     year: 2023,
     authors: ["Joseph Thacker"],
     desc: "Substack newsletter by AI red-teamer Joseph Thacker (rez0), covering LLM jailbreaks, prompt-injection techniques, agentic AI vulnerabilities, and practical red-teaming methodology drawn from his work at Trail of Bits and independent research.",
     url: "https://rez0.substack.com/",
-    tags: ["ai red teaming", "jailbreaking", "prompt injection", "substack"]
+    tags: ["ai red teaming", "jailbreaking", "prompt injection", "substack", "newsletter"]
+  },
+  {
+    title: "The AI Breakdown",
+    type: "blog_post",
+    org: "The AI Breakdown",
+    year: 2023,
+    authors: ["Nathaniel Whittemore"],
+    desc: "Daily AI news and analysis podcast with extensive coverage of AI safety incidents, model jailbreaks, agent security failures, and frontier AI policy. Daily format covers breaking AI red teaming research.",
+    url: "https://theaibreakdown.com/",
+    tags: ["podcast", "ai", "ai safety", "news", "daily"]
   },
   {
     title: "The Rundown AI",
-    type: "newsletter",
+    type: "blog_post",
     org: "The Rundown",
     year: 2023,
     authors: ["The Rundown"],
@@ -6507,151 +7559,211 @@ const RESOURCES = [
   },
   {
     title: "AVID Blog",
-    type: "blog",
+    type: "blog_post",
     org: "AVID (AI Vulnerability Database)",
     year: 2022,
     desc: "Blog from the AI Vulnerability Database (AVID), an open-source taxonomy and repository of AI model failure modes. Publishes case studies of AI harms, evaluated model risks, and dataset evaluations contributed by the community.",
     url: "https://avidml.org/blog/",
-    tags: ["ai vulnerability", "failure modes", "taxonomy", "open source"]
+    tags: ["ai vulnerability", "failure modes", "taxonomy", "open source", "blog"]
   },
   {
     title: "Ahead of AI",
-    type: "newsletter",
+    type: "blog_post",
     org: "Sebastian Raschka",
     year: 2022,
     authors: ["Sebastian Raschka"],
     desc: "Substack newsletter by Sebastian Raschka covering LLM research, training, and security topics including fine-tuning attacks, model tampering, and the technical underpinnings of jailbreak and prompt-injection defenses.",
     url: "https://magazine.sebastianraschka.com/",
-    tags: ["llm research", "ai security", "fine-tuning", "technical", "substack"]
+    tags: ["llm research", "ai security", "fine-tuning", "technical", "substack", "newsletter"]
   },
   {
     title: "CAIS Research Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Center for AI Safety",
     year: 2022,
     authors: ["Center for AI Safety"],
     desc: "Blog from the Center for AI Safety (CAIS) publishing frontier-model evaluations, deception/scheming research, and policy-relevant threat analysis. Hosts the globally cited 'AI Risk' statement and related safety research.",
     url: "https://www.safe.ai/blog",
-    tags: ["ai safety", "frontier models", "evaluation", "policy", "research blog"]
+    tags: ["ai safety", "frontier models", "evaluation", "policy", "research blog", "newsletter"]
   },
   {
     title: "HiddenLayer Research",
-    type: "newsletter",
+    type: "blog_post",
     org: "HiddenLayer",
     year: 2022,
     authors: ["HiddenLayer"],
     desc: "Research portal from HiddenLayer, an AI-security vendor, publishing threat research on model theft, adversarial machine-learning attacks, and AI supply-chain risks. Mirrors findings reported to MITRE ATLAS.",
     url: "https://hiddenlayer.com/research",
-    tags: ["adversarial ml", "model theft", "supply chain", "research blog", "vendor"]
+    tags: ["adversarial ml", "model theft", "supply chain", "research blog", "vendor", "newsletter"]
   },
   {
     title: "Kai Greshake's Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Kai Greshake",
     year: 2022,
     authors: ["Kai Greshake"],
     desc: "Personal blog of prompt-injection researcher Kai Greshake, co-author of the original indirect prompt injection paper, with ongoing analysis of LLM agent vulnerabilities, defensive proposals, and security research commentary.",
     url: "https://kai-greshake.de/",
-    tags: ["prompt injection", "indirect prompt injection", "research blog", "llm security"]
+    tags: ["prompt injection", "indirect prompt injection", "research blog", "llm security", "newsletter"]
   },
   {
     title: "Lakera Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Lakera",
     year: 2022,
     authors: ["Lakera"],
     desc: "Blog and newsletter from Lakera, vendor of the Lakera Guard LLM firewall, covering prompt-injection research, LLM red-teaming methodology, and the company's annual LLM security 'state of the union' reports.",
     url: "https://lakera.ai/blog/",
-    tags: ["llm firewall", "prompt injection", "red teaming", "vendor blog"]
+    tags: ["llm firewall", "prompt injection", "red teaming", "vendor blog", "newsletter"]
   },
   {
     title: "LearnPrompting Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Learn Prompting",
     year: 2022,
     authors: ["Sander Schulhoff"],
     desc: "Blog from LearnPrompting.org, the open-source prompt-engineering curriculum, publishing research on prompt injection, jailbreak defenses, and LLM red-teaming alongside community-contributed tutorials.",
     url: "https://learnprompting.org/blog",
-    tags: ["prompt engineering", "prompt injection", "llm security", "education"]
+    tags: ["prompt engineering", "prompt injection", "llm security", "education", "blog"]
+  },
+  {
+    title: "OffSec Podcast",
+    type: "blog_post",
+    org: "OffSec",
+    year: 2022,
+    authors: ["OffSec Team"],
+    desc: "OffSec (Offensive Security) podcast covering penetration testing, red team tradecraft, and emerging offensive AI capabilities including LLM-driven exploit development and agentic offensive automation.",
+    url: "https://offsec.com/podcast",
+    tags: ["podcast", "pentesting", "red teaming", "ai security", "offensive"]
   },
   {
     title: "Protect AI Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Protect AI",
     year: 2022,
     desc: "Vendor blog from Protect AI covering AI/ML supply-chain security, model scanning, runtime threat detection, and the company's Nightmare and VulnHuntr security research tools. Publishes original CVE research for AI frameworks.",
     url: "https://protectai.com/blog",
-    tags: ["ai security", "supply chain", "model scanning", "vendor blog"]
+    tags: ["ai security", "supply chain", "model scanning", "vendor blog", "blog"]
+  },
+  {
+    title: "TCM Security Podcast",
+    type: "blog_post",
+    org: "TCM Security",
+    year: 2022,
+    authors: ["Heath Adams", "Alex Hamrick"],
+    desc: "TCM Security's official podcast covering practical offensive security training, certifications, and emerging techniques including LLM-assisted pentesting and AI red team operations.",
+    url: "https://www.youtube.com/@TCMSecurity",
+    tags: ["podcast", "pentesting", "red teaming", "ai security", "training"]
+  },
+  {
+    title: "The BlueHat Podcast",
+    type: "blog_post",
+    org: "Microsoft (CyberWire network)",
+    year: 2022,
+    authors: ["Nic Fillingham", "Sarah Pearl"],
+    desc: "Microsoft BlueHat podcast featuring offensive security research presented at the BlueHat conference, with episodes on AI red teaming, LLM jailbreaks, and offensive AI research from Microsoft and external researchers.",
+    url: "https://thecyberwire.com/podcasts/the-bluehat-podcast",
+    tags: ["podcast", "offensive security", "ai security", "red teaming", "conference"]
   },
   {
     title: "Zenity Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Zenity",
     year: 2022,
     desc: "Vendor blog from Zenity, which provides security for low-code/no-code and AI-agent platforms (Microsoft Copilot, Salesforce, ServiceNow). Publishes original research on prompt injection, agentic vulnerabilities, and SaaS AI security.",
     url: "https://zenity.io/blog",
-    tags: ["agentic security", "prompt injection", "low-code security", "vendor blog"]
+    tags: ["agentic security", "prompt injection", "low-code security", "vendor blog", "blog"]
   },
   {
     title: "Anthropic Research",
-    type: "newsletter",
+    type: "blog_post",
     org: "Anthropic",
     year: 2021,
     authors: ["Anthropic"],
     desc: "Research blog from Anthropic publishing frontier-model safety research including prompt injection, jailbreak analysis, computer-use agent security, and Claude red-teaming results. Frequently cited for empirical agentic-AI security studies.",
     url: "https://www.anthropic.com/research",
-    tags: ["ai safety", "frontier models", "jailbreaking", "agent security", "research blog"]
+    tags: ["ai safety", "frontier models", "jailbreaking", "agent security", "research blog", "newsletter"]
   },
   {
     title: "METR Updates",
-    type: "newsletter",
+    type: "blog_post",
     org: "METR",
     year: 2021,
     authors: ["METR"],
     desc: "Updates feed from METR (Model Evaluation & Threat Research), the non-profit evaluating frontier AI models for deceptive alignment, autonomous capability, and dangerous-agent behavior on behalf of major AI labs.",
     url: "https://www.metr.org/blog/",
-    tags: ["model evaluation", "agentic ai", "deceptive alignment", "research blog"]
+    tags: ["model evaluation", "agentic ai", "deceptive alignment", "research blog", "newsletter"]
   },
   {
     title: "Adversa AI Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Adversa AI",
     year: 2020,
     authors: ["Adversa AI"],
     desc: "Blog from Adversa AI, an AI red-teaming vendor, publishing annual 'AI Attack Landscapes' reports and technical write-ups of jailbreaks, prompt injections, and agentic-AI vulnerabilities discovered by their research team.",
     url: "https://www.adversa.ai/blog",
-    tags: ["ai red teaming", "jailbreaking", "threat report", "vendor blog"]
+    tags: ["ai red teaming", "jailbreaking", "threat report", "vendor blog", "newsletter"]
+  },
+  {
+    title: "Afternoon Cyber Tea with Microsoft",
+    type: "blog_post",
+    org: "Microsoft (CyberWire network)",
+    year: 2020,
+    authors: ["Ann Johnson"],
+    desc: "Microsoft podcast hosted by Ann Johnson featuring interviews with security leaders on AI governance, secure AI development, and operationalizing AI security in enterprise environments.",
+    url: "https://thecyberwire.com/podcasts/afternoon-cyber-tea",
+    tags: ["podcast", "ai governance", "enterprise", "interview", "microsoft"]
+  },
+  {
+    title: "CSO Perspectives",
+    type: "blog_post",
+    org: "CyberWire",
+    year: 2020,
+    authors: ["Rick Howard"],
+    desc: "CyberWire podcast for security executives discussing enterprise defense strategy including AI governance, model risk management, and integrating AI red teaming into security operations.",
+    url: "https://thecyberwire.com/podcasts/cso-perspectives",
+    tags: ["podcast", "ciso", "ai governance", "enterprise", "strategy"]
   },
   {
     title: "Cisco Security Blog — AI",
-    type: "blog",
+    type: "blog_post",
     org: "Cisco",
     year: 2020,
     desc: "Cisco Security blog's AI section, covering research on AI/LLM threats from Cisco's Talos and AI defense teams, including agentic AI security, model abuse detection, and incident-response guidance for AI-augmented attacks.",
     url: "https://blogs.cisco.com/security/ai",
-    tags: ["ai security", "threat intelligence", "cisco", "vendor blog"]
+    tags: ["ai security", "threat intelligence", "cisco", "vendor blog", "blog"]
   },
   {
     title: "Cohere Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Cohere",
     year: 2020,
     desc: "Blog from Cohere, the enterprise LLM vendor, publishing research on model safety, prompt-injection evaluations, retrieval-augmented generation security, and enterprise GenAI deployment best practices.",
     url: "https://cohere.com/blog",
-    tags: ["llm safety", "enterprise ai", "rag security", "vendor blog"]
+    tags: ["llm safety", "enterprise ai", "rag security", "vendor blog", "blog"]
+  },
+  {
+    title: "Google Cloud Security Podcast",
+    type: "blog_post",
+    org: "Google Cloud",
+    year: 2020,
+    authors: ["Anton Chuvakin", "Tim Peacock"],
+    desc: "Google Cloud security podcast covering cloud security operations and increasingly AI security topics including Secure AI Framework (SAIF) implementation, AI red teaming, and defending LLM-powered applications.",
+    url: "https://cloud.google.com/security/podcast/",
+    tags: ["podcast", "ai security", "cloud security", "google", "saif"]
   },
   {
     title: "Hudson Rock Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Hudson Rock",
     year: 2020,
     desc: "Blog from Hudson Rock, an infostealer intelligence company, publishing research on how stolen credentials from infostealers are used to compromise AI services, LLM accounts, and corporate GenAI deployments. Includes empirical data on InfoStealer-victim overlap with AI platforms.",
     url: "https://www.hudsonrock.com/blog",
-    tags: ["infostealer", "ai compromise", "credential theft", "vendor blog"]
+    tags: ["infostealer", "ai compromise", "credential theft", "vendor blog", "blog"]
   },
   {
     title: "Last Week in AI",
-    type: "newsletter",
+    type: "blog_post",
     org: "Last Week in AI",
     year: 2020,
     authors: ["Last Week in AI"],
@@ -6660,8 +7772,18 @@ const RESOURCES = [
     tags: ["ai news", "weekly digest", "llm security", "substack", "newsletter"]
   },
   {
+    title: "Security Unlocked",
+    type: "blog_post",
+    org: "Microsoft",
+    year: 2020,
+    authors: ["Nic Fillingham", "Sarah Pearl"],
+    desc: "Microsoft security podcast featuring AI security topics including PyRIT red teaming, AI safety research from Microsoft Research, and guest interviews with AI security practitioners across industry and government.",
+    url: "https://securityunlocked.com/",
+    tags: ["podcast", "ai security", "vendor", "red teaming", "microsoft"]
+  },
+  {
     title: "TLDR AI",
-    type: "newsletter",
+    type: "blog_post",
     org: "TLDR",
     year: 2020,
     authors: ["TLDR"],
@@ -6671,7 +7793,7 @@ const RESOURCES = [
   },
   {
     title: "The Batch",
-    type: "newsletter",
+    type: "blog_post",
     org: "DeepLearning.AI",
     year: 2020,
     authors: ["Andrew Ng", "DeepLearning.AI"],
@@ -6680,45 +7802,75 @@ const RESOURCES = [
     tags: ["ai news", "weekly digest", "llm security", "industry", "newsletter"]
   },
   {
+    title: "The Hacker Mind",
+    type: "blog_post",
+    org: "Bugcrowd",
+    year: 2020,
+    authors: ["Robert Vamosi"],
+    desc: "Bugcrowd podcast exploring hacker culture and offensive security, with episodes on bug bounty findings in AI systems, prompt injection flaws in production LLM apps, and crowdsourced AI red teaming.",
+    url: "https://www.bugcrowd.com/hackermind",
+    tags: ["podcast", "offensive security", "bug bounty", "ai security", "red teaming"]
+  },
+  {
     title: "Wiz Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Wiz",
     year: 2020,
     desc: "Cloud security blog from Wiz covering research on cloud-AI vulnerabilities, including the BingBang Copilot incident, LLM service misconfigurations, and AI-supply-chain threats in cloud environments. Publishes original research from Wiz Research.",
     url: "https://www.wiz.io/blog",
-    tags: ["cloud security", "ai security", "research blog", "vendor blog"]
+    tags: ["cloud security", "ai security", "research blog", "vendor blog", "blog"]
   },
   {
     title: "Avertium Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Avertium",
     year: 2019,
     desc: "Cybersecurity blog from managed detection and response firm Avertium, covering threat intelligence, incident response, and emerging AI-related threats to enterprise environments. Publishes practitioner guidance on defending against AI-augmented attacks.",
     url: "https://www.avertium.com/blog",
-    tags: ["cybersecurity", "threat intelligence", "ai security", "vendor blog"]
+    tags: ["cybersecurity", "threat intelligence", "ai security", "vendor blog", "blog"]
+  },
+  {
+    title: "CISO Series Podcast",
+    type: "blog_post",
+    org: "CISO Series",
+    year: 2019,
+    authors: ["David Spark", "Steve Zalewski"],
+    desc: "CISO-focused podcast network covering security leadership including AI governance, building AI security programs, and managing AI red team exercises across multiple weekly shows.",
+    url: "https://cisoseries.com/",
+    tags: ["podcast", "ciso", "ai governance", "enterprise", "interview"]
+  },
+  {
+    title: "Hacker Valley Studio",
+    type: "blog_post",
+    org: "Hacker Valley Studio",
+    year: 2019,
+    authors: ["Chris Cochran", "Ron Eddings"],
+    desc: "Podcast exploring cybersecurity through a personal lens, with episodes on AI security careers, red team mindset, and interviews with offensive AI researchers and AI safety practitioners.",
+    url: "https://www.hackervalley.com/",
+    tags: ["podcast", "ai security", "interview", "red teaming", "career"]
   },
   {
     title: "Nicholas Carlini — Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Nicholas Carlini",
     year: 2019,
     authors: ["Nicholas Carlini"],
     desc: "Personal blog by Nicholas Carlini (Google DeepMind researcher) on adversarial machine learning, model extraction, and breaking neural-network defenses. Widely cited in academic ML security literature for first-author attacks on certified defenses.",
     url: "https://nicholascarlini.com/",
-    tags: ["adversarial ml", "model extraction", "research blog", "neural network attacks"]
+    tags: ["adversarial ml", "model extraction", "research blog", "neural network attacks", "blog"]
   },
   {
     title: "AI Alignment Forum",
-    type: "blog",
+    type: "blog_post",
     org: "AI Alignment Forum",
     year: 2018,
     desc: "Community blog devoted to technical AI alignment research, including posts on deceptive alignment, inner optimization, agent oversight, and frontier-model evaluations. Hosts research from major AI safety organizations including Redwood Research, Anthropic, and Apollo Research.",
     url: "https://www.alignmentforum.org/",
-    tags: ["ai alignment", "ai safety", "frontier models", "community blog"]
+    tags: ["ai alignment", "ai safety", "frontier models", "community blog", "blog"]
   },
   {
     title: "AI Alignment Newsletter",
-    type: "newsletter",
+    type: "blog_post",
     org: "Rohin Shah",
     year: 2018,
     authors: ["Rohin Shah"],
@@ -6728,240 +7880,460 @@ const RESOURCES = [
   },
   {
     title: "AI Village",
-    type: "newsletter",
+    type: "blog_post",
     org: "AI Village",
     year: 2018,
     authors: ["AI Village"],
     desc: "Community hub and publication from AI Village, the DEFCON hacker community focused on public AI red-team practice, hands-on security workshops, and open AI-security resources. Includes newsletter and event announcements.",
     url: "https://aivillage.org/",
-    tags: ["ai red teaming", "community", "defcon", "workshops", "open source"]
+    tags: ["ai red teaming", "community", "defcon", "workshops", "open source", "newsletter"]
   },
   {
     title: "AI Village Blog",
-    type: "blog",
+    type: "blog_post",
     org: "AI Village",
     year: 2018,
     desc: "Blog of AI Village, the DEFCON hacker community for public AI red-teaming, publishing hands-on security research, workshop materials, and CVE write-ups on adversarial ML and LLM vulnerabilities from community contributors.",
     url: "https://aivillage.org/blog/",
-    tags: ["ai red teaming", "defcon", "community blog", "adversarial ml"]
+    tags: ["ai red teaming", "defcon", "community blog", "adversarial ml", "blog"]
+  },
+  {
+    title: "Black Hat Podcast",
+    type: "blog_post",
+    org: "Black Hat",
+    year: 2018,
+    authors: ["Black Hat"],
+    desc: "Official Black Hat conference podcast featuring interviews with briefed speakers on cutting-edge offensive security research, including AI red teaming, adversarial ML, and agent exploitation talks.",
+    url: "https://www.blackhat.com/",
+    tags: ["podcast", "offensive security", "ai security", "conference", "red teaming"]
   },
   {
     title: "Cybeats Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Cybeats",
     year: 2018,
     desc: "Blog from Cybeats covering software supply-chain security, SBOM management, and AI/ML model supply-chain risks. Includes guidance on AI Bills of Materials (AIBOM), model provenance, and SBOM-driven risk governance.",
     url: "https://www.cybeats.com/blog",
-    tags: ["supply chain", "sbom", "ai bom", "vendor blog"]
+    tags: ["supply chain", "sbom", "ai bom", "vendor blog", "blog"]
   },
   {
     title: "Hugging Face Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Hugging Face",
     year: 2018,
     desc: "Hugging Face's official blog covering model releases, ML research, and security topics including malicious model detection, pickle file risks, the Picklescan tooling, and the Hugging Face Secure Code Hub for AI practitioners.",
     url: "https://huggingface.co/blog",
-    tags: ["ml models", "ai security", "open source", "vendor blog"]
+    tags: ["ml models", "ai security", "open source", "vendor blog", "blog"]
   },
   {
     title: "IronCore Labs Blog",
-    type: "blog",
+    type: "blog_post",
     org: "IronCore Labs",
     year: 2018,
     desc: "Blog from IronCore Labs, a privacy and security vendor for AI applications, covering encryption for LLM prompts, confidential RAG architectures, and privacy-preserving AI deployment patterns.",
     url: "https://ironcorelabs.com/blog/",
-    tags: ["ai privacy", "encryption", "rag security", "vendor blog"]
+    tags: ["ai privacy", "encryption", "rag security", "vendor blog", "blog"]
   },
   {
     title: "Lil'Log",
-    type: "newsletter",
+    type: "blog_post",
     org: "Lilian Weng",
     year: 2018,
     authors: ["Lilian Weng"],
     desc: "Technical blog by Lilian Weng (OpenAI / formerly Azure OpenAI) that publishes in-depth primers on LLM agents, autonomous agents, prompt injection, and adversarial attacks on language models. Widely cited for foundational survey posts on agentic AI.",
     url: "https://lilianweng.github.io/",
-    tags: ["llm agents", "prompt injection", "adversarial", "research blog", "survey"]
+    tags: ["llm agents", "prompt injection", "adversarial", "research blog", "survey", "newsletter"]
   },
   {
     title: "PortSwigger Daily Swig",
-    type: "newsletter",
+    type: "blog_post",
     org: "PortSwigger",
     year: 2018,
     authors: ["PortSwigger"],
     desc: "Daily cybersecurity news digest from PortSwigger (makers of Burp Suite) that tracks AI/LLM web vulnerabilities, prompt-injection incidents, and academic web-agent security research relevant to practitioners.",
     url: "https://www.portswigger.net/daily-swig",
-    tags: ["web security", "ai security", "news digest", "vulnerability"]
+    tags: ["web security", "ai security", "news digest", "vulnerability", "newsletter"]
+  },
+  {
+    title: "Practical AI",
+    type: "blog_post",
+    org: "Changelog",
+    year: 2018,
+    authors: ["Daniel Whitenack", "Chris Benson"],
+    desc: "Changelog podcast on practical machine learning engineering, with episodes on LLM security, securing RAG pipelines, AI red teaming tools, and defending against prompt injection in production AI apps.",
+    url: "https://changelog.com/practicalai",
+    tags: ["podcast", "ai", "ai security", "llm", "engineering"]
+  },
+  {
+    title: "RSA Conference Podcast",
+    type: "blog_post",
+    org: "RSA Conference",
+    year: 2018,
+    authors: ["RSA Conference"],
+    desc: "RSA Conference podcast featuring interviews with security industry leaders and conference speakers, with substantial coverage of AI governance, AI red teaming, and enterprise AI security programs.",
+    url: "https://www.rsaconference.com/",
+    tags: ["podcast", "ai security", "ai governance", "conference", "interview"]
   },
   {
     title: "Snyk Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Snyk",
     year: 2018,
     desc: "Developer-security blog from Snyk covering open-source vulnerabilities, cloud-native security, and AI/LLM code security. Includes research on AI-generated code risks, the Snyk Code tooling, and agentic-code vulnerabilities.",
     url: "https://snyk.io/blog/",
-    tags: ["application security", "open source", "ai code security", "vendor blog"]
+    tags: ["application security", "open source", "ai code security", "vendor blog", "blog"]
+  },
+  {
+    title: "The Cyber Mentor Podcast",
+    type: "blog_post",
+    org: "TCM Security",
+    year: 2018,
+    authors: ["Heath Adams"],
+    desc: "Practical pentesting and red team podcast from TCM Security, with episodes on using LLMs for offensive tooling, prompt injection in real-world engagements, and AI-augmented web app testing.",
+    url: "https://www.thecybermentor.com/",
+    tags: ["podcast", "pentesting", "red teaming", "ai security", "offensive"]
+  },
+  {
+    title: "80,000 Hours Podcast",
+    type: "blog_post",
+    org: "80,000 Hours",
+    year: 2017,
+    authors: ["Rob Wiblin", "Luisa Rodriguez"],
+    desc: "Long-form interview podcast with deep dives into AI safety, AI alignment research, and AI security careers, including episodes with frontier model red teamers and AI governance experts.",
+    url: "https://80000hours.org/podcast/",
+    tags: ["podcast", "ai safety", "interview", "alignment", "career"]
+  },
+  {
+    title: "AI in Business",
+    type: "blog_post",
+    org: "Emerj Artificial Intelligence Research",
+    year: 2017,
+    authors: ["Dan Faggella"],
+    desc: "Podcast focused on enterprise AI adoption with episodes on AI governance, AI security risk management, and operational red teaming of enterprise AI systems. Host interviews Fortune 500 AI leaders.",
+    url: "https://www.aiinbusiness.com/",
+    tags: ["podcast", "ai", "enterprise", "ai governance", "interview"]
   },
   {
     title: "Cobalt Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Cobalt",
     year: 2017,
     desc: "Blog from Cobalt (PtaaS provider) covering application security, penetration testing, and AI-security testing methodology. Includes practitioner guidance on pentesting LLM and agentic applications and the offensive-AI research series.",
     url: "https://www.cobalt.io/blog",
-    tags: ["application security", "penetration testing", "ai security", "vendor blog"]
+    tags: ["application security", "penetration testing", "ai security", "vendor blog", "blog"]
+  },
+  {
+    title: "Darknet Diaries",
+    type: "blog_post",
+    org: "Darknet Diaries",
+    year: 2017,
+    authors: ["Jack Rhysider"],
+    desc: "Narrative-style podcast exploring true stories from the dark web and cyber underground, including episodes on AI-assisted fraud, deepfake heists, and prompt injection attacks. Highly produced investigative format.",
+    url: "https://darknetdiaries.com/",
+    tags: ["podcast", "ai security", "narrative", "underground", "investigative"]
   },
   {
     title: "GitGuardian Blog",
-    type: "blog",
+    type: "blog_post",
     org: "GitGuardian",
     year: 2017,
     desc: "Blog from GitGuardian covering secrets detection, non-human identity governance, and AI/LLM supply-chain security. Publishes technical research on hardcoded credentials in AI training pipelines and model repositories.",
     url: "https://blog.gitguardian.com/",
-    tags: ["secrets security", "supply chain", "nhi governance", "vendor blog"]
+    tags: ["secrets security", "supply chain", "nhi governance", "vendor blog", "blog"]
   },
   {
     title: "Google Safety & Security Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Google",
     year: 2017,
     desc: "Official Google blog on safety and security, covering AI safety research, abuse mitigation, threat-response efforts across Google products including Gemini, Workspace, and Android, and Google's Secure AI Framework (SAIF) announcements.",
     url: "https://blog.google/technology/safety-security/",
-    tags: ["ai safety", "security", "abuse mitigation", "vendor blog"]
+    tags: ["ai safety", "security", "abuse mitigation", "vendor blog", "blog"]
+  },
+  {
+    title: "Hacking Humans",
+    type: "blog_post",
+    org: "CyberWire",
+    year: 2017,
+    authors: ["Dave Bittner", "Joe Carrigan"],
+    desc: "CyberWire podcast on social engineering and human-focused attacks, with regular coverage of AI-powered phishing, deepfake voice scams, and LLM-driven manipulation campaigns.",
+    url: "https://thecyberwire.com/podcasts/hacking-humans",
+    tags: ["podcast", "social engineering", "ai security", "phishing", "deepfakes"]
+  },
+  {
+    title: "IBM Security Intelligence Podcast",
+    type: "blog_post",
+    org: "IBM Security",
+    year: 2017,
+    authors: ["Maria Vello", "Camille Stewart"],
+    desc: "IBM Security podcast covering threat intelligence, AI-driven security operations, and IBM's AI red teaming methodology for foundation models. Frequent interviews with X-Force researchers.",
+    url: "https://securityintelligence.com/podcasts/",
+    tags: ["podcast", "ai security", "threat intel", "ibm", "red teaming"]
+  },
+  {
+    title: "Malicious Life",
+    type: "blog_post",
+    org: "Cybereason",
+    year: 2017,
+    authors: ["Ran Levi"],
+    desc: "Narrative cybersecurity history podcast with episodes on the rise of adversarial machine learning, AI worms, and the cat-and-mouse between AI attackers and defenders.",
+    url: "https://malicious.life/",
+    tags: ["podcast", "ai security", "history", "narrative", "malware"]
+  },
+  {
+    title: "Research Saturday",
+    type: "blog_post",
+    org: "CyberWire",
+    year: 2017,
+    authors: ["Dave Bittner"],
+    desc: "CyberWire podcast featuring in-depth interviews with security researchers, including frequent guests working on adversarial ML, prompt injection, and AI red teaming. Published weekly.",
+    url: "https://thecyberwire.com/podcasts/research-saturday",
+    tags: ["podcast", "research", "interview", "ai security", "red teaming"]
+  },
+  {
+    title: "Smashing Security",
+    type: "blog_post",
+    org: "Smashing Security",
+    year: 2017,
+    authors: ["Graham Cluley", "Carole Theriault"],
+    desc: "Award-winning cybersecurity news podcast with regular segments on AI-powered scams, deepfakes, and LLM-driven social engineering. Accessible format with expert commentary.",
+    url: "https://www.smashingsecurity.com/",
+    tags: ["podcast", "ai security", "news", "deepfakes", "weekly"]
+  },
+  {
+    title: "Tenable Podcast",
+    type: "blog_post",
+    org: "Tenable",
+    year: 2017,
+    authors: ["Satnam Narang", "Scott Small"],
+    desc: "Tenable security research podcast with episodes on AI-generated phishing, deepfake-based business email compromise, and securing AI workloads in enterprise environments.",
+    url: "https://www.tenable.com/podcast",
+    tags: ["podcast", "ai security", "vulnerability", "vendor", "research"]
   },
   {
     title: "The Gradient",
-    type: "blog",
+    type: "blog_post",
     org: "The Gradient",
     year: 2017,
     desc: "Independent digital publication on AI research, policy, and safety, publishing long-form essays and technical analyses on adversarial ML, AI red-teaming, and frontier-model risks from academic and industry contributors.",
     url: "https://thegradient.pub/",
-    tags: ["ai research", "ai safety", "ai policy", "publication"]
+    tags: ["ai research", "ai safety", "ai policy", "publication", "blog"]
+  },
+  {
+    title: "CyberWire Daily Podcast",
+    type: "blog_post",
+    org: "CyberWire",
+    year: 2016,
+    authors: ["Dave Bittner"],
+    desc: "Daily cybersecurity news podcast with frequent AI security coverage including LLM vulnerabilities, AI supply chain attacks, and policy developments. Produced by the CyberWire network.",
+    url: "https://thecyberwire.com/podcasts/daily-podcast",
+    tags: ["podcast", "ai security", "news", "daily"]
+  },
+  {
+    title: "Future of Life Institute Podcast (AI Alignment)",
+    type: "blog_post",
+    org: "Future of Life Institute",
+    year: 2016,
+    authors: ["Lucas Perry"],
+    desc: "Podcast from the Future of Life Institute featuring interviews with AI safety researchers on alignment, catastrophe risk, red teaming of frontier models, and AI governance.",
+    url: "https://futureoflife.org/podcast/",
+    tags: ["podcast", "ai safety", "alignment", "interview", "red teaming"]
+  },
+  {
+    title: "The AI Podcast",
+    type: "blog_post",
+    org: "NVIDIA",
+    year: 2016,
+    authors: ["Noah Kravitz"],
+    desc: "NVIDIA's long-running AI podcast featuring one-on-one interviews with researchers and engineers, including episodes on AI safety, adversarial robustness, and securing AI infrastructure.",
+    url: "https://blogs.nvidia.com/blog/category/the-ai-podcast/",
+    tags: ["podcast", "ai", "interview", "ai safety", "nvidia"]
+  },
+  {
+    title: "Black Hills Information Security Podcast",
+    type: "blog_post",
+    org: "Black Hills Information Security",
+    year: 2015,
+    authors: ["John Strand", "Mike Felch"],
+    desc: "Practical offensive security podcast from the Black Hills pentest team, with episodes on using LLMs for red team tooling, prompt injection in assessments, and AI-augmented C2.",
+    url: "https://www.blackhillsinfosec.com/podcast/",
+    tags: ["podcast", "pentesting", "red teaming", "ai security", "offensive"]
   },
   {
     title: "ITSPmagazine",
-    type: "blog",
+    type: "blog_post",
     org: "ITSPmagazine",
     year: 2015,
     authors: ["Marco Ciappelli", "Sean Martin"],
     desc: "Independent multimedia publication and podcast network covering cybersecurity, AI, and society, co-founded by Marco Ciappelli. Publishes articles, interviews, and panel discussions on AI security, governance, and red-teaming.",
     url: "https://www.itspmagazine.com/",
-    tags: ["cybersecurity", "ai security", "podcast", "media"]
+    tags: ["cybersecurity", "ai security", "podcast", "media", "blog"]
   },
   {
     title: "Import AI",
-    type: "newsletter",
+    type: "blog_post",
     org: "Jack Clark",
     year: 2015,
     authors: ["Jack Clark"],
     desc: "Influential weekly AI newsletter by Jack Clark (co-founder of Anthropic), covering frontier-model research, AI policy, and notable AI security incidents. Read widely across AI labs and policy makers.",
     url: "https://importai.substack.com/",
-    tags: ["ai news", "weekly digest", "policy", "frontier models", "substack"]
+    tags: ["ai news", "weekly digest", "policy", "frontier models", "substack", "newsletter"]
   },
   {
     title: "OpenAI Research",
-    type: "newsletter",
+    type: "blog_post",
     org: "OpenAI",
     year: 2015,
     authors: ["OpenAI"],
     desc: "OpenAI's research blog covering frontier-model evaluations, safety mitigations, agentic-AI red-teaming, and Computer-Using Agent (CUA) security findings. Posts are accompanied by released system cards and model specs.",
     url: "https://openai.com/research/",
-    tags: ["ai safety", "frontier models", "red teaming", "agent security", "research blog"]
+    tags: ["ai safety", "frontier models", "red teaming", "agent security", "research blog", "newsletter"]
   },
   {
     title: "Palo Alto Unit 42 Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Palo Alto Networks Unit 42",
     year: 2014,
     desc: "Threat-research blog from Palo Alto Networks' Unit 42 incident-response and intelligence team, publishing analyses of AI-augmented phishing, deepfake-enabled fraud, LLM-powered malware, and emerging agentic-AI threat actor tradecraft.",
     url: "https://unit42.paloaltonetworks.com/",
-    tags: ["threat intelligence", "ai-augmented attacks", "incident response", "vendor blog"]
+    tags: ["threat intelligence", "ai-augmented attacks", "incident response", "vendor blog", "blog"]
   },
   {
     title: "Unsupervised Learning",
-    type: "newsletter",
+    type: "blog_post",
     org: "Daniel Miessler",
     year: 2014,
     authors: ["Daniel Miessler"],
     desc: "Weekly newsletter by Daniel Miessler covering the intersection of cybersecurity, AI safety, and national security, including analysis of LLM attacks, agent threats, and the OWASP Top 10 for LLM Applications that he helped author.",
     url: "https://newsletter.danielmiessler.com/",
-    tags: ["ai security", "cybersecurity", "weekly digest", "owasp", "analysis"]
+    tags: ["ai security", "cybersecurity", "weekly digest", "owasp", "analysis", "newsletter"]
   },
   {
     title: "Trail of Bits Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Trail of Bits",
     year: 2012,
     authors: ["Trail of Bits"],
     desc: "Security research blog from Trail of Bits covering AI/ML security audits, model supply-chain risks, and adversarial attacks on LLM agents. Publishes original research and tooling for AI red-teamers.",
     url: "https://blog.trailofbits.com/",
-    tags: ["ai security", "ml security", "audit", "supply chain", "vendor blog"]
+    tags: ["ai security", "ml security", "audit", "supply chain", "vendor blog", "newsletter"]
   },
   {
     title: "Google DeepMind Blog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Google DeepMind",
     year: 2010,
     authors: ["Google DeepMind"],
     desc: "Google DeepMind's official blog publishing safety and security research including agentic-AI red-teaming, multi-agent evaluations, frontier safety frameworks, and responsible deployment findings for Gemini models.",
     url: "https://deepmind.google/discover/blog/",
-    tags: ["ai safety", "frontier models", "agentic security", "research blog"]
+    tags: ["ai safety", "frontier models", "agentic security", "research blog", "newsletter"]
+  },
+  {
+    title: "Security Weekly",
+    type: "blog_post",
+    org: "Security Weekly / CyberRisk Alliance",
+    year: 2010,
+    authors: ["Paul Asadoorian", "Jeff Man"],
+    desc: "Long-running cybersecurity podcast network covering enterprise security, pentesting, and increasingly AI red teaming, agent security, and LLM vulnerability research. Multiple weekly shows.",
+    url: "https://securityweekly.com/",
+    tags: ["podcast", "ai security", "pentesting", "red teaming", "weekly"]
   },
   {
     title: "LessWrong — AI Risk",
-    type: "blog",
+    type: "blog_post",
     org: "LessWrong",
     year: 2009,
     desc: "Curated tag page on LessWrong aggregating AI risk essays, including seminal work on instrumental convergence, the orthogonality thesis, and modern frontier-model risk analysis. Updated continuously by LessWrong editors with both classical and contemporary posts.",
     url: "https://www.lesswrong.com/tag/ai-risk",
-    tags: ["ai risk", "ai alignment", "ai safety", "community blog"]
+    tags: ["ai risk", "ai alignment", "ai safety", "community blog", "blog"]
+  },
+  {
+    title: "The Social Engineer Podcast",
+    type: "blog_post",
+    org: "Social-Engineer, LLC",
+    year: 2009,
+    authors: ["Chris Hadnagy"],
+    desc: "Podcast dedicated to social engineering science and defense, with episodes covering AI-voice-cloning vishing, deepfake CEO fraud, and LLM-based pretexting attacks.",
+    url: "https://www.socialengineer.org/",
+    tags: ["podcast", "social engineering", "ai security", "deepfakes", "vishing"]
+  },
+  {
+    title: "Hak5",
+    type: "blog_post",
+    org: "Hak5",
+    year: 2008,
+    authors: ["Shannon Morse", "Darren Kitchen"],
+    desc: "Long-running hacker-focused show covering offensive tooling, with recent episodes on AI-augmented pentesting hardware, LLM agents for red team operations, and AI-powered social engineering gadgets.",
+    url: "https://www.youtube.com/@Hak5",
+    tags: ["podcast", "hacking", "ai security", "tooling", "offensive"]
+  },
+  {
+    title: "Risky Business",
+    type: "blog_post",
+    org: "Risky Business Media",
+    year: 2007,
+    authors: ["Patrick Gray", "Adam Boileau"],
+    desc: "Weekly cybersecurity news and analysis podcast with a regular AI security segment covering prompt injection research, agent attacks, and vendor AI red team reports. Long-running industry standard for crypto/infosec news.",
+    url: "https://risky.biz/",
+    tags: ["podcast", "ai security", "news", "interview", "weekly"]
+  },
+  {
+    title: "SANS ISC Podcast",
+    type: "blog_post",
+    org: "SANS Internet Storm Center",
+    year: 2006,
+    authors: ["Johannes Ullrich"],
+    desc: "Daily short-form cybersecurity podcast from the SANS Internet Storm Center, with frequent coverage of AI-generated malware, prompt injection attacks, and AI-augmented phishing campaigns.",
+    url: "https://isc.sans.edu/podcast.html",
+    tags: ["podcast", "ai security", "news", "daily", "threat intel"]
   },
   {
     title: "Microsoft Security Response Center Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Microsoft Security Response Center",
     year: 2005,
     desc: "Blog from Microsoft's Security Response Center (MSRC) covering vulnerability response, CVE patches, and AI-related security incidents affecting Microsoft products and Azure AI services. Publishes Patch Tuesday summaries and AI-incident postmortems.",
     url: "https://www.microsoft.com/en-us/msrc/blog",
-    tags: ["vulnerability response", "cve", "ai incidents", "microsoft"]
+    tags: ["vulnerability response", "cve", "ai incidents", "microsoft", "blog"]
   },
   {
     title: "Microsoft Security Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Microsoft",
     year: 2003,
     desc: "Official Microsoft Security blog covering enterprise security research, threat intelligence, AI red-teaming, and the Microsoft AI Red Team's (AIRTS) findings on Copilot, Azure OpenAI, and Security Copilot. Publishes monthly threat-intelligence reports.",
     url: "https://www.microsoft.com/en-us/security/blog/",
-    tags: ["ai red teaming", "threat intelligence", "microsoft", "vendor blog"]
+    tags: ["ai red teaming", "threat intelligence", "microsoft", "vendor blog", "blog"]
   },
   {
     title: "Simon Willison's Weblog",
-    type: "newsletter",
+    type: "blog_post",
     org: "Simon Willison",
     year: 2002,
     authors: ["Simon Willison"],
     desc: "Long-running personal weblog whose recent output focuses heavily on LLM security, prompt injection, and tool-use vulnerabilities, with weekly link digests and detailed write-ups of jailbreaks and agent attacks.",
     url: "https://simonwillison.net/",
-    tags: ["prompt injection", "llm security", "agent security", "weekly digest", "research blog"]
+    tags: ["prompt injection", "llm security", "agent security", "weekly digest", "research blog", "newsletter"]
   },
   {
     title: "Daniel Miessler Blog",
-    type: "blog",
+    type: "blog_post",
     org: "Daniel Miessler",
     year: 2001,
     authors: ["Daniel Miessler"],
     desc: "Long-running personal blog by Daniel Miessler covering cybersecurity, AI/LLM security, prompt injection, and the OWASP Top 10 for LLM Applications. Author of the 'Unsupervised Learning' newsletter and noted security practitioner.",
     url: "https://danielmiessler.com/blog",
-    tags: ["ai security", "prompt injection", "owasp", "llm security", "personal blog"]
+    tags: ["ai security", "prompt injection", "owasp", "llm security", "personal blog", "blog"]
   },
   {
     title: "Gary McGraw — Writings",
-    type: "blog",
+    type: "blog_post",
     org: "Gary McGraw",
     year: 1997,
     authors: ["Gary McGraw"],
     desc: "Personal site and writings of Gary McGraw, software-security author and co-founder of the Berryville Institute of Machine Learning (BIML). Includes essays on AI risk assessment, the BIML AI Risk Landscape reports, and the 'Securing AI' series.",
     url: "https://www.garymcgraw.com/",
-    tags: ["ai security", "software security", "risk assessment", "biml"]
+    tags: ["ai security", "software security", "risk assessment", "biml", "blog"]
   },
 
 ];

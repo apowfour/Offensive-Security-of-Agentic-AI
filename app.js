@@ -142,7 +142,38 @@ function renderCategory(){
   }
 
   // sync any preselected topic chip from the URL
-  function syncTopicChips(){ [...topicChips.children].forEach(c=>c.classList.toggle("active", c.dataset.topic===activeTopic)); }
+  function syncTopicChips(){
+    [...topicChips.children].forEach(c=>c.classList.toggle("active", c.dataset.topic===activeTopic));
+    // Scroll the active chip into view (horizontal scroll container)
+    if(activeTopic){
+      const active = topicChips.querySelector('.chip.active');
+      if(active){
+        const cLeft = active.offsetLeft;
+        const cRight = cLeft + active.offsetWidth;
+        const sLeft = topicChips.scrollLeft;
+        const sRight = sLeft + topicChips.clientWidth;
+        if(cLeft < sLeft + 8)  topicChips.scrollTo({left: cLeft - 16, behavior: 'smooth'});
+        else if(cRight > sRight - 8) topicChips.scrollTo({left: cRight - topicChips.clientWidth + 16, behavior: 'smooth'});
+      }
+    }
+  }
+
+  // Add .no-overflow class when chips fit in one row (so the fade mask drops)
+  function checkOverflow(){
+    const hasOverflow = topicChips.scrollWidth > topicChips.clientWidth + 4;
+    topicChips.classList.toggle('no-overflow', !hasOverflow);
+    topicChips.parentElement.classList.toggle('has-overflow', hasOverflow);
+  }
+  // Check now and on resize
+  checkOverflow();
+  window.addEventListener('resize', checkOverflow);
+  // Check again after fonts load (chip widths can change)
+  if(document.fonts && document.fonts.ready){
+    document.fonts.ready.then(checkOverflow);
+  }
+  // Also re-check when chips get clicked (active styles may change width slightly)
+  topicChips.addEventListener('click', () => setTimeout(checkOverflow, 50));
+
   syncTopicChips();
 
   document.getElementById("search").addEventListener("input", e=>{ query=e.target.value.trim().toLowerCase(); draw(); });
