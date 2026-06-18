@@ -68,6 +68,10 @@ const TREE = [
     {label:"Threat Modeling", cat:"paper", topic:"Threat Modeling"},
     {label:"Computer-Use & Web Agents", cat:"paper", topic:"Computer-Use & Web Agents"},
     {label:"Misc Attacks & Other", cat:"paper", topic:"Misc Attacks & Other"},
+    {label:"MCP Security", cat:"paper", topic:"MCP Security"},
+    {label:"Agent Memory Attacks", cat:"paper", topic:"Agent Memory Attacks"},
+    {label:"Supply Chain Attacks", cat:"paper", topic:"Supply Chain Attacks"},
+    {label:"Side-channel Attacks", cat:"paper", topic:"Side-channel Attacks"},
   ]},
   { label:"Guides", cat:"guide", children:[
     {label:"Framework guides"},
