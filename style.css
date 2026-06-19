@@ -114,6 +114,35 @@ header.hero { border-bottom: 1px solid var(--line); padding: 60px 0 44px; }
 /* When chips don't overflow (JS adds .no-overflow), drop the fade mask */
 .chips.no-overflow { -webkit-mask-image: none; mask-image: none; padding-bottom: 0; margin-bottom: 0; }
 
+/* Collapsible chips: when expanded, wrap into a grid (no scroll, no fade) */
+.chips.is-expanded {
+  flex-wrap: wrap;
+  overflow-x: visible;
+  -webkit-mask-image: none;
+  mask-image: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  row-gap: 8px;
+}
+.chips.is-expanded::-webkit-scrollbar { display: none; }
+
+/* Toggle button — looks like a chip but with a chevron + "more/less" label */
+.chip.chip-toggle {
+  background: var(--paper-2);
+  color: var(--ink);
+  border-color: var(--line);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.chip.chip-toggle:hover {
+  border-color: var(--clay);
+  color: var(--clay-deep);
+  background: var(--paper);
+}
+.chip.chip-toggle i { font-size: 14px; }
+
 .chip {
   flex: none;            /* don't shrink or grow — keep natural width */
   white-space: nowrap;   /* never wrap a chip's text */
@@ -463,3 +492,217 @@ code.defense {
 .card, .cat-card { min-width: 0; }
 .card h3 { overflow-wrap: anywhere; }
 img, svg { max-width: 100%; }
+
+/* ============================================================
+   v7 — Bilingual (Arabic-first): RTL + lang toggle + responsive
+   ============================================================ */
+
+/* ---------- Arabic font ---------- */
+/* Tajawal for Arabic body + headings; Inter retained for English-heavy
+   content (paper titles, descriptions) so Latin glyphs render cleanly. */
+html[lang="ar"] body {
+  font-family: 'Tajawal', 'Inter', system-ui, sans-serif;
+}
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] .hero h1,
+html[lang="ar"] .block-head,
+html[lang="ar"] .group-head,
+html[lang="ar"] .section-head,
+html[lang="ar"] .cat-name,
+html[lang="ar"] .tutorial h2,
+html[lang="ar"] .risk-title {
+  font-family: 'Tajawal', 'Newsreader', serif;
+  letter-spacing: 0; /* Arabic doesn't need letter-spacing */
+}
+/* Paper titles + descriptions are English-heavy; keep Inter for legibility */
+html[lang="ar"] .card h3,
+html[lang="ar"] .card .desc,
+html[lang="ar"] .card .org {
+  font-family: 'Inter', 'Tajawal', sans-serif;
+}
+/* Arabic numerals stay in tabular-numeric Inter for consistency with stats */
+html[lang="ar"] .hero .meta b,
+html[lang="ar"] .gh-count,
+html[lang="ar"] .card .org,
+html[lang="ar"] .chip .count {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Brand row + language toggle ---------- */
+.brand-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+/* In RTL, the natural flex flow already places the first child (.brand) on the
+   right and the toggle on the left — no flex-direction: row-reverse needed. */
+.lang-toggle {
+  font-family: 'Inter', sans-serif; /* Always Inter for "English" / "العربية" label */
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  flex: none; /* don't shrink or stretch */
+  min-height: 32px;
+  line-height: 1.2;
+}
+.lang-toggle:hover {
+  border-color: var(--clay);
+  color: var(--clay-deep);
+  background: var(--paper);
+}
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 2px;
+}
+html[dir="rtl"] .lang-toggle {
+  font-family: 'Tajawal', 'Inter', sans-serif; /* for the "العربية" label */
+}
+
+/* ---------- RTL arrow flips ---------- */
+/* Back icon (ti-arrow-left): flip to point right in RTL */
+html[dir="rtl"] .ti-arrow-left::before {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+/* Card "Open" arrow: flip → to ← */
+html[dir="rtl"] .card .go .arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+/* Card "Open" hover: in LTR arrow slides right; in RTL it should slide left.
+   Combine the flip with the translate so the flip is preserved on hover. */
+html[dir="rtl"] .card:hover .go .arrow {
+  transform: scaleX(-1) translateX(3px);
+}
+/* Cat-card count arrow (hardcoded → in app.js, wrapped in .arrow span):
+   flip to ← in RTL. The tutorial card already uses a per-language arrow
+   inside its i18n string, so it's excluded. */
+html[dir="rtl"] .cat-card:not(.cat-card--tutorial) .cat-count .arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+/* Tree chevron (ti-chevron-right):
+   LTR collapsed=0deg (right), open=90deg (down).
+   RTL collapsed=180deg (left), open=90deg (down — same as LTR). */
+html[dir="rtl"] .tree-toggle .tw {
+  transform: rotate(180deg);
+}
+/* The base `.tree-branch.open > .tree-toggle .tw { transform: rotate(90deg); }`
+   has higher specificity than our collapsed rule, so the open state inherits
+   90deg automatically — no need to re-declare. But we add it explicitly for
+   clarity and to guard against future specificity changes. */
+html[dir="rtl"] .tree-branch.open > .tree-toggle .tw {
+  transform: rotate(90deg);
+}
+
+/* ---------- RTL directional padding/margin/border overrides ---------- */
+/* Approach: existing rules use physical sides (left/right). Rather than
+   rewriting them, add `html[dir="rtl"]` overrides that flip each one. */
+
+/* Chip count badge: was margin-left → margin-right in RTL */
+html[dir="rtl"] .chip .count { margin-left: 0; margin-right: 5px; }
+
+/* Card "is-start" left accent → right accent in RTL */
+html[dir="rtl"] .card.is-start { box-shadow: inset -3px 0 0 var(--clay); }
+
+/* Tree indentation: left margin/padding/border → right in RTL */
+html[dir="rtl"] .tree li ul {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+  margin-right: 14px;
+  padding-right: 14px;
+  border-right: 1px solid var(--line);
+}
+html[dir="rtl"] .tree-leaf { padding: 4px 2px 4px 0; }
+
+/* Tutorial list bullets: left → right in RTL */
+html[dir="rtl"] .tut-list li { padding: 6px 22px 6px 0; }
+html[dir="rtl"] .tut-list li::before { left: auto; right: 4px; }
+
+/* Timeline (demo trace) border-left → border-right in RTL */
+html[dir="rtl"] .tl { border-left: none; border-right: 2px solid var(--line); }
+html[dir="rtl"] .res-ok { border-right-color: #1D9E75; }
+html[dir="rtl"] .res-bad { border-right-color: #E24B4A; }
+
+/* Group-head count badge: margin-left → margin-right in RTL */
+html[dir="rtl"] .group-head .gh-count { margin-left: 0; margin-right: 4px; }
+
+/* Chips horizontal-scroll fade hint: in LTR it's on the right edge (more
+   chips hidden to the right). In RTL it should be on the left edge. */
+html[dir="rtl"] .chips {
+  scroll-padding-left: 32px;
+  scroll-padding-right: 4px;
+  -webkit-mask-image: linear-gradient(to left, #000 0, #000 calc(100% - 32px), transparent 100%);
+          mask-image: linear-gradient(to left, #000 0, #000 calc(100% - 32px), transparent 100%);
+}
+
+/* Step card text alignment: LTR is text-align: left; RTL should be right */
+html[dir="rtl"] .step { text-align: right; }
+
+/* Tutorial TOC and tabs: no directional change needed (flex-wrap handles it),
+   but ensure the tab border-bottom stays consistent. */
+
+/* Footer: ensure code element doesn't break RTL flow */
+html[dir="rtl"] footer code { unicode-bidi: plaintext; }
+
+/* ---------- Mobile (≤480px) tweaks — tested at 375px ---------- */
+@media (max-width: 480px) {
+  .brand-row { gap: 10px; margin-bottom: 6px; }
+  .brand { font-size: 14px; }
+  .lang-toggle {
+    padding: 8px 14px;
+    font-size: 12.5px;
+    min-height: 36px; /* comfortable tap target */
+  }
+  .hero h1 { font-size: clamp(26px, 7vw, 30px); }
+  .hero p.lede { font-size: 16px; }
+  .hero--sub h1 { font-size: 24px; gap: 8px; }
+  .hero--sub h1 .cat-ic.big { width: 40px; height: 40px; font-size: 22px; }
+  .cat-name { font-size: 19px; }
+  .cat-blurb { font-size: 13px; }
+  .cat-count { font-size: 12.5px; }
+  .cat-ic { width: 38px; height: 38px; font-size: 19px; }
+  .block-head { font-size: 21px; }
+  .block-sub { font-size: 14px; }
+  .group-head { font-size: 20px; }
+  .step { padding: 14px; }
+  .step h3 { font-size: 14.5px; }
+  .step p { font-size: 13px; }
+  .filter-label { font-size: 11px; }
+  .chip { font-size: 12.5px; padding: 6px 11px; }
+  .card { padding: 16px 16px 14px; }
+  .card h3 { font-size: 18px; }
+  .card .desc { font-size: 14px; }
+  .card .go { font-size: 13px; }
+  footer { padding: 28px 0 40px; }
+  footer .wrap { font-size: 12.5px; line-height: 1.55; }
+  footer .wrap code { word-break: break-all; }
+  /* Tutorial tabs: scroll horizontally on tiny screens instead of wrapping */
+  .tut-tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
+  .tut-tab { white-space: nowrap; padding: 10px 14px; }
+  /* Demo controls stack tighter */
+  .demo-ctrls { gap: 10px; }
+  /* Risk card head: stack the badge + title on very small screens */
+  .risk-head { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
+/* ---------- Extra-small (≤360px) — Galaxy Fold / very narrow ---------- */
+@media (max-width: 360px) {
+  .wrap { padding: 0 14px; }
+  .brand-row { gap: 8px; }
+  .lang-toggle { padding: 7px 12px; font-size: 12px; }
+  .hero h1 { font-size: 24px; }
+  .cat-ic { width: 34px; height: 34px; font-size: 17px; }
+}

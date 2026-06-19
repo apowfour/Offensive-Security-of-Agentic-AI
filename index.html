@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OffensiveAgentic — Offensive Security of Agentic AI</title>
-<meta name="description" content="The open reference for the offensive security of agentic AI: red teaming, penetration testing, vulnerability assessment, evaluation and benchmarking.">
+<title>OffensiveAgentic — الأمن الهجومي للـ Agentic AI</title>
+<meta name="description" content="المرجع المفتوح للأمن الهجومي للـ Agentic AI: Red Teaming، Penetration Testing، تقييم الثغرات، والتقييم والمعايير.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,41 +15,56 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="brand"><span class="dot"></span> OffensiveAgentic</div>
-    <h1>The offensive security of agentic&nbsp;AI, in one place.</h1>
-    <p class="lede">A curated, growing reference for everyone who red-teams, pentests, evaluates, or breaks AI agents. Pick a category to dive in, or scan the full map below.</p>
+    <div class="brand-row">
+      <div class="brand"><span class="dot"></span> OffensiveAgentic</div>
+      <button id="lang-toggle" class="lang-toggle" aria-label="تبديل اللغة">English</button>
+    </div>
+    <h1 data-i18n="home.hero.title">الأمن الهجومي للـ Agentic AI، في مكان واحد.</h1>
+    <p class="lede" data-i18n="home.hero.lede">مرجع منظم وآخذ في النمو لكل من يقوم بـ Red Teaming أو Penetration Testing أو تقييم أو اختراق وكلاء الذكاء الاصطناعي. اختر فئة للبدء، أو تصفّح الخريطة الكاملة أدناه.</p>
     <div class="meta">
-      <span><b id="stat-total">880</b> resources</span>
-      <span><b id="stat-cats">0</b> categories</span>
+      <span><b id="stat-total">922</b> <span data-i18n="home.hero.stat.resources">مورد</span></span>
+      <span><b id="stat-cats">0</b> <span data-i18n="home.hero.stat.categories">فئة</span></span>
     </div>
   </div>
 </header>
 
 <main class="wrap">
   <section class="block">
-    <h2 class="block-head">Browse by category</h2>
-    <p class="block-sub">Each opens a focused page with its own search.</p>
+    <h2 class="block-head" data-i18n="home.section.browse.title">تصفّح حسب الفئة</h2>
+    <p class="block-sub" data-i18n="home.section.browse.sub">كل فئة تفتح صفحة مخصصة مع بحث خاص بها.</p>
     <div class="cat-grid" id="cat-cards"></div>
   </section>
 
   <section class="block">
-    <h2 class="block-head">The full map</h2>
-    <p class="block-sub">A hierarchy of the whole field — click a row with a ▸ to expand it; linked items jump to their category page.</p>
+    <h2 class="block-head" data-i18n="home.section.tree.title">الخريطة الكاملة</h2>
+    <p class="block-sub" data-i18n="home.section.tree.sub">هرمية شاملة للمجال — اضغط على صف يحتوي على ▸ لتوسيعه؛ العناصر المرتبطة تنتقل إلى صفحة فئتها.</p>
     <div id="tree" class="tree"></div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    Open reference · Contributions welcome on
+    <span data-i18n="footer.openRef">مرجع مفتوح</span> · <span data-i18n="footer.contributions">المساهمات مرحب بها على</span>
     <a href="https://github.com/apowfour/Offensive-Security-of-Agentic-AI" target="_blank" rel="noopener">GitHub</a>.
-    To add a resource, edit <code>data.js</code>.
+    <span data-i18n="footer.toAdd">لإضافة مورد، عدّل ملف</span> <code>data.js</code>.
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="config.js"></script>
+<script src="i18n-topics.js"></script>
 <script src="data.js"></script>
 <script src="app.js"></script>
-<script>renderHome();</script>
+<script>
+  // Apply translations first, then render dynamic content
+  i18n.applyToDocument();
+  renderHome();
+  // Wire lang toggle
+  document.getElementById('lang-toggle').addEventListener('click', () => i18n.toggle());
+  // Re-render dynamic content on language change (so labels update)
+  i18n.onChange(() => {
+    renderHome();
+  });
+</script>
 </body>
 </html>
